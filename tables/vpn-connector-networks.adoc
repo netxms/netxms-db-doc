@@ -1,7 +1,7 @@
 [[t-vpn-connector-networks]]
 === VPN_CONNECTOR_NETWORKS
 
-
+This table is deprecated.
 
 .Columns
 [cols="15,17,13,10,45a"]

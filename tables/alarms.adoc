@@ -4,7 +4,7 @@
 
 
 .Columns
-[cols="20,18,13,10,39a"]
+[cols="21,18,13,10,38a"]
 |===
 |Name|Type|State|Default|Description
 |🔑alarm_id
@@ -130,6 +130,12 @@
 |ack_timeout
 |INTEGER
 |NOT NULL
+|∅
+|
+
+|alarm_category_ids
+|VARCHAR(255)
+|NULL
 |∅
 |
 |===

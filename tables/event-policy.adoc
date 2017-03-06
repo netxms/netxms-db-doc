@@ -66,18 +66,6 @@
 |NOT NULL
 |∅
 |
-
-|situation_id
-|INTEGER
-|NOT NULL
-|∅
-|
-
-|situation_instance
-|VARCHAR(255)
-|NULL
-|∅
-|
 |===
 
 .Indexes

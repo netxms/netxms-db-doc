@@ -4,7 +4,7 @@
 Nodes
 
 .Columns
-[cols="22,17,13,10,38a"]
+[cols="26,17,13,10,34a"]
 |===
 |Name|Type|State|Default|Description
 |🔑id
@@ -229,6 +229,12 @@ Nodes
 |∅
 |
 
+|chassis_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of chassis object this node belongs to
+
 |agent_cache_mode
 |CHAR(1)
 |NOT NULL
@@ -237,6 +243,66 @@ Nodes
 
 |last_agent_comm_time
 |INTEGER
+|NOT NULL
+|∅
+|
+
+|syslog_msg_count
+|BIGINT
+|NOT NULL
+|∅
+|Total number of received syslog messages
+
+|snmp_trap_count
+|BIGINT
+|NOT NULL
+|∅
+|Total number of received SNMP traps
+
+|node_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|node_subtype
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|ssh_login
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|ssh_password
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|ssh_proxy
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|port_rows
+|INTEGER
+|NULL
+|∅
+|Number of port rows
+
+|port_numbering_scheme
+|INTEGER
+|NULL
+|∅
+|Numbering scheme of ports
+
+|agent_comp_mode
+|CHAR(1)
 |NOT NULL
 |∅
 |

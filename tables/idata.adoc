@@ -30,7 +30,7 @@ Contains historical values for single-value DCIs for the node. Table name is dyn
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|idx_idata_114_id_timestamp
+|idx_idata_<NODE_ID>_id_timestamp
 |NORMAL
 |item_id,idata_timestamp
 

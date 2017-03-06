@@ -1,0 +1,43 @@
+[[t-policy-pstorage-actions]]
+=== POLICY_PSTORAGE_ACTIONS
+
+Table that links epp with persistent storage
+
+.Columns
+[cols="15,18,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|Foreign key from event_policy table
+
+|🔑ps_key
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Value that should be set for persistent storage entry
+
+|value
+|VARCHAR(2000)
+|NULL
+|∅
+|
+
+|🔑action
+|INTEGER
+|NOT NULL
+|∅
+|Action that should be done on persistent storage entry set/delete
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|policy_pstorage_actions_pkey
+|UNIQUE
+|rule_id,ps_key,action
+
+|===

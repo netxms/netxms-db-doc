@@ -60,6 +60,10 @@
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
+|idx_syslog_source
+|NORMAL
+|source_object_id
+
 |idx_syslog_msg_timestamp
 |NORMAL
 |msg_timestamp

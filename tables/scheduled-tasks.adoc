@@ -60,6 +60,12 @@
 |NOT NULL
 |∅
 |
+
+|comments
+|VARCHAR(255)
+|NULL
+|∅
+|
 |===
 
 .Indexes

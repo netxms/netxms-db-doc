@@ -1,0 +1,31 @@
+[[t-alarm-category-acl]]
+=== ALARM_CATEGORY_ACL
+
+Alarm category-user correspondence
+
+.Columns
+[cols="16,16,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑category_id
+|INTEGER
+|NOT NULL
+|∅
+|Category ID
+
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|User ID
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|alarm_category_acl_pkey
+|UNIQUE
+|category_id,user_id
+
+|===

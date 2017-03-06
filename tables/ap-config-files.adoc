@@ -1,7 +1,7 @@
 [[t-ap-config-files]]
 === AP_CONFIG_FILES
 
-
+Agent policies configuration files
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique policy identifier
 
 |file_content
 |TEXT
 |NULL
 |∅
-|
+|Policy file content
 |===
 
 .Indexes

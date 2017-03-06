@@ -1,0 +1,31 @@
+[[t-persistent-storage]]
+=== PERSISTENT_STORAGE
+
+Persistent storage table accessible form EPP and any script
+
+.Columns
+[cols="15,18,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑entry_key
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Unique string key
+
+|value
+|VARCHAR(2000)
+|NULL
+|∅
+|Value
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|persistent_storage_pkey
+|UNIQUE
+|entry_key
+
+|===

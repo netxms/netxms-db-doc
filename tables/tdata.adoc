@@ -19,9 +19,9 @@ Contains historical values for table DCIs for the node. Table name is dynamic, <
 |∅
 |
 
-|record_id
-|BIGINT
-|NOT NULL
+|tdata_value
+|TEXT
+|NULL
 |∅
 |
 |===
@@ -30,12 +30,8 @@ Contains historical values for table DCIs for the node. Table name is dynamic, <
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|idx_tdata_<NODE_ID>_timestamp_id
+|idx_tdata_<NODE_ID>
 |NORMAL
-|tdata_timestamp,item_id
-
-|tdata_<NODE_ID>_record_id_key
-|UNIQUE
-|record_id
+|item_id,tdata_timestamp
 
 |===

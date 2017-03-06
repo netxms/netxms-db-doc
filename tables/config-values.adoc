@@ -1,0 +1,37 @@
+[[t-config-values]]
+=== CONFIG_VALUES
+
+Possible values for system configuration parameters
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑var_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Parameter name
+
+|🔑var_value
+|VARCHAR(15)
+|NOT NULL
+|∅
+|Parameter value
+
+|var_description
+|VARCHAR(255)
+|NULL
+|∅
+|Parameter description
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|config_values_pkey
+|UNIQUE
+|var_name,var_value
+
+|===

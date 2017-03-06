@@ -44,7 +44,7 @@ Server configuration
 |No used in current version
 
 |description
-|VARCHAR(255)
+|VARCHAR(450)
 |NULL
 |∅
 |Not used in current version

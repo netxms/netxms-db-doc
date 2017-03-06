@@ -53,7 +53,7 @@ System user groups
 |VARCHAR(64)
 |NULL
 |∅
-|
+|LDAP unique id if field set
 |===
 
 .Indexes

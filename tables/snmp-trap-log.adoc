@@ -48,6 +48,10 @@
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
+|idx_snmp_trap_log_oid
+|NORMAL
+|object_id
+
 |idx_snmp_trap_log_tt
 |NORMAL
 |trap_timestamp

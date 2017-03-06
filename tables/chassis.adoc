@@ -1,0 +1,61 @@
+[[t-chassis]]
+=== CHASSIS
+
+Chassis
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Chassis id form object_properties
+
+|controller_id
+|INTEGER
+|NOT NULL
+|∅
+|Id of node object providing management capabilities for this chassis
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Chassis options as bit flags
+
+|rack_id
+|INTEGER
+|NOT NULL
+|∅
+|Related rack object ID
+
+|rack_image
+|VARCHAR(36)
+|NULL
+|∅
+|Image to be used in rack view
+
+|rack_position
+|INTEGER
+|NOT NULL
+|∅
+|Position in rack (in rack units)
+
+|rack_height
+|INTEGER
+|NOT NULL
+|∅
+|Height in rack (in rack units)
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|chassis_pkey
+|UNIQUE
+|id
+
+|===

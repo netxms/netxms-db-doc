@@ -181,6 +181,12 @@
 |∅
 |
 
+|npe_name
+|VARCHAR(15)
+|NULL
+|∅
+|
+
 |comments
 |TEXT
 |NULL

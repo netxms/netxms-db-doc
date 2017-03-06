@@ -1,7 +1,7 @@
-[[t-situations]]
-=== SITUATIONS
+[[t-alarm-categories]]
+=== ALARM_CATEGORIES
 
-
+Alarm categories
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,26 +11,26 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Category ID
 
 |name
-|VARCHAR(127)
-|NOT NULL
+|VARCHAR(63)
+|NULL
 |∅
-|
+|Category name
 
-|comments
-|TEXT
-|NOT NULL
+|descr
+|VARCHAR(255)
+|NULL
 |∅
-|
+|Category description
 |===
 
 .Indexes
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|situations_pkey
+|alarm_categories_pkey
 |UNIQUE
 |id
 

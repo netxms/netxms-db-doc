@@ -1,0 +1,31 @@
+[[t-alarm-category-map]]
+=== ALARM_CATEGORY_MAP
+
+Alarm-category correspondence
+
+.Columns
+[cols="16,16,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑alarm_id
+|INTEGER
+|NOT NULL
+|∅
+|Alarm ID
+
+|🔑category_id
+|INTEGER
+|NOT NULL
+|∅
+|Category ID
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|alarm_category_map_pkey
+|UNIQUE
+|alarm_id,category_id
+
+|===

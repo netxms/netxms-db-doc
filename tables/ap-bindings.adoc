@@ -1,7 +1,7 @@
 [[t-ap-bindings]]
 === AP_BINDINGS
 
-
+Agent policies to node binding
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique policy identifier
 
 |🔑node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique node identifier
 |===
 
 .Indexes
