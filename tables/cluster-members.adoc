@@ -1,0 +1,31 @@
+[[t-cluster-members]]
+=== CLUSTER_MEMBERS
+
+Cluster members
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑cluster_id
+|INTEGER
+|NOT NULL
+|∅
+|Cluster id from clusters table
+
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|Node id form nodes table
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|cluster_members_pkey
+|UNIQUE
+|cluster_id,node_id
+
+|===

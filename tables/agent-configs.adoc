@@ -1,0 +1,49 @@
+[[t-agent-configs]]
+=== AGENT_CONFIGS
+
+
+
+.Columns
+[cols="20,17,13,10,40a"]
+|===
+|Name|Type|State|Default|Description
+|🔑config_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|config_name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|config_file
+|TEXT
+|NOT NULL
+|∅
+|
+
+|config_filter
+|TEXT
+|NOT NULL
+|∅
+|
+
+|sequence_number
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|agent_configs_pkey
+|UNIQUE
+|config_id
+
+|===

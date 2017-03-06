@@ -1,0 +1,43 @@
+[[t-templates]]
+=== TEMPLATES
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|version
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|apply_filter
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|templates_pkey
+|UNIQUE
+|id
+
+|===

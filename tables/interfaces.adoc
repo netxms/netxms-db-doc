@@ -1,0 +1,151 @@
+[[t-interfaces]]
+=== INTERFACES
+
+
+
+.Columns
+[cols="22,17,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|if_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|if_index
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|mtu
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|speed
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|bridge_port
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|phy_slot
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|phy_port
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|peer_node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|peer_if_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|peer_proto
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|mac_addr
+|VARCHAR(12)
+|NOT NULL
+|∅
+|
+
+|required_polls
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|admin_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|oper_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|dot1x_pae_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|dot1x_backend_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|alias
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|iftable_suffix
+|VARCHAR(127)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|interfaces_pkey
+|UNIQUE
+|id
+
+|===

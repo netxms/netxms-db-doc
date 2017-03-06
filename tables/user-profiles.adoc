@@ -1,0 +1,37 @@
+[[t-user-profiles]]
+=== USER_PROFILES
+
+User profiles
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑var_name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|var_value
+|TEXT
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|user_profiles_pkey
+|UNIQUE
+|user_id,var_name
+
+|===

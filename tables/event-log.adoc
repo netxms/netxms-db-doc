@@ -1,0 +1,85 @@
+[[t-event-log]]
+=== EVENT_LOG
+
+
+
+.Columns
+[cols="19,18,13,10,40a"]
+|===
+|Name|Type|State|Default|Description
+|🔑event_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|event_code
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|event_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|event_source
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|dci_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|event_severity
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|event_message
+|VARCHAR(2000)
+|NULL
+|∅
+|
+
+|root_event_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|user_tag
+|VARCHAR(63)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|idx_event_log_root_id
+|NORMAL
+|root_event_id
+
+|idx_event_log_source
+|NORMAL
+|event_source
+
+|idx_event_log_event_timestamp
+|NORMAL
+|event_timestamp
+
+|event_log_pkey
+|UNIQUE
+|event_id
+
+|===

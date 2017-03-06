@@ -1,0 +1,37 @@
+[[t-situations]]
+=== SITUATIONS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(127)
+|NOT NULL
+|∅
+|
+
+|comments
+|TEXT
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|situations_pkey
+|UNIQUE
+|id
+
+|===

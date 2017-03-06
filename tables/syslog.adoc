@@ -1,0 +1,71 @@
+[[t-syslog]]
+=== SYSLOG
+
+
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑msg_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|msg_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|facility
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|severity
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source_object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|hostname
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|msg_tag
+|VARCHAR(32)
+|NULL
+|∅
+|
+
+|msg_text
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_syslog_msg_timestamp
+|NORMAL
+|msg_timestamp
+
+|syslog_pkey
+|UNIQUE
+|msg_id
+
+|===

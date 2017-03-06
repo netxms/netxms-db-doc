@@ -1,0 +1,45 @@
+[[t-tdata-records]]
+=== TDATA_RECORDS_<NODE_ID>
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|record_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|🔑row_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|instance
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_tdata_rec_<NODE_ID>_id
+|NORMAL
+|record_id
+
+|idx_tdata_rec_<NODE_ID>_instance
+|NORMAL
+|instance
+
+|tdata_records_<NODE_ID>_pkey
+|UNIQUE
+|row_id
+
+|===

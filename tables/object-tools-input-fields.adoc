@@ -1,0 +1,55 @@
+[[t-object-tools-input-fields]]
+=== OBJECT_TOOLS_INPUT_FIELDS
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑tool_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑name
+|VARCHAR(31)
+|NOT NULL
+|∅
+|
+
+|input_type
+|CHAR(1)
+|NOT NULL
+|∅
+|
+
+|display_name
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|sequence_num
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|config
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|object_tools_input_fields_pkey
+|UNIQUE
+|tool_id,name
+
+|===

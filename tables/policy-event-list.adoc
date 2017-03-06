@@ -1,0 +1,31 @@
+[[t-policy-event-list]]
+=== POLICY_EVENT_LIST
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑event_code
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|policy_event_list_pkey
+|UNIQUE
+|rule_id,event_code
+
+|===

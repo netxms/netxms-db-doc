@@ -1,0 +1,41 @@
+[[t-object-custom-attributes]]
+=== OBJECT_CUSTOM_ATTRIBUTES
+
+Object custom attributes
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id from object_properties
+
+|🔑attr_name
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Object attribute name
+
+|attr_value
+|TEXT
+|NULL
+|∅
+|Object attribute value
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|idx_ocattr_oid
+|NORMAL
+|object_id
+
+|object_custom_attributes_pkey
+|UNIQUE
+|object_id,attr_name
+
+|===

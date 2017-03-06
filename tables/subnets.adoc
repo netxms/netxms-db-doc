@@ -1,0 +1,49 @@
+[[t-subnets]]
+=== SUBNETS
+
+
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|ip_addr
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+
+|ip_netmask
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|zone_guid
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|synthetic_mask
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|subnets_pkey
+|UNIQUE
+|id
+
+|===

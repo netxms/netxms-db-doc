@@ -1,0 +1,49 @@
+[[t-event-groups]]
+=== EVENT_GROUPS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|description
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|range_start
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|range_end
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|event_groups_pkey
+|UNIQUE
+|id
+
+|===

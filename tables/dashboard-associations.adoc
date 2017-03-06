@@ -1,0 +1,31 @@
+[[t-dashboard-associations]]
+=== DASHBOARD_ASSOCIATIONS
+
+
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑dashboard_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="31,15,54a"]
+|===
+|Name|Type|Fields
+|dashboard_associations_pkey
+|UNIQUE
+|object_id,dashboard_id
+
+|===

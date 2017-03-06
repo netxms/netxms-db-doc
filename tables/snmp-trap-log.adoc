@@ -1,0 +1,59 @@
+[[t-snmp-trap-log]]
+=== SNMP_TRAP_LOG
+
+
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑trap_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|trap_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|ip_addr
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+
+|object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|trap_oid
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|trap_varlist
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_snmp_trap_log_tt
+|NORMAL
+|trap_timestamp
+
+|snmp_trap_log_pkey
+|UNIQUE
+|trap_id
+
+|===

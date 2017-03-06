@@ -1,0 +1,31 @@
+[[t-container-members]]
+=== CONTAINER_MEMBERS
+
+
+
+.Columns
+[cols="17,17,13,10,43a"]
+|===
+|Name|Type|State|Default|Description
+|🔑container_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|container_members_pkey
+|UNIQUE
+|container_id,object_id
+
+|===

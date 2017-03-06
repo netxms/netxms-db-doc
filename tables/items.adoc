@@ -1,0 +1,203 @@
+[[t-items]]
+=== ITEMS
+
+
+
+.Columns
+[cols="24,18,13,10,35a"]
+|===
+|Name|Type|State|Default|Description
+|🔑item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|template_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|template_item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(1023)
+|NULL
+|∅
+|
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_port
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|datatype
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|polling_interval
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|retention_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_raw_value_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|delta_calculation
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|transformation
+|TEXT
+|NULL
+|∅
+|
+
+|instance
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|system_tag
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|resource_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|proxy_node
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|base_units
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|unit_multiplier
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|custom_units_name
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|perftab_settings
+|TEXT
+|NULL
+|∅
+|
+
+|instd_method
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|instd_data
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|instd_filter
+|TEXT
+|NULL
+|∅
+|
+
+|samples
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|comments
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_items_node_id
+|NORMAL
+|node_id
+
+|items_pkey
+|UNIQUE
+|item_id
+
+|===

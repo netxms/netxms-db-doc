@@ -1,0 +1,193 @@
+[[t-object-properties]]
+=== OBJECT_PROPERTIES
+
+Object properties of NetObj and everything that is inherited from it(Dashboard, Interface, Node...)
+
+.Columns
+[cols="25,17,13,10,35a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Object GUID
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Object name
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|Object status(Unknown, Normal, Warning, Minor ...)
+
+|is_deleted
+|INTEGER
+|NOT NULL
+|∅
+|Flag that defines if this object is scheduled for deletion
+
+|is_system
+|INTEGER
+|NOT NULL
+|∅
+|Flag that defines if this object is the system object(DashboardRoot, ServiceRoot...)
+
+|last_modified
+|INTEGER
+|NOT NULL
+|∅
+|Timestamp when this object was last modified
+
+|inherit_access_rights
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status_calc_alg
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status_prop_alg
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status_fixed_val
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status_shift
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status_translation
+|VARCHAR(8)
+|NOT NULL
+|∅
+|
+
+|status_single_threshold
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status_thresholds
+|VARCHAR(8)
+|NOT NULL
+|∅
+|
+
+|comments
+|TEXT
+|NULL
+|∅
+|Comments
+
+|location_type
+|INTEGER
+|NOT NULL
+|∅
+|Lacation type(Undefined, Manual, Automatic)
+
+|latitude
+|VARCHAR(20)
+|NULL
+|∅
+|Latitude value
+
+|longitude
+|VARCHAR(20)
+|NULL
+|∅
+|Longitude value
+
+|location_accuracy
+|INTEGER
+|NOT NULL
+|∅
+|Received location accuracy
+
+|location_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Last received location time
+
+|image
+|VARCHAR(36)
+|NOT NULL
+|∅
+|
+
+|submap_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|country
+|VARCHAR(63)
+|NULL
+|∅
+|Object location country
+
+|city
+|VARCHAR(63)
+|NULL
+|∅
+|Object location city
+
+|street_address
+|VARCHAR(255)
+|NULL
+|∅
+|Object location address
+
+|postcode
+|VARCHAR(31)
+|NULL
+|∅
+|Object location postcode
+
+|maint_mode
+|CHAR(1)
+|NOT NULL
+|∅
+|
+
+|maint_event_id
+|BIGINT
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|object_properties_pkey
+|UNIQUE
+|object_id
+
+|===

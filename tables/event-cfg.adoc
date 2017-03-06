@@ -1,0 +1,61 @@
+[[t-event-cfg]]
+=== EVENT_CFG
+
+Event templates
+
+.Columns
+[cols="15,18,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑event_code
+|INTEGER
+|NOT NULL
+|∅
+|Event code (unique within system)
+
+|event_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Event name
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Event template GUID
+
+|severity
+|INTEGER
+|NOT NULL
+|∅
+|Severity
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Flags
+
+|message
+|VARCHAR(2000)
+|NULL
+|∅
+|Message template
+
+|description
+|TEXT
+|NULL
+|∅
+|Event description
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|event_cfg_pkey
+|UNIQUE
+|event_code
+
+|===

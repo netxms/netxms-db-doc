@@ -1,0 +1,49 @@
+[[t-dct-thresholds]]
+=== DCT_THRESHOLDS
+
+
+
+.Columns
+[cols="20,17,13,10,40a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|table_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|sequence_number
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|activation_event
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|deactivation_event
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dct_thresholds_pkey
+|UNIQUE
+|id
+
+|===

@@ -1,0 +1,55 @@
+[[t-dct-threshold-conditions]]
+=== DCT_THRESHOLD_CONDITIONS
+
+
+
+.Columns
+[cols="23,17,13,10,37a"]
+|===
+|Name|Type|State|Default|Description
+|🔑threshold_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑group_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑sequence_number
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|column_name
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|check_operation
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|check_value
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="32,15,53a"]
+|===
+|Name|Type|Fields
+|dct_threshold_conditions_pkey
+|UNIQUE
+|threshold_id,group_id,sequence_number
+
+|===

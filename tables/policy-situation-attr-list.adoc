@@ -1,0 +1,43 @@
+[[t-policy-situation-attr-list]]
+=== POLICY_SITUATION_ATTR_LIST
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑situation_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑attr_name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|attr_value
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|policy_situation_attr_list_pkey
+|UNIQUE
+|rule_id,situation_id,attr_name
+
+|===

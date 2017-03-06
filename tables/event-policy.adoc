@@ -1,0 +1,91 @@
+[[t-event-policy]]
+=== EVENT_POLICY
+
+
+
+.Columns
+[cols="23,18,13,10,36a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|rule_guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|comments
+|TEXT
+|NULL
+|∅
+|
+
+|script
+|TEXT
+|NULL
+|∅
+|
+
+|alarm_message
+|VARCHAR(2000)
+|NULL
+|∅
+|
+
+|alarm_severity
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|alarm_key
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|alarm_timeout
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|alarm_timeout_event
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|situation_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|situation_instance
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|event_policy_pkey
+|UNIQUE
+|rule_id
+
+|===

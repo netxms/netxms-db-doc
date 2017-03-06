@@ -1,0 +1,31 @@
+[[t-policy-source-list]]
+=== POLICY_SOURCE_LIST
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|policy_source_list_pkey
+|UNIQUE
+|rule_id,object_id
+
+|===

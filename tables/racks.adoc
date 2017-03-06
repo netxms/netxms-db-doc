@@ -1,0 +1,37 @@
+[[t-racks]]
+=== RACKS
+
+Racks
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Rack id form object_properties
+
+|height
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|top_bottom_num
+|CHAR(1)
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|racks_pkey
+|UNIQUE
+|id
+
+|===

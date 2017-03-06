@@ -1,0 +1,109 @@
+[[t-network-maps]]
+=== NETWORK_MAPS
+
+
+
+.Columns
+[cols="22,17,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|map_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|layout
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|seed
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|radius
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|background
+|VARCHAR(36)
+|NULL
+|∅
+|
+
+|bg_latitude
+|VARCHAR(20)
+|NULL
+|∅
+|
+
+|bg_longitude
+|VARCHAR(20)
+|NULL
+|∅
+|
+
+|bg_zoom
+|INTEGER
+|NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|bg_color
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|link_color
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|link_routing
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|object_display_mode
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|filter
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|network_maps_pkey
+|UNIQUE
+|id
+
+|===

@@ -1,0 +1,31 @@
+[[t-policy-action-list]]
+=== POLICY_ACTION_LIST
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑action_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|policy_action_list_pkey
+|UNIQUE
+|rule_id,action_id
+
+|===

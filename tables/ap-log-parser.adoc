@@ -1,0 +1,31 @@
+[[t-ap-log-parser]]
+=== AP_LOG_PARSER
+
+Agent policies log parser files
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑policy_id
+|INTEGER
+|NOT NULL
+|∅
+|Unique policy identifier
+
+|file_content
+|TEXT
+|NULL
+|∅
+|Log parser policy file content
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ap_log_parser_pkey
+|UNIQUE
+|policy_id
+
+|===

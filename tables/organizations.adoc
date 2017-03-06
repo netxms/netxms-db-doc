@@ -1,0 +1,55 @@
+[[t-organizations]]
+=== ORGANIZATIONS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|parent_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|org_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|manager
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|organizations_pkey
+|UNIQUE
+|id
+
+|===

@@ -1,0 +1,41 @@
+[[t-tdata]]
+=== TDATA_<NODE_ID>
+
+Contains historical values for table DCIs for the node. Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "TDATA_100").
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|tdata_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|record_id
+|BIGINT
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_tdata_<NODE_ID>_timestamp_id
+|NORMAL
+|tdata_timestamp,item_id
+
+|tdata_<NODE_ID>_record_id_key
+|UNIQUE
+|record_id
+
+|===

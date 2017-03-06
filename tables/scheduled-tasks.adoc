@@ -1,0 +1,73 @@
+[[t-scheduled-tasks]]
+=== SCHEDULED_TASKS
+
+
+
+.Columns
+[cols="22,18,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|taskid
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|schedule
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|params
+|VARCHAR(1023)
+|NULL
+|∅
+|
+
+|execution_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|last_execution_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|owner
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|scheduled_tasks_pkey
+|UNIQUE
+|id
+
+|===

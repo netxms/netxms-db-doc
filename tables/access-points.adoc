@@ -1,0 +1,67 @@
+[[t-access-points]]
+=== ACCESS_POINTS
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|mac_address
+|VARCHAR(12)
+|NULL
+|∅
+|
+
+|vendor
+|VARCHAR(64)
+|NULL
+|∅
+|
+
+|model
+|VARCHAR(128)
+|NULL
+|∅
+|
+
+|serial_number
+|VARCHAR(64)
+|NULL
+|∅
+|
+
+|ap_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|ap_index
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|access_points_pkey
+|UNIQUE
+|id
+
+|===

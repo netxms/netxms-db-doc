@@ -1,0 +1,61 @@
+[[t-dci-summary-tables]]
+=== DCI_SUMMARY_TABLES
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|
+
+|menu_path
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|title
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|node_filter
+|TEXT
+|NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|columns
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dci_summary_tables_pkey
+|UNIQUE
+|id
+
+|===

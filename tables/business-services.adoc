@@ -1,0 +1,25 @@
+[[t-business-services]]
+=== BUSINESS_SERVICES
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑service_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|business_services_pkey
+|UNIQUE
+|service_id
+
+|===

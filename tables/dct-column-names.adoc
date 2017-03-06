@@ -1,0 +1,31 @@
+[[t-dct-column-names]]
+=== DCT_COLUMN_NAMES
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑column_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|column_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dct_column_names_pkey
+|UNIQUE
+|column_id
+
+|===

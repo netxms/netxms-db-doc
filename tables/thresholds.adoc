@@ -1,0 +1,123 @@
+[[t-thresholds]]
+=== THRESHOLDS
+
+
+
+.Columns
+[cols="24,17,13,10,36a"]
+|===
+|Name|Type|State|Default|Description
+|🔑threshold_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|sequence_number
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|fire_value
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|rearm_value
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|check_function
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|check_operation
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|sample_count
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|script
+|TEXT
+|NULL
+|∅
+|
+
+|event_code
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|rearm_event_code
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|repeat_interval
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|current_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|current_severity
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|match_count
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|last_event_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_thresholds_sequence
+|NORMAL
+|sequence_number
+
+|idx_thresholds_item_id
+|NORMAL
+|item_id
+
+|thresholds_pkey
+|UNIQUE
+|threshold_id
+
+|===

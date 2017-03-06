@@ -1,0 +1,137 @@
+[[t-dc-tables]]
+=== DC_TABLES
+
+
+
+.Columns
+[cols="23,18,13,10,36a"]
+|===
+|Name|Type|State|Default|Description
+|🔑item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|template_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|template_item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(1023)
+|NULL
+|∅
+|
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_port
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|polling_interval
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|retention_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|system_tag
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|resource_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|proxy_node
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|perftab_settings
+|TEXT
+|NULL
+|∅
+|
+
+|transformation_script
+|TEXT
+|NULL
+|∅
+|
+
+|comments
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_dc_tables_node_id
+|NORMAL
+|node_id
+
+|dc_tables_pkey
+|UNIQUE
+|item_id
+
+|===

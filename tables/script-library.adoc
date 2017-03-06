@@ -1,0 +1,37 @@
+[[t-script-library]]
+=== SCRIPT_LIBRARY
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑script_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|script_name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|script_code
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|script_library_pkey
+|UNIQUE
+|script_id
+
+|===

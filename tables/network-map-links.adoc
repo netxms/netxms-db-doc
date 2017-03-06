@@ -1,0 +1,73 @@
+[[t-network-map-links]]
+=== NETWORK_MAP_LINKS
+
+
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|map_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|element1
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|element2
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|link_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|link_name
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|connector_name1
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|connector_name2
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|element_data
+|TEXT
+|NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="35,15,50a"]
+|===
+|Name|Type|Fields
+|idx_network_map_links_map_id
+|NORMAL
+|map_id
+
+|===

@@ -1,0 +1,37 @@
+[[t-userdb-custom-attributes]]
+=== USERDB_CUSTOM_ATTRIBUTES
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑attr_name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|attr_value
+|TEXT
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|userdb_custom_attributes_pkey
+|UNIQUE
+|object_id,attr_name
+
+|===

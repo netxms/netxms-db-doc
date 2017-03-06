@@ -1,0 +1,67 @@
+[[t-config]]
+=== CONFIG
+
+Server configuration
+
+.Columns
+[cols="21,18,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑var_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Parameter name
+
+|var_value
+|VARCHAR(2000)
+|NULL
+|∅
+|Value
+
+|is_visible
+|INTEGER
+|NOT NULL
+|1
+|GUI visibility indicator
+
+|need_server_restart
+|INTEGER
+|NOT NULL
+|0
+|Change take effect after server restart
+
+|data_type
+|CHAR(1)
+|NOT NULL
+|S
+|Not used in current verion
+
+|is_public
+|CHAR(1)
+|NOT NULL
+|N
+|No used in current version
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Not used in current version
+
+|possible_values
+|TEXT
+|NULL
+|∅
+|Not used in current version
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|config_pkey
+|UNIQUE
+|var_name
+
+|===

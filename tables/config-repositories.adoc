@@ -1,0 +1,43 @@
+[[t-config-repositories]]
+=== CONFIG_REPOSITORIES
+
+
+
+.Columns
+[cols="15,18,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|url
+|VARCHAR(1023)
+|NOT NULL
+|∅
+|
+
+|auth_token
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|description
+|VARCHAR(1023)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|config_repositories_pkey
+|UNIQUE
+|id
+
+|===

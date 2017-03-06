@@ -1,0 +1,73 @@
+[[t-mobile-devices]]
+=== MOBILE_DEVICES
+
+Mobile devices from object_properties
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Mobile device id
+
+|device_id
+|VARCHAR(64)
+|NOT NULL
+|∅
+|Device ID(IMEI or ESN)
+
+|vendor
+|VARCHAR(64)
+|NULL
+|∅
+|Device vendor
+
+|model
+|VARCHAR(128)
+|NULL
+|∅
+|Device model
+
+|serial_number
+|VARCHAR(64)
+|NULL
+|∅
+|Serial number
+
+|os_name
+|VARCHAR(32)
+|NULL
+|∅
+|Operating system name
+
+|os_version
+|VARCHAR(64)
+|NULL
+|∅
+|Operation system version
+
+|user_id
+|VARCHAR(64)
+|NULL
+|∅
+|
+
+|battery_level
+|INTEGER
+|NOT NULL
+|∅
+|Battery charge level
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|mobile_devices_pkey
+|UNIQUE
+|id
+
+|===

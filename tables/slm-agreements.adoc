@@ -1,0 +1,61 @@
+[[t-slm-agreements]]
+=== SLM_AGREEMENTS
+
+
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑agreement_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|service_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|org_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|uptime
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|period
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|start_date
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|notes
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|slm_agreements_pkey
+|UNIQUE
+|agreement_id
+
+|===

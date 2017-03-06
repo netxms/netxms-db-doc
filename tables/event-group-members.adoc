@@ -1,0 +1,31 @@
+[[t-event-group-members]]
+=== EVENT_GROUP_MEMBERS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑group_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑event_code
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|event_group_members_pkey
+|UNIQUE
+|group_id,event_code
+
+|===

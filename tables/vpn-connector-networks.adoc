@@ -1,0 +1,43 @@
+[[t-vpn-connector-networks]]
+=== VPN_CONNECTOR_NETWORKS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑vpn_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|network_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑ip_addr
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+
+|ip_netmask
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|vpn_connector_networks_pkey
+|UNIQUE
+|vpn_id,ip_addr
+
+|===

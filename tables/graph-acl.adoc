@@ -1,0 +1,37 @@
+[[t-graph-acl]]
+=== GRAPH_ACL
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑graph_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|user_rights
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|graph_acl_pkey
+|UNIQUE
+|graph_id,user_id
+
+|===

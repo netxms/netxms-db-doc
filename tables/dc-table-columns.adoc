@@ -1,0 +1,55 @@
+[[t-dc-table-columns]]
+=== DC_TABLE_COLUMNS
+
+
+
+.Columns
+[cols="20,18,13,10,39a"]
+|===
+|Name|Type|State|Default|Description
+|🔑table_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|sequence_number
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑column_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|snmp_oid
+|VARCHAR(1023)
+|NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|display_name
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dc_table_columns_pkey
+|UNIQUE
+|table_id,column_name
+
+|===

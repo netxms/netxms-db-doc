@@ -1,0 +1,55 @@
+[[t-graphs]]
+=== GRAPHS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑graph_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|owner_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|
+
+|config
+|TEXT
+|NULL
+|∅
+|
+
+|filters
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|graphs_pkey
+|UNIQUE
+|graph_id
+
+|===

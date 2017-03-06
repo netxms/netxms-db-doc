@@ -1,0 +1,43 @@
+[[t-zmq-subscription]]
+=== ZMQ_SUBSCRIPTION
+
+
+
+.Columns
+[cols="22,17,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑subscription_type
+|CHAR(1)
+|NOT NULL
+|∅
+|
+
+|ignore_items
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|items
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|zmq_subscription_pkey
+|UNIQUE
+|object_id,subscription_type
+
+|===

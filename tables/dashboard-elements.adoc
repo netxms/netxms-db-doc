@@ -1,0 +1,49 @@
+[[t-dashboard-elements]]
+=== DASHBOARD_ELEMENTS
+
+
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑dashboard_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑element_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|element_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|element_data
+|TEXT
+|NULL
+|∅
+|
+
+|layout_data
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dashboard_elements_pkey
+|UNIQUE
+|dashboard_id,element_id
+
+|===

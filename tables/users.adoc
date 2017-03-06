@@ -1,0 +1,145 @@
+[[t-users]]
+=== USERS
+
+System users
+
+.Columns
+[cols="24,17,13,10,36a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|User id
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|User guid
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Login name
+
+|password
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Hashed password
+
+|system_access
+|BIGINT
+|NOT NULL
+|∅
+|Bit-mask of system access rights
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Account flags (locked, password never expire etc.)
+
+|full_name
+|VARCHAR(127)
+|NULL
+|∅
+|Full name
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Description
+
+|grace_logins
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|auth_method
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|cert_mapping_method
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|cert_mapping_data
+|TEXT
+|NULL
+|∅
+|
+
+|auth_failures
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|last_passwd_change
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|min_passwd_length
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|disabled_until
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|last_login
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|password_history
+|TEXT
+|NULL
+|∅
+|
+
+|xmpp_id
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|ldap_dn
+|TEXT
+|NULL
+|∅
+|LDAP dn
+
+|ldap_unique_id
+|VARCHAR(64)
+|NULL
+|∅
+|LDAP unique id if field set
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|users_pkey
+|UNIQUE
+|id
+
+|===

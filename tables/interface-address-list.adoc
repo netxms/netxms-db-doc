@@ -1,0 +1,37 @@
+[[t-interface-address-list]]
+=== INTERFACE_ADDRESS_LIST
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑iface_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑ip_addr
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+
+|ip_netmask
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|interface_address_list_pkey
+|UNIQUE
+|iface_id,ip_addr
+
+|===

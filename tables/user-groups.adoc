@@ -1,0 +1,67 @@
+[[t-user-groups]]
+=== USER_GROUPS
+
+System user groups
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Group id
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Group GUID
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Group name
+
+|system_access
+|BIGINT
+|NOT NULL
+|∅
+|Bit-mask of system access rights
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Description
+
+|ldap_dn
+|TEXT
+|NULL
+|∅
+|LDAP dn
+
+|ldap_unique_id
+|VARCHAR(64)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|user_groups_pkey
+|UNIQUE
+|id
+
+|===

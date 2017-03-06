@@ -1,0 +1,53 @@
+[[t-alarm-notes]]
+=== ALARM_NOTES
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑note_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|alarm_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|change_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|note_text
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_alarm_notes_alarm_id
+|NORMAL
+|alarm_id
+
+|alarm_notes_pkey
+|UNIQUE
+|note_id
+
+|===

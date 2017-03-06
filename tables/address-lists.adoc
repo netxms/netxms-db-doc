@@ -1,0 +1,53 @@
+[[t-address-lists]]
+=== ADDRESS_LISTS
+
+
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑list_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑community_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑addr_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑addr1
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+
+|🔑addr2
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_address_lists_list_type
+|NORMAL
+|list_type
+
+|address_lists_pkey
+|UNIQUE
+|list_type,community_id,addr_type,addr1,addr2
+
+|===

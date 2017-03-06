@@ -1,0 +1,37 @@
+[[t-dashboards]]
+=== DASHBOARDS
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|num_columns
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|options
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dashboards_pkey
+|UNIQUE
+|id
+
+|===

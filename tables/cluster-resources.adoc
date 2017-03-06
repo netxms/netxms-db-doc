@@ -1,0 +1,49 @@
+[[t-cluster-resources]]
+=== CLUSTER_RESOURCES
+
+
+
+.Columns
+[cols="17,17,13,10,43a"]
+|===
+|Name|Type|State|Default|Description
+|🔑cluster_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑resource_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|resource_name
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|ip_addr
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+
+|current_owner
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|cluster_resources_pkey
+|UNIQUE
+|cluster_id,resource_id
+
+|===

@@ -1,0 +1,253 @@
+[[t-nodes]]
+=== NODES
+
+Nodes
+
+.Columns
+[cols="22,17,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Node id from object_properties
+
+|primary_name
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|primary_ip
+|VARCHAR(48)
+|NOT NULL
+|∅
+|
+
+|node_flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|runtime_flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_version
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_port
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|community
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|usm_auth_password
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|usm_priv_password
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|usm_methods
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_oid
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|auth_method
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|secret
+|VARCHAR(64)
+|NULL
+|∅
+|
+
+|agent_port
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status_poll_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|agent_version
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|platform_name
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|poller_node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|zone_guid
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|proxy_node
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_proxy
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|icmp_proxy
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|required_polls
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|uname
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|use_ifxtable
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|snmp_sys_name
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|snmp_sys_contact
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|snmp_sys_location
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|bridge_base_addr
+|VARCHAR(15)
+|NULL
+|∅
+|
+
+|down_since
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|boot_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|driver_name
+|VARCHAR(32)
+|NULL
+|∅
+|
+
+|rack_image
+|VARCHAR(36)
+|NULL
+|∅
+|
+
+|rack_position
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|rack_height
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|rack_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|agent_cache_mode
+|CHAR(1)
+|NOT NULL
+|∅
+|
+
+|last_agent_comm_time
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|nodes_pkey
+|UNIQUE
+|id
+
+|===

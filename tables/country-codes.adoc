@@ -1,0 +1,43 @@
+[[t-country-codes]]
+=== COUNTRY_CODES
+
+List of country codes
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑numeric_code
+|CHAR(3)
+|NOT NULL
+|∅
+|Numeric ISO code
+
+|alpha_code
+|CHAR(2)
+|NOT NULL
+|∅
+|Alphabetical 2 character ISO code
+
+|alpha3_code
+|CHAR(3)
+|NOT NULL
+|∅
+|Alphabetical 3 character ISO code
+
+|name
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Country name
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|country_codes_pkey
+|UNIQUE
+|numeric_code
+
+|===

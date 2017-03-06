@@ -1,0 +1,37 @@
+[[t-acl]]
+=== ACL
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|access_rights
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|acl_pkey
+|UNIQUE
+|object_id,user_id
+
+|===

@@ -1,0 +1,145 @@
+[[t-alarms]]
+=== ALARMS
+
+
+
+.Columns
+[cols="20,18,13,10,39a"]
+|===
+|Name|Type|State|Default|Description
+|🔑alarm_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|alarm_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|hd_state
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|hd_ref
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|last_change_time
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source_object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source_event_code
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source_event_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|dci_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|message
+|VARCHAR(2000)
+|NULL
+|∅
+|
+
+|original_severity
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|current_severity
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|repeat_count
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|alarm_key
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|ack_by
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|resolved_by
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|term_by
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|timeout
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|timeout_event
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|ack_timeout
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|alarms_pkey
+|UNIQUE
+|alarm_id
+
+|===

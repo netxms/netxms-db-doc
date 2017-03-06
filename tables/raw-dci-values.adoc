@@ -1,0 +1,43 @@
+[[t-raw-dci-values]]
+=== RAW_DCI_VALUES
+
+
+
+.Columns
+[cols="21,17,13,10,39a"]
+|===
+|Name|Type|State|Default|Description
+|🔑item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|raw_value
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|transformed_value
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|last_poll_time
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|raw_dci_values_pkey
+|UNIQUE
+|item_id
+
+|===

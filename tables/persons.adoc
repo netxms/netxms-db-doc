@@ -1,0 +1,55 @@
+[[t-persons]]
+=== PERSONS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|org_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|first_name
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|last_name
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|title
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|persons_pkey
+|UNIQUE
+|id
+
+|===

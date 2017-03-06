@@ -1,0 +1,49 @@
+[[t-network-map-elements]]
+=== NETWORK_MAP_ELEMENTS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑map_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑element_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|element_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|element_data
+|TEXT
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="32,15,53a"]
+|===
+|Name|Type|Fields
+|network_map_elements_pkey
+|UNIQUE
+|map_id,element_id
+
+|===

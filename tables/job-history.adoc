@@ -1,0 +1,85 @@
+[[t-job-history]]
+=== JOB_HISTORY
+
+
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|time_created
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|time_started
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|time_finished
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|job_type
+|VARCHAR(127)
+|NULL
+|∅
+|
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|additional_info
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|failure_message
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|job_history_pkey
+|UNIQUE
+|id
+
+|===

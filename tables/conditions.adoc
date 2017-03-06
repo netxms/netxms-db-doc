@@ -1,0 +1,61 @@
+[[t-conditions]]
+=== CONDITIONS
+
+
+
+.Columns
+[cols="21,16,13,10,40a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|activation_event
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|deactivation_event
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source_object
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|active_status
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|inactive_status
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|script
+|TEXT
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|conditions_pkey
+|UNIQUE
+|id
+
+|===

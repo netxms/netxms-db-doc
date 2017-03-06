@@ -1,0 +1,43 @@
+[[t-currency-codes]]
+=== CURRENCY_CODES
+
+List of currency codes
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑numeric_code
+|CHAR(3)
+|NOT NULL
+|∅
+|Numeric ISO code
+
+|alpha_code
+|CHAR(3)
+|NOT NULL
+|∅
+|Alphabetical ISO code
+
+|description
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Description
+
+|exponent
+|INTEGER
+|NOT NULL
+|∅
+|Exponent for minor units
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|currency_codes_pkey
+|UNIQUE
+|numeric_code
+
+|===

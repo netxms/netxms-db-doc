@@ -1,0 +1,55 @@
+[[t-slm-tickets]]
+=== SLM_TICKETS
+
+
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑ticket_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|service_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|check_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|create_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|close_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|reason
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|slm_tickets_pkey
+|UNIQUE
+|ticket_id
+
+|===

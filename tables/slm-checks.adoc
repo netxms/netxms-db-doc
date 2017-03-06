@@ -1,0 +1,67 @@
+[[t-slm-checks]]
+=== SLM_CHECKS
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|content
+|TEXT
+|NULL
+|∅
+|
+
+|threshold_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|reason
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|is_template
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|template_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|current_ticket
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|slm_checks_pkey
+|UNIQUE
+|id
+
+|===

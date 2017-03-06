@@ -1,0 +1,31 @@
+[[t-trusted-nodes]]
+=== TRUSTED_NODES
+
+
+
+.Columns
+[cols="21,17,13,10,39a"]
+|===
+|Name|Type|State|Default|Description
+|🔑source_object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑target_node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|trusted_nodes_pkey
+|UNIQUE
+|source_object_id,target_node_id
+
+|===

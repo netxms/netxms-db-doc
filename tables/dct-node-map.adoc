@@ -1,0 +1,31 @@
+[[t-dct-node-map]]
+=== DCT_NODE_MAP
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑template_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dct_node_map_pkey
+|UNIQUE
+|template_id,node_id
+
+|===

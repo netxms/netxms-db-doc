@@ -1,0 +1,31 @@
+[[t-metadata]]
+=== METADATA
+
+System meta data (DBMS type, schema version, etc.)
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑var_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Variable name
+
+|var_value
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Variable value
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|metadata_pkey
+|UNIQUE
+|var_name
+
+|===

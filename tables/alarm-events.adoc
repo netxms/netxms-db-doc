@@ -1,0 +1,71 @@
+[[t-alarm-events]]
+=== ALARM_EVENTS
+
+
+
+.Columns
+[cols="19,18,13,10,40a"]
+|===
+|Name|Type|State|Default|Description
+|🔑alarm_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑event_id
+|BIGINT
+|NOT NULL
+|∅
+|
+
+|event_code
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|event_name
+|VARCHAR(63)
+|NULL
+|∅
+|
+
+|severity
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|source_object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|event_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|message
+|VARCHAR(2000)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_alarm_events_alarm_id
+|NORMAL
+|alarm_id
+
+|alarm_events_pkey
+|UNIQUE
+|alarm_id,event_id
+
+|===

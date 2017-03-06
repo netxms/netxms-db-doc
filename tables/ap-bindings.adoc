@@ -1,0 +1,31 @@
+[[t-ap-bindings]]
+=== AP_BINDINGS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑policy_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ap_bindings_pkey
+|UNIQUE
+|policy_id,node_id
+
+|===

@@ -1,0 +1,31 @@
+[[t-config-clob]]
+=== CONFIG_CLOB
+
+System configuration table for large data elements
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑var_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Parameter name
+
+|var_value
+|TEXT
+|NULL
+|∅
+|Value
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|config_clob_pkey
+|UNIQUE
+|var_name
+
+|===

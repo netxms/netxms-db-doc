@@ -1,0 +1,37 @@
+[[t-dci-schedules]]
+=== DCI_SCHEDULES
+
+
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑schedule_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑item_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|schedule
+|VARCHAR(255)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dci_schedules_pkey
+|UNIQUE
+|item_id,schedule_id
+
+|===

@@ -1,0 +1,61 @@
+[[t-actions]]
+=== ACTIONS
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑action_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|action_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|action_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|is_disabled
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|rcpt_addr
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|email_subject
+|VARCHAR(255)
+|NULL
+|∅
+|
+
+|action_data
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|actions_pkey
+|UNIQUE
+|action_id
+
+|===

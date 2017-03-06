@@ -1,0 +1,55 @@
+[[t-cond-dci-map]]
+=== COND_DCI_MAP
+
+
+
+.Columns
+[cols="23,13,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑condition_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑sequence_number
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|dci_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|dci_func
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|num_polls
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|cond_dci_map_pkey
+|UNIQUE
+|condition_id,sequence_number
+
+|===

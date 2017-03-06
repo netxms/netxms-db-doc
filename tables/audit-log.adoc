@@ -1,0 +1,73 @@
+[[t-audit-log]]
+=== AUDIT_LOG
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|subsystem
+|VARCHAR(32)
+|NOT NULL
+|∅
+|
+
+|success
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|workstation
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|session_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|object_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|message
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|audit_log_pkey
+|UNIQUE
+|record_id
+
+|===

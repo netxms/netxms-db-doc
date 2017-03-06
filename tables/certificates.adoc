@@ -1,0 +1,49 @@
+[[t-certificates]]
+=== CERTIFICATES
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑cert_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|cert_type
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|cert_data
+|TEXT
+|NOT NULL
+|∅
+|
+
+|subject
+|TEXT
+|NOT NULL
+|∅
+|
+
+|comments
+|TEXT
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|certificates_pkey
+|UNIQUE
+|cert_id
+
+|===

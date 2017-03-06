@@ -1,0 +1,43 @@
+[[t-slm-service-history]]
+=== SLM_SERVICE_HISTORY
+
+
+
+.Columns
+[cols="20,17,13,10,40a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|service_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|change_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|new_status
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|slm_service_history_pkey
+|UNIQUE
+|record_id
+
+|===

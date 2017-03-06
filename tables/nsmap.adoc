@@ -1,0 +1,31 @@
+[[t-nsmap]]
+=== NSMAP
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑subnet_id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|nsmap_pkey
+|UNIQUE
+|subnet_id,node_id
+
+|===

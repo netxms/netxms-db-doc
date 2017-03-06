@@ -1,0 +1,43 @@
+[[t-mapping-tables]]
+=== MAPPING_TABLES
+
+
+
+.Columns
+[cols="15,18,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|description
+|VARCHAR(4000)
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|mapping_tables_pkey
+|UNIQUE
+|id
+
+|===

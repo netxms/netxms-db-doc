@@ -1,0 +1,43 @@
+[[t-object-containers]]
+=== OBJECT_CONTAINERS
+
+
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|object_class
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|
+
+|auto_bind_filter
+|TEXT
+|NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|object_containers_pkey
+|UNIQUE
+|id
+
+|===

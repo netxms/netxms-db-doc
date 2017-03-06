@@ -1,0 +1,53 @@
+[[t-images]]
+=== IMAGES
+
+
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|category
+|VARCHAR(63)
+|NOT NULL
+|∅
+|
+
+|mimetype
+|VARCHAR(32)
+|NOT NULL
+|∅
+|
+
+|protected
+|INTEGER
+|NULL
+|0
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|images_name_category_key
+|UNIQUE
+|name,category
+
+|images_pkey
+|UNIQUE
+|guid
+
+|===
