@@ -1,7 +1,7 @@
 [[t-access-points]]
 === ACCESS_POINTS
 
-
+List of known access points, as collected from wireless controllers.
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,49 +11,49 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Record primary key
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the Node object representing this access point. Reference to `id` field in <<t-nodes>>.
 
 |mac_address
 |VARCHAR(12)
 |NULL
 |∅
-|
+|Access point mac address
 
 |vendor
 |VARCHAR(64)
 |NULL
 |∅
-|
+|Access point vendor
 
 |model
 |VARCHAR(128)
 |NULL
 |∅
-|
+|Access point model
 
 |serial_number
 |VARCHAR(64)
 |NULL
 |∅
-|
+|Access point serial number
 
 |ap_state
 |INTEGER
 |NOT NULL
 |∅
-|
+|Current state of the access point
 
 |ap_index
 |INTEGER
 |NOT NULL
 |∅
-|
+|Reserved for future use
 |===
 
 .Indexes
