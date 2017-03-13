@@ -1,7 +1,7 @@
 [[t-address-lists]]
 === ADDRESS_LISTS
 
-
+List of network ranges and subnets used by network discovery.
 
 .Columns
 [cols="19,17,13,10,41a"]
@@ -11,31 +11,37 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Purpose of the record:
+
+* 1 - Active discovery target
+* 2 - Address discovery filter
 
 |🔑community_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Reserved for future use
 
 |🔑addr_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Type of the record:
+
+* 0 - Subnet, field `addr2` indicates netmask in CIDR format
+* 1 - Range, field `addr2` indicates end of the range
 
 |🔑addr1
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|Network address or start of the range address.
 
 |🔑addr2
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|Network mark in CIDR format or end of the range address.
 |===
 
 .Indexes
