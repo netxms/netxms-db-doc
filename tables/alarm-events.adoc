@@ -1,7 +1,7 @@
 [[t-alarm-events]]
 === ALARM_EVENTS
 
-
+History of all events which resulted in generating alarm.
 
 .Columns
 [cols="19,18,13,10,40a"]
@@ -11,49 +11,49 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the alarm. Reference to <<t-alarms>>.
 
 |🔑event_id
 |BIGINT
 |NOT NULL
 |∅
-|
+|Event ID. Reference to <<t-event-log>>.
 
 |event_code
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event code. Reference to <<t-event-cfg>>.
 
 |event_name
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Name of the event at the moment of generation.
 
 |severity
 |INTEGER
 |NOT NULL
 |∅
-|
+|Severity of the event at the moment of generation.
 
 |source_object_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the object which originated the event. Can be reference to <<t-nodes>>, <<t-clusters>>, etc.
 
 |event_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unix time stamp of the event.
 
 |message
 |VARCHAR(2000)
 |NULL
 |∅
-|
+|Event message.
 |===
 
 .Indexes
