@@ -1,7 +1,7 @@
 [[t-agent-pkg]]
 === AGENT_PKG
 
-
+List of the agent upgrade packages stored on the server and available for deploy.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,37 +11,37 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier
 
 |pkg_name
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Name of the package (e.g. "nxagent"), as loaded from NPI file.
 
 |version
 |VARCHAR(31)
 |NULL
 |∅
-|
+|Version of the package, as loaded from NPI file.
 
 |platform
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Supported plarform of the package, as loaded from NPI file.
 
 |pkg_file
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Name of the binary file in server storage.
 
 |description
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Description of the package, as loaded from NPI file.
 |===
 
 .Indexes
