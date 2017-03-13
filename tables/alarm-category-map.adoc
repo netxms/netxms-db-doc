@@ -1,7 +1,7 @@
 [[t-alarm-category-map]]
 === ALARM_CATEGORY_MAP
 
-Alarm-category correspondence
+Relation between alarms and alarm categories.
 
 .Columns
 [cols="16,16,13,10,45a"]
@@ -11,13 +11,13 @@ Alarm-category correspondence
 |INTEGER
 |NOT NULL
 |∅
-|Alarm ID
+|ID of the alarm. Reference to <<t-alarms>>.
 
 |🔑category_id
 |INTEGER
 |NOT NULL
 |∅
-|Category ID
+|ID of the alarm category. Reference to <<t-alarm-categories>>.
 |===
 
 .Indexes

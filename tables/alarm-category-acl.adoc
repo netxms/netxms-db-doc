@@ -1,7 +1,8 @@
 [[t-alarm-category-acl]]
 === ALARM_CATEGORY_ACL
 
-Alarm category-user correspondence
+Access control for alarm categories.
+Presense of the record in this table give user (or group) access to alarms in specific category.
 
 .Columns
 [cols="16,16,13,10,45a"]
@@ -17,7 +18,7 @@ Alarm category-user correspondence
 |INTEGER
 |NOT NULL
 |∅
-|User ID
+|User or group ID. Reference to <<t-users>> or <<t-user-groups>>.
 |===
 
 .Indexes
