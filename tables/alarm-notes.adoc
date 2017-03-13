@@ -1,7 +1,7 @@
 [[t-alarm-notes]]
 === ALARM_NOTES
 
-
+Alarm comments.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,31 +11,31 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |alarm_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the alarm. Reference to <<t-alarms>>.
 
 |change_time
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unix time stamp of last change.
 
 |user_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Author of the comment. Reference to <<t-users>>.
 
 |note_text
 |TEXT
 |NULL
 |∅
-|
+|Comment body.
 |===
 
 .Indexes
