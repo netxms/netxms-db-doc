@@ -1,7 +1,7 @@
 [[t-agent-configs]]
 === AGENT_CONFIGS
 
-
+Server side configuration files for the agents.
 
 .Columns
 [cols="20,17,13,10,40a"]
@@ -11,31 +11,31 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier
 
 |config_name
 |VARCHAR(255)
 |NOT NULL
 |∅
-|
+|Description of the configuration file
 
 |config_file
 |TEXT
 |NOT NULL
 |∅
-|
+|Content of the configuration file
 
 |config_filter
 |TEXT
 |NOT NULL
 |∅
-|
+|NXSL script which decide if this configuration is right for incoming agent request.
 
 |sequence_number
 |INTEGER
 |NOT NULL
 |∅
-|
+|Used to sort configurations.
 |===
 
 .Indexes
