@@ -1,7 +1,7 @@
 [[t-actions]]
 === ACTIONS
 
-
+Server actions used in event processing.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,43 +11,55 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Action ID.
 
 |action_name
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Name of the action.
 
 |action_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Type of the action:
+
+* 0 - Execute command on the management server
+* 1 - Execute command on the remote agent
+* 2 - Send email
+* 3 - Send SMS
+* 4 - Forward event to another server
+* 5 - Run NXSL script
+* 6 - Send XMPP (Jabber) message
 
 |is_disabled
 |INTEGER
 |NOT NULL
 |∅
-|
+|State of the action:
+
+* 0 - Enabled
+* 1 - Disabled
 
 |rcpt_addr
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Recepient address for SMS and email actions.
 
 |email_subject
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Subject line for email action.
 
 |action_data
 |TEXT
 |NULL
 |∅
-|
+|Action data field. Meaning depends on the action type. For email/SMS - message body,
+for server execute - path to the application, etc.
 |===
 
 .Indexes
