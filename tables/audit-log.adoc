@@ -1,7 +1,7 @@
 [[t-audit-log]]
 === AUDIT_LOG
 
-
+Log of all user actions.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,55 +11,55 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique record identifier.
 
 |timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unix timestamp.
 
 |subsystem
 |VARCHAR(32)
 |NOT NULL
 |∅
-|
+|System component name.
 
 |success
 |INTEGER
 |NOT NULL
 |∅
-|
+|Success indicator.
 
 |user_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the user performed logged action. Reference to <<t-users>>.
 
 |workstation
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|IP of the user's workstation.
 
 |session_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|User's session id.
 
 |object_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Target object id which was involved in the logged action.
 
 |message
 |TEXT
 |NULL
 |∅
-|
+|Audit record text.
 |===
 
 .Indexes
