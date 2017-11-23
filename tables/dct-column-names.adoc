@@ -1,7 +1,7 @@
 [[t-dct-column-names]]
 === DCT_COLUMN_NAMES
 
-
+Data collection configuration for table items - column names.
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |column_name
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Name of the column.
 |===
 
 .Indexes

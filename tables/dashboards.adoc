@@ -1,7 +1,7 @@
 [[t-dashboards]]
 === DASHBOARDS
 
-
+List of all dashboards.
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,19 +11,22 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |num_columns
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of columns in in the dashboard.
 
 |options
 |INTEGER
 |NOT NULL
 |∅
-|
+|Bitmask of additional dashboard options. Known values:
+
+* 0x0001 – All columns should have equal width
+
 |===
 
 .Indexes

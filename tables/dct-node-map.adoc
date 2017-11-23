@@ -1,7 +1,7 @@
 [[t-dct-node-map]]
 === DCT_NODE_MAP
 
-
+Mapping between nodes and applied templates with table DCI.
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Templade ID. Reference to <<t-templates>>.
 
 |🔑node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Target node ID. Reference to <<t-nodes>> or <<t-clusters>>.
 |===
 
 .Indexes

@@ -1,7 +1,7 @@
 [[t-clusters]]
 === CLUSTERS
 
-Clusters
+Information specific for Cluster objects.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,19 +11,19 @@ Clusters
 |INTEGER
 |NOT NULL
 |∅
-|Cluster id form object_properties
+|Unique identifier.
 
 |cluster_type
 |INTEGER
 |NOT NULL
 |∅
-|Cluster type
+|Reserved for future use.
 
 |zone_guid
 |INTEGER
 |NOT NULL
 |∅
-|Zone GUID form zones table
+|Zone GUID. Reference to <<t-zones>>.
 |===
 
 .Indexes

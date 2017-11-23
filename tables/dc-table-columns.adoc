@@ -1,7 +1,7 @@
 [[t-dc-table-columns]]
 === DC_TABLE_COLUMNS
 
-
+Data collection configuration for table items – column configuration.
 
 .Columns
 [cols="20,18,13,10,39a"]
@@ -11,37 +11,49 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Reference to `item_id` in <<t-dc-tables>>.
 
 |sequence_number
 |INTEGER
 |NOT NULL
 |∅
-|
+|Column number used for sorting.
 
 |🔑column_name
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Name of the column as read from the agent.
 
 |snmp_oid
 |VARCHAR(1023)
 |NULL
 |∅
-|
+|SNMP OID (used only if table source is SNMP).
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Bitmark of column flags. Known values:
+
+* 0x0000 – Type: Integer
+* 0x0001 – Type: Unsigned Integer
+* 0x0002 – Type: Int64
+* 0x0003 – Type: Unsigned Int64
+* 0x0004 – Type: String
+* 0x0005 – Type: Float
+* 0x0010 – Aggregate: Average
+* 0x0020 – Aggregate: Min
+* 0x0030 – Aggregate: Max
+* 0x0100 – This column is instance (key) column
+* 0x0200 – This column is instance label column
 
 |display_name
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Column name to be shown to user.
 |===
 
 .Indexes

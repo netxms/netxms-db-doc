@@ -1,7 +1,7 @@
 [[t-graph-acl]]
 === GRAPH_ACL
 
-
+Access control table for saved graphs.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,19 +11,24 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Graph ID. Reference to <<t-graphs>>.
 
 |🔑user_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|User ID. Reference to <<t-users>> or <<t-user-groups>>.
 
 |user_rights
 |INTEGER
 |NOT NULL
 |∅
-|
+|Bitmaks of effective permissions. Known values:
+
+* 0x00000001 – Read
+* 0x00000002 – Modify
+* 0x00000008 – Delete
+
 |===
 
 .Indexes

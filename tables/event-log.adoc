@@ -1,7 +1,7 @@
 [[t-event-log]]
 === EVENT_LOG
 
-
+All events which was emmited in the system. Table is cleaned up automatically by the housekeeper.
 
 .Columns
 [cols="19,18,13,10,40a"]
@@ -11,49 +11,49 @@
 |BIGINT
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |event_code
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event code. Reference to <<t-event-cfg>>.
 
 |event_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unix time stamp of the event.
 
 |event_source
 |INTEGER
 |NOT NULL
 |∅
-|
+|Source object which originated evenent.
 
 |dci_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Non-zero ID of the DCI related to this event. If event is unrelated to any DCI, value is `0`.
 
 |event_severity
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event severity at the moment of insertion into log.
 
 |event_message
 |VARCHAR(2000)
 |NULL
 |∅
-|
+|Event message.
 
 |root_event_id
 |BIGINT
 |NOT NULL
 |∅
-|
+|If event was correlated, this field contains root event which cause further events to be emmited.
 
 |user_tag
 |VARCHAR(63)

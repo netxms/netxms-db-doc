@@ -1,7 +1,7 @@
 [[t-container-members]]
 === CONTAINER_MEMBERS
 
-
+Parent-child relations between containers and objects inside them.
 
 .Columns
 [cols="17,17,13,10,43a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Container ID. Reference to <<t-object-containers>>.
 
 |🔑object_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Child object ID. Reference to any object which can be placed into container (<<t-nodes>>, <<t-clusters>>, <<t-object-containers>>).
 |===
 
 .Indexes

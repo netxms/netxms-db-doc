@@ -26,22 +26,22 @@ Effective rights are calculated in the runtime by the server based on the ACL in
 |∅
 |Bitmask of the permissions. Possible flags:
 
-* 0x00000001 - Read
-* 0x00000002 - Modify
-* 0x00000004 - Create child objects
-* 0x00000008 - Delete
-* 0x00000010 - View alarms
-* 0x00000020 - Access control
-* 0x00000040 - Update alarms
-* 0x00000080 - Send events
-* 0x00000100 - Control
-* 0x00000200 - Terminate alarms
-* 0x00000400 - Push data
-* 0x00000800 - Create helpdesk tickets
-* 0x00001000 - Download files
-* 0x00002000 - Upload files
-* 0x00004000 - Manage files (renamed, delete, etc.)
-* 0x00008000 - Control manintenance mode
+* 0x00000001 – Read
+* 0x00000002 – Modify
+* 0x00000004 – Create child objects
+* 0x00000008 – Delete
+* 0x00000010 – View alarms
+* 0x00000020 – Access control
+* 0x00000040 – Update alarms
+* 0x00000080 – Send events
+* 0x00000100 – Control
+* 0x00000200 – Terminate alarms
+* 0x00000400 – Push data
+* 0x00000800 – Create helpdesk tickets
+* 0x00001000 – Download files
+* 0x00002000 – Upload files
+* 0x00004000 – Manage files (renamed, delete, etc.)
+* 0x00008000 – Control maintenance mode
 |===
 
 .Indexes

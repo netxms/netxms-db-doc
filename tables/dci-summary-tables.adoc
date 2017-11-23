@@ -1,7 +1,7 @@
 [[t-dci-summary-tables]]
 === DCI_SUMMARY_TABLES
 
-
+Configuration of DCI summary tables.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,31 +11,31 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |guid
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|Summary Table GUID.
 
 |menu_path
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Path of the element in "Summary Tables" menu.
 
 |title
 |VARCHAR(127)
 |NULL
 |∅
-|
+|Title of the summary table.
 
 |node_filter
 |TEXT
 |NULL
 |∅
-|
+|NXSL script to filter out unrequired nodes.
 
 |flags
 |INTEGER
@@ -47,7 +47,7 @@
 |TEXT
 |NULL
 |∅
-|
+|Columns configuration.
 |===
 
 .Indexes

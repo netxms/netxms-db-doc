@@ -25,13 +25,13 @@ Server actions used in event processing.
 |∅
 |Type of the action:
 
-* 0 - Execute command on the management server
-* 1 - Execute command on the remote agent
-* 2 - Send email
-* 3 - Send SMS
-* 4 - Forward event to another server
-* 5 - Run NXSL script
-* 6 - Send XMPP (Jabber) message
+* 0 – Execute command on the management server
+* 1 – Execute command on the remote agent
+* 2 – Send email
+* 3 – Send SMS
+* 4 – Forward event to another server
+* 5 – Run NXSL script
+* 6 – Send XMPP (Jabber) message
 
 |is_disabled
 |INTEGER
@@ -39,8 +39,8 @@ Server actions used in event processing.
 |∅
 |State of the action:
 
-* 0 - Enabled
-* 1 - Disabled
+* 0 – Enabled
+* 1 – Disabled
 
 |rcpt_addr
 |VARCHAR(255)
@@ -58,8 +58,8 @@ Server actions used in event processing.
 |TEXT
 |NULL
 |∅
-|Action data field. Meaning depends on the action type. For email/SMS - message body,
-for server execute - path to the application, etc.
+|Action data field. Meaning depends on the action type. For email/SMS – message body,
+for server execute – path to the application, etc.
 |===
 
 .Indexes

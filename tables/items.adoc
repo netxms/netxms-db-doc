@@ -1,7 +1,7 @@
 [[t-items]]
 === ITEMS
 
-
+Data collection configuration for signle-value items.
 
 .Columns
 [cols="24,18,13,10,35a"]
@@ -11,43 +11,45 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object where DCI is configured. Reference to <<t-nodes>> or <<t-clusters>>.
 
 |template_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the source template. If item was created directly on the node, value will be `0`.
+Reference to <<t-templates>>.
 
 |template_item_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the DCI in the template. If item was created directly on the node, value will be `0`.
+Reference to <<t-templates>>.
 
 |guid
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|Record GUID.
 
 |name
 |VARCHAR(1023)
 |NULL
 |∅
-|
+|Name of the parameter. Depending on the source, it can be agent's parameter, SNMP OID, Script name, etc.
 
 |description
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Human readable description of the item.
 
 |flags
 |INTEGER
@@ -59,13 +61,14 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Source node. If this value is non-zero, server will query data from this node instead of the node specified by `node_id`.
+Reference to <<t-nodes>>.
 
 |snmp_port
 |INTEGER
 |NOT NULL
 |∅
-|
+|SNMP port.
 
 |datatype
 |INTEGER
@@ -77,19 +80,23 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Polling interval in seconds.
 
 |retention_time
 |INTEGER
 |NOT NULL
 |∅
-|
+|Retention time in days.
 
 |status
 |INTEGER
 |NOT NULL
 |∅
-|
+|Status of the DCI. Known values:
+
+* 0 – Active
+* 1 – Disabled
+* 2 – Not Supported
 
 |snmp_raw_value_type
 |INTEGER

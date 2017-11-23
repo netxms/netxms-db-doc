@@ -1,7 +1,7 @@
 [[t-config]]
 === CONFIG
 
-Server configuration
+Server configuration.
 
 .Columns
 [cols="21,18,13,10,38a"]
@@ -35,7 +35,13 @@ Server configuration
 |CHAR(1)
 |NOT NULL
 |S
-|Not used in current verion
+|Type of the attribute. Known values:
+
+* S – String
+* I – Integer
+* B – Boolean
+* C – Choice (Drop-down list displayed in UI)
+* H - Color (Color picker displayed in UI)
 
 |is_public
 |CHAR(1)

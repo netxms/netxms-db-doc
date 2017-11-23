@@ -1,7 +1,7 @@
 [[t-images]]
 === IMAGES
 
-
+Meta-data for image library.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,31 +11,31 @@
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|Image GUID.
 
 |name
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Name of the image.
 
 |category
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Image category.
 
 |mimetype
 |VARCHAR(32)
 |NOT NULL
 |∅
-|
+|MIME-type of the image.
 
 |protected
 |INTEGER
 |NULL
 |0
-|
+|Read-only marker for bundled images.
 |===
 
 .Indexes

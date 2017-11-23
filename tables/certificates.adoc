@@ -1,7 +1,7 @@
 [[t-certificates]]
 === CERTIFICATES
 
-
+Storage for x509 certificates used for authentication.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,31 +11,36 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier
 
 |cert_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Type of the certificate. Known values:
+
+* 0 - Trusted CA
+* 1 - User certificate
+* 2 - Agent certificate
+* 3 - Server certificate
 
 |cert_data
 |TEXT
 |NOT NULL
 |∅
-|
+|PEM-encoded body of the certificate.
 
 |subject
 |TEXT
 |NOT NULL
 |∅
-|
+|Certificate subject.
 
 |comments
 |TEXT
 |NOT NULL
 |∅
-|
+|Certificate comments added by administrator.
 |===
 
 .Indexes

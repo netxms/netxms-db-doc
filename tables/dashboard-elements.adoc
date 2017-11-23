@@ -1,7 +1,7 @@
 [[t-dashboard-elements]]
 === DASHBOARD_ELEMENTS
 
-
+Widgets and layout configuration of each dashboard.
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,31 +11,57 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the dashboard. Reference to <<t-dashboards>>.
 
 |🔑element_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |element_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Type of the element. Known values:
+
+* 0 – Label
+* 1 – Line Chart
+* 2 – Bar Chart
+* 3 – Pie Chart
+* 4 – Tube Chart
+* 5 – Status Chart
+* 6 – Status Indicator
+* 7 – Embeded Dashboard
+* 8 – Network Map
+* 9 – Custom
+* 10 – Geo map
+* 11 – Alarm Viewer
+* 12 – Availability Chart
+* 13 – Dial Chart
+* 14 – Web Page
+* 15 – Table Bar Chart
+* 16 – Table Pie Chart
+* 17 – Table Tube Chart
+* 18 – Separator
+* 19 – Table Last Value
+* 20 – Status Map
+* 21 – DCI Summary Table
+* 22 – Syslog Monitor
+* 23 – SNMP Trap Monitor
+* 24 – Event Monitor
 
 |element_data
 |TEXT
 |NULL
 |∅
-|
+|Widget configuration (data sources, etc.). Format is internal to a widget.
 
 |layout_data
 |TEXT
 |NULL
 |∅
-|
+|Widget layout details.
 |===
 
 .Indexes

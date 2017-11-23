@@ -1,7 +1,7 @@
 [[t-dci-schedules]]
 === DCI_SCHEDULES
 
-
+Advanced schedules for DCI.
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,19 +11,19 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |🔑item_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|DCI ID. Reference to either <<t-items>> or <<t-dc-tables>>.
 
 |schedule
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Cron-like schedule definition.
 |===
 
 .Indexes

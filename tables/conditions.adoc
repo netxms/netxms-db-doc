@@ -1,7 +1,7 @@
 [[t-conditions]]
 === CONDITIONS
 
-
+Conditions definition table.
 
 .Columns
 [cols="21,16,13,10,40a"]
@@ -11,25 +11,25 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |activation_event
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event code of the activation event. Reference to <<t-event-cfg>>.
 
 |deactivation_event
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event code of the deactivation event. Reference to <<t-event-cfg>>.
 
 |source_object
 |INTEGER
 |NOT NULL
 |∅
-|
+|Source object for generating events. Reference to <<t-nodes>> or <<t-clusters>>.
 
 |active_status
 |INTEGER
@@ -47,7 +47,7 @@
 |TEXT
 |NOT NULL
 |∅
-|
+|NXSL script for activating condition.
 |===
 
 .Indexes

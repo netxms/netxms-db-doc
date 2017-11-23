@@ -1,7 +1,7 @@
 [[t-event-policy]]
 === EVENT_POLICY
 
-
+Event processing policy.
 
 .Columns
 [cols="23,18,13,10,36a"]
@@ -11,43 +11,43 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |rule_guid
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|GUID of the record.
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Rule flags.
 
 |comments
 |TEXT
 |NULL
 |∅
-|
+|Comments as show in rule editor.
 
 |script
 |TEXT
 |NULL
 |∅
-|
+|NXSL filtering script. Should return `True` for rule to execute.
 
 |alarm_message
 |VARCHAR(2000)
 |NULL
 |∅
-|
+|Message for creating alarm based on the event.
 
 |alarm_severity
 |INTEGER
 |NOT NULL
 |∅
-|
+|Severity for created alarm.
 
 |alarm_key
 |VARCHAR(255)

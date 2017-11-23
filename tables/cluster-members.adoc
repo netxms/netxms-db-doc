@@ -11,13 +11,13 @@ Cluster members
 |INTEGER
 |NOT NULL
 |∅
-|Cluster id from clusters table
+|Cluster ID. Reference to <<t-clusters>>.
 
 |🔑node_id
 |INTEGER
 |NOT NULL
 |∅
-|Node id form nodes table
+|Node ID. Reference to <<t-nodes>>.
 |===
 
 .Indexes

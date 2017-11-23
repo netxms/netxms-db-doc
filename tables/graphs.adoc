@@ -1,7 +1,7 @@
 [[t-graphs]]
 === GRAPHS
 
-
+Saved graphs.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |owner_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object owner. Reference to <<t-users>>.
 
 |flags
 |INTEGER
@@ -29,13 +29,13 @@
 |VARCHAR(255)
 |NOT NULL
 |∅
-|
+|Name of the graph.
 
 |config
 |TEXT
 |NULL
 |∅
-|
+|XML-based configuration of the graph.
 
 |filters
 |TEXT

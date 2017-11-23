@@ -1,7 +1,7 @@
 [[t-cond-dci-map]]
 === COND_DCI_MAP
 
-
+Mapping of the conditions to corresponding data collection items.
 
 .Columns
 [cols="23,13,13,10,41a"]
@@ -11,37 +11,45 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Condition ID. Reference to <<t-conditions>>.
 
 |🔑sequence_number
 |INTEGER
 |NOT NULL
 |∅
-|
+|Sequence number.
 
 |dci_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the DCI. Reference to <<t-items>>.
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the node. Reference to <<t-nodes>>.
 
 |dci_func
 |INTEGER
 |NOT NULL
 |∅
-|
+|DCI function to use. Known values:
+
+* 0 - Last value
+* 1 - Average value
+* 2 - Mean deviation
+* 3 - Difference with previous value
+* 4 - Data collection error
+* 5 - Sum of values
+* 6 - Run NXSL script
 
 |num_polls
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of values for `dci_func` to process.
 |===
 
 .Indexes

@@ -1,7 +1,8 @@
 [[t-idata]]
 === IDATA_<NODE_ID>
 
-Contains historical values for single-value DCIs for the node. Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100").
+Contains historical values for single-value DCIs for the node.
+Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100").
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,19 +12,19 @@ Contains historical values for single-value DCIs for the node. Table name is dyn
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |idata_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unix time stamp
 
 |idata_value
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Collected value.
 |===
 
 .Indexes

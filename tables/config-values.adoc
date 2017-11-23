@@ -1,7 +1,7 @@
 [[t-config-values]]
 === CONFIG_VALUES
 
-Possible values for system configuration parameters
+Possible values for system configuration parameters. Used by the GUI only.
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,7 +11,7 @@ Possible values for system configuration parameters
 |VARCHAR(63)
 |NOT NULL
 |∅
-|Parameter name
+|Parameter name. Reference to <<t-config>>.
 
 |🔑var_value
 |VARCHAR(15)

@@ -1,7 +1,7 @@
 [[t-config-repositories]]
 === CONFIG_REPOSITORIES
 
-
+Repository configuration for templates market.
 
 .Columns
 [cols="15,18,13,10,44a"]
@@ -11,25 +11,25 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |url
 |VARCHAR(1023)
 |NOT NULL
 |∅
-|
+|Repository URL.
 
 |auth_token
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Repository authentication token.
 
 |description
 |VARCHAR(1023)
 |NULL
 |∅
-|
+|Repository description.
 |===
 
 .Indexes
