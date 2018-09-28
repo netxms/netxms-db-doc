@@ -4,7 +4,7 @@ prepare:
 	mkdir -p build
 
 html:
-	asciidoctor -b html5 -o build/netxms-data-dictionary.html index.adoc
+	asciidoctor -a html -b html5 -o build/netxms-data-dictionary.html index.adoc
 
 pdf:
 	asciidoctor-pdf -a pdf-style=netxms-theme.yml -a pdf-fontsdir=fonts -o build/netxms-data-dictionary.pdf index.adoc
