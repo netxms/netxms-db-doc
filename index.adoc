@@ -8,7 +8,7 @@ v2.0.8, March 1, 2017
 ifdef::html[+++You can download offline version here <a href="netxms-data-dictionary.pdf">here</a>.+++]
 
 == Introduction
-[TBD]
+TBD
 
 == Tables
 
