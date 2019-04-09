@@ -48,6 +48,17 @@ Chassis
 |NOT NULL
 |∅
 |Height in rack (in rack units)
+
+|rack_orientation
+|INTEGER
+|NOT NULL
+|∅
+|Rack orientation type:
+
+* 0 - FILL
+* 1 - FRONT
+* 2 - REAR
+
 |===
 
 .Indexes

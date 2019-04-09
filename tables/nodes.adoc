@@ -318,6 +318,29 @@ Nodes
 |NULL
 |∅
 |LLDP id
+
+|fail_time_snmp
+|INTEGER
+|NOT NULL
+|∅
+|Last SNMP request file time
+
+|fail_time_agent
+|INTEGER
+|NOT NULL
+|∅
+|Last agent request file time
+
+|rack_orientation
+|INTEGER
+|NOT NULL
+|∅
+|Rack orientation type:
+
+* 0 - FILL
+* 1 - FRONT
+* 2 - REAR
+
 |===
 
 .Indexes
