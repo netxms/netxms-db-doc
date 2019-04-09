@@ -60,6 +60,24 @@ Log of all user actions.
 |NULL
 |∅
 |Audit record text.
+
+|old_value
+|TEXT
+|NULL
+|∅
+|Old value. Object is saved in json format
+
+|new_value
+|TEXT
+|NULL
+|∅
+|New value. Object is saved in json format
+
+|value_diff
+|TEXT
+|NULL
+|∅
+|Diff from old and new value. Object data is represented in json format
 |===
 
 .Indexes

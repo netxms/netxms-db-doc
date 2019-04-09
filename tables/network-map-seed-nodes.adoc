@@ -1,0 +1,31 @@
+[[t-network-map-seed-nodes]]
+=== NETWORK_MAP_SEED_NODES
+
+Nodes that will be used as a start point for automatic map build.
+
+.Columns
+[cols="22,17,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑map_id
+|INTEGER
+|NOT NULL
+|∅
+|Network map id forn <<t-network-maps>>
+
+|🔑seed_node_id
+|INTEGER
+|NOT NULL
+|∅
+|Node is form <<t-nodes>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|network_map_seed_nodes_pkey
+|UNIQUE
+|map_id,seed_node_id
+
+|===

@@ -306,6 +306,18 @@ Nodes
 |NOT NULL
 |∅
 |
+
+|tunnel_id
+|VARCHAR(36)
+|NULL
+|∅
+|GUID of bound tunnel
+
+|lldp_id
+|VARCHAR(63)
+|NULL
+|∅
+|LLDP id
 |===
 
 .Indexes

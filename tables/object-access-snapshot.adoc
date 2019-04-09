@@ -1,0 +1,37 @@
+[[t-object-access-snapshot]]
+=== OBJECT_ACCESS_SNAPSHOT
+
+Access snapshot 
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id form <<t-users>>
+
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id from <<t-object-properties>>.
+
+|access_rights
+|INTEGER
+|NOT NULL
+|∅
+|
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|object_access_snapshot_pkey
+|UNIQUE
+|user_id,object_id
+
+|===

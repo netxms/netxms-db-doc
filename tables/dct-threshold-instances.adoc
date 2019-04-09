@@ -1,0 +1,43 @@
+[[t-dct-threshold-instances]]
+=== DCT_THREASHOLD_INSTANCES
+
+Table stores matched instances by table threashold
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑threshold_id
+|INTEGER
+|NOT NULL
+|∅
+|Threshold id from <<t-dct-threasholds>>
+
+|instance
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Matched threshold instance. If no instance column is defined row number is used as an instance.
+
+|match_count
+|INTEGER
+|NOT NULL
+|∅
+|Number of times this threshold, instance couple were matched
+
+|is_active
+|CHAR(1)
+|NOT NULL
+|∅
+|Defines if this threshold, instance couple is active
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dct_threashold_instances_pkey
+|UNIQUE
+|threshold_id,instance
+
+|===

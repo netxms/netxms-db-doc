@@ -1,0 +1,43 @@
+[[t-object-urls]]
+=== OBJECT_URLS
+
+URLs that can be configured on `External Resources` property page of object and are shown on object overview page.  
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object is from <<t-object-properties>>.
+
+|🔑url_id
+|INTEGER
+|NOT NULL
+|∅
+|URL id. Unique amoung URLs of one object
+
+|url
+|VARCHAR(2000)
+|NULL
+|∅
+|URL
+
+|description
+|VARCHAR(2000)
+|NULL
+|∅
+|URL description
+|===
+
+.Indexes
+[cols="35,15,50a"]
+|===
+|Name|Type|Fields
+|object_urls_pkey
+|UNIQUE
+|object_id,url_id
+
+|===

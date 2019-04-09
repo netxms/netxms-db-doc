@@ -127,6 +127,37 @@ Reference to <<t-nodes>>.
 |NULL
 |∅
 |
+
+|instance
+|VARCHAR(255)
+|NULL
+|∅
+|Instance
+
+|instd_method
+|INTEGER
+|NOT NULL
+|∅
+|Method of instance discovery
+
+* 0 – IDM_NONE 
+* 1 – IDM_AGENT_LIST 
+* 2 – IDM_AGENT_TABLE  
+* 3 – IDM_SNMP_WALK_VALUES 
+* 4 – IDM_SNMP_WALK_OIDS 
+* 5 – IDM_SCRIPT 
+
+|instd_data
+|VARCHAR(255)
+|NULL
+|∅
+|Data for instance discovery (Srcipt name, Agent list...)
+
+|instd_filter
+|TEXT
+|NULL
+|∅
+|NXSL instance discovery filter
 |===
 
 .Indexes

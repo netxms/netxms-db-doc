@@ -138,6 +138,12 @@
 |NULL
 |∅
 |
+
+|parent_iface
+|INTEGER
+|NOT NULL
+|∅
+|Interface id from <<t-interfaces>>
 |===
 
 .Indexes

@@ -1,0 +1,66 @@
+[[t-port-layouts]]
+=== PORT_LAYOUTS
+
+List of possible port layout options
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑device_oid
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Device OID
+
+|numbering_scheme
+|CHAR(1)
+|NOT NULL
+|∅
+|Numbering scheme
+
+* 0 - port layout not known to driver
+* 1 - custom layout, driver defines location of each port
+* 2 - left-to-right, then up-down
+    
+    1 2 3 4 
+    5 6 7 8
+
+* 3 - left-to-right, then down-up
+
+    5 6 7 8
+    1 2 3 4
+
+* 4 - up-down, then left-right
+
+    1 3 5 7
+    2 4 6 8
+
+* 5 - down-up, then left-right
+
+    2 4 6 8
+    1 3 5 7
+
+
+|row_count
+|CHAR(1)
+|NULL
+|∅
+|Number of rows
+
+|layout_data
+|VARCHAR(4000)
+|NULL
+|∅
+|Custom layout data. 
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|port_layouts_pkey
+|UNIQUE
+|device_oid
+
+|===

@@ -1,7 +1,7 @@
 [[t-dct-thresholds]]
 === DCT_THRESHOLDS
 
-
+Table threshold configuration
 
 .Columns
 [cols="20,17,13,10,40a"]
@@ -11,31 +11,37 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique threshold identifier
 
 |table_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Item id from <<t-dc-tables>>
 
 |sequence_number
 |INTEGER
 |NOT NULL
 |∅
-|
+|Threashold proccessing sequence number
 
 |activation_event
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event code of activation event from <<t-event-cfg>>
 
 |deactivation_event
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event code of deactivation event from <<t-event-cfg>>
+
+|sample_count
+|INTEGER
+|NOT NULL
+|∅
+|Required sample count for state change
 |===
 
 .Indexes

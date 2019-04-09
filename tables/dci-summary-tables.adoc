@@ -44,10 +44,16 @@ Configuration of DCI summary tables.
 |
 
 |columns
-|TEXT
+|VARCHAR(255)
 |NULL
 |∅
 |Columns configuration.
+
+|table_dci_name
+|TEXT
+|NULL
+|∅
+|Name of the summary table.
 |===
 
 .Indexes
