@@ -1,0 +1,31 @@
+[[t-policy-timer-cancellation-list]]
+=== POLICY_TIMER_CANCELATION_LIST
+
+List of cancelation action for EPP action delay timers
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|Rule id from <<t-event-policy>>
+
+|🔑timer_key
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Timer kay form  <<t-scheduled-tasks>> `task_key`
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|policy_timer_cancellation_list_pkey
+|UNIQUE
+|rule_id,timer_key
+
+|===

@@ -24,6 +24,18 @@ Agent policies common attributes
 |NOT NULL
 |∅
 |Policy version
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Common policy flags
+
+|deploy_filter
+|TEXT
+|NOT NULL
+|∅
+|NXSL auto apply filter
 |===
 
 .Indexes

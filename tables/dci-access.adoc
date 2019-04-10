@@ -1,0 +1,31 @@
+[[t-dci-access]]
+=== DCI_ACCESS
+
+Access rights for dci
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑dci_id
+|INTEGER
+|NOT NULL
+|∅
+|DCI ID. Reference to either <<t-items>> or <<t-dc-tables>>.
+
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id form <<t-users>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dci_access_pkey
+|UNIQUE
+|dci_id,user_id
+
+|===

@@ -1,0 +1,87 @@
+[[t-certificate-action-log]]
+=== CERTIFICTE_ACTION_LOG
+
+Certificate activity log
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|INTEGER
+|NOT NULL
+|∅
+|Record primary key
+
+|timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Action timestamp
+
+|operation
+|INTEGER
+|NOT NULL
+|∅
+|Operation:
+
+* 1 - ISSUE_CERTIFICATE
+* 2 - REVOKE_CERTIFICATE
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id form <<t-users>>
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|Node id from <<t-nodes>>
+
+|node_guid
+|VARCHAR(36)
+|NULL
+|∅
+|Node guid
+
+|cert_type
+|INTEGER
+|NOT NULL
+|∅
+|Type of certificate:
+
+* 0 - CERT_TYPE_TRUSTED_CA
+* 1 - CERT_TYPE_USER
+* 2 - CERT_TYPE_AGENT
+* 3 - CERT_TYPE_SERVER
+
+|subject
+|VARCHAR(36)
+|NULL
+|∅
+|Subject
+
+|subject
+|VARCHAR(36)
+|NULL
+|∅
+|Subject
+
+|serial
+|VARCHAR(36)
+|NULL
+|∅
+|Subject
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|certificate_action_log_pkey
+|UNIQUE
+|record_id
+
+|===

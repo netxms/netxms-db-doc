@@ -1,7 +1,7 @@
 [[t-scheduled-tasks]]
 === SCHEDULED_TASKS
 
-
+Scheduled task information
 
 .Columns
 [cols="22,18,13,10,38a"]
@@ -11,19 +11,28 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |taskid
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Task type. Known types:
+
+* Execute.Action
+* Execute.Script
+* Maintenance.Enter
+* Maintenance.Leave
+* Policy.Deploy
+* Policy.Uninstall
+* Alarms.SendSummaryEmail
+* AgentTunnels.ProcessUnbound
 
 |schedule
 |VARCHAR(127)
 |NULL
 |∅
-|
+|Cron execution schedule - will not be set for one time tasks
 
 |params
 |VARCHAR(1023)
@@ -35,13 +44,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|The time when action should be executed - will be set only for one time task
 
 |last_execution_time
 |INTEGER
 |NOT NULL
 |∅
-|
+|Timestamp of last execution time
 
 |flags
 |INTEGER
@@ -53,19 +62,25 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Scheduled task owner form <<t-users>>
 
 |object_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Scheduled task object from <<t-object-properties>>
 
 |comments
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Scheduled task comment. Free format text. 
+
+|task_key
+|VARCHAR(255)
+|NULL
+|∅
+|Scheduled task text key
 |===
 
 .Indexes

@@ -169,17 +169,17 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |∅
 |Object location postcode
 
-|maint_mode
-|CHAR(1)
-|NOT NULL
-|∅
-|
-
 |maint_event_id
 |BIGINT
 |NOT NULL
 |∅
 |
+
+|state_before_maint
+|INTEGER
+|NOT NULL
+|∅
+|State before maintenance
 |===
 
 .Indexes

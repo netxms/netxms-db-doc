@@ -1,0 +1,38 @@
+[[t-idata-node-id]]
+=== IDATA_<NODE_ID>
+
+Contains historical values for single-value DCIs for the node.
+Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100"). The table is populated only if single table performance data is disabled. 
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑item_id
+|INTEGER
+|NOT NULL
+|∅
+|Item id form <<t-items>>
+
+|🔑idata_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Unix time stamp
+
+|idata_value
+|VARCHAR(255)
+|NULL
+|∅
+|Collected value.
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_idata_<NODE_ID>_id_timestamp
+|NORMAL
+|item_id,idata_timestamp
+
+|===

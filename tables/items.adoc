@@ -199,6 +199,18 @@ Reference to <<t-nodes>>.
 |NULL
 |∅
 |
+
+|instance_retention_time
+|INTEGER
+|NOT NULL
+|∅
+|Retention time for deleted instances 
+
+|grace_period_start
+|INTEGER
+|NOT NULL
+|∅
+|Start for grade period for deleted instance
 |===
 
 .Indexes

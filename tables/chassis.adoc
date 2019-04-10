@@ -31,11 +31,11 @@ Chassis
 |∅
 |Related rack object ID
 
-|rack_image
+|rack_image_front
 |VARCHAR(36)
 |NULL
 |∅
-|Image to be used in rack view
+|Image to be used in front rack view
 
 |rack_position
 |INTEGER
@@ -59,6 +59,11 @@ Chassis
 * 1 - FRONT
 * 2 - REAR
 
+|rack_image_rear
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Image GUID to be used in rear rack view
 |===
 
 .Indexes

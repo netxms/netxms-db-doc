@@ -11,13 +11,25 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event processing policy rule id form <<t-event-policy>>
 
 |🔑action_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Action id form <<t-actions>>
+
+|timer_delay
+|INTEGER
+|NOT NULL
+|∅
+|Time to wait befor action to be executed
+
+|timer_key
+|VARCHAR(127)
+|NULL
+|∅
+|Timmer key
 |===
 
 .Indexes

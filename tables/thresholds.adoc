@@ -102,6 +102,12 @@
 |NOT NULL
 |∅
 |
+
+|state_before_maint
+|CHAR(1)
+|NOT NULL
+|∅
+|Threshold state before maintenance
 |===
 
 .Indexes

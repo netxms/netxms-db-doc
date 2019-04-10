@@ -158,6 +158,18 @@ Reference to <<t-nodes>>.
 |NULL
 |∅
 |NXSL instance discovery filter
+
+|instance_retention_time
+|INTEGER
+|NOT NULL
+|∅
+|Retention time for deleted instances from instance discovery
+
+|grace_period_start
+|INTEGER
+|NOT NULL
+|∅
+|Start for grade period for deleted instance
 |===
 
 .Indexes

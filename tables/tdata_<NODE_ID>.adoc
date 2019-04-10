@@ -1,18 +1,12 @@
-[[t-tdata]]
-=== TDATA
+[[t-tdata-node-id]]
+=== TDATA_<NODE_ID>
 
-Contains historical values for table DCIs for the node. The table is populated only if single table performance data is enabled. 
+Contains historical values for table DCIs for the node. Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "TDATA_100"). The table is populated only if single table performance data is disabled. 
 
 .Columns
 [cols="15,17,13,10,45a"]
 |===
 |Name|Type|State|Default|Description
-|🔑node_id
-|INTEGER
-|NOT NULL
-|∅
-|Object id form <<t-object-properties>>
-
 |🔑item_id
 |INTEGER
 |NOT NULL
@@ -23,7 +17,7 @@ Contains historical values for table DCIs for the node. The table is populated o
 |INTEGER
 |NOT NULL
 |∅
-|Unix time stamp for collected value
+|Unix time stamp
 
 |tdata_value
 |TEXT

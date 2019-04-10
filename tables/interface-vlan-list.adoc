@@ -1,0 +1,31 @@
+[[t-interface-vlan-list]]
+=== INTERFACE_VALN_LIST
+
+Vlan to interface connection
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑iface_id
+|INTEGER
+|NOT NULL
+|∅
+|Interface id form <<t-interfaces>>
+
+|🔑vlan_id
+|INTEGER
+|NOT NULL
+|∅
+|Vlan id
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|interface_vlan_list_pkey
+|UNIQUE
+|iface_id,vlan_id
+
+|===

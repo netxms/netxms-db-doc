@@ -24,6 +24,12 @@ Racks
 |NOT NULL
 |∅
 |
+
+|passive_elements
+|TEXT
+|NULL
+|∅
+|Rack passive elements
 |===
 
 .Indexes

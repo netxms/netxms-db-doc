@@ -150,6 +150,12 @@ Reference to <<t-items>>.
 |NULL
 |∅
 |Comma-separated list of related alarm categories. Reference to <<t-alarm-categories>>.
+
+|zone_uin
+|INTEGER
+|NULL
+|∅
+|Zone unique identification number form <<t-zones>>
 |===
 
 .Indexes

@@ -205,29 +205,29 @@ Nodes
 |∅
 |
 
-|rack_image
+|rack_image_front
 |VARCHAR(36)
 |NULL
 |∅
-|
+|Image GUID to be used in front rack view
 
 |rack_position
 |INTEGER
 |NOT NULL
 |∅
-|
+|Position in rack (in rack units)
 
 |rack_height
 |INTEGER
 |NOT NULL
 |∅
-|
+|Height in rack (in rack units)
 
 |rack_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Related rack object ID
 
 |chassis_id
 |INTEGER
@@ -291,13 +291,13 @@ Nodes
 
 |port_rows
 |INTEGER
-|NULL
+|NOT NULL
 |∅
 |Number of port rows
 
 |port_numbering_scheme
 |INTEGER
-|NULL
+|NOT NULL
 |∅
 |Numbering scheme of ports
 
@@ -341,6 +341,47 @@ Nodes
 * 1 - FRONT
 * 2 - REAR
 
+|rack_image_rear
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Image GUID to be used in rear rack view
+
+|agent_id
+|VARCHAR(36)
+|NULL
+|∅
+|Agent id
+
+|agent_cert_subject
+|VARCHAR(500)
+|NULL
+|∅
+|Agent certificate subject
+
+|hypervisor_type
+|VARCHAR(31)
+|NULL
+|∅
+|Hypervisor type. Wel known types:
+
+* OpenVZ
+* Linux-VServer
+* LXC
+* Docker
+* XEN
+* VMware
+* Hyper-V
+* KVM
+* bhyve
+* Parallels
+* VirtualBox
+
+|hypervisor_info
+|VARCHAR(255)
+|NULL
+|∅
+|Hypervisor info that might be or might not be. There can be some version information. 
 |===
 
 .Indexes

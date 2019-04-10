@@ -60,6 +60,18 @@ All events which was emmited in the system. Table is cleaned up automatically by
 |NULL
 |∅
 |
+
+|zone_uin
+|INTEGER
+|NULL
+|∅
+|Zone unique identification number form <<t-zones>>
+
+|raw_data
+|TEXT
+|NULL
+|∅
+|Event raw data
 |===
 
 .Indexes

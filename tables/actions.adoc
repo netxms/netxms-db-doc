@@ -60,6 +60,12 @@ Server actions used in event processing.
 |∅
 |Action data field. Meaning depends on the action type. For email/SMS – message body,
 for server execute – path to the application, etc.
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Action GUID
 |===
 
 .Indexes

@@ -17,7 +17,7 @@ Table stores matched instances by table threashold
 |VARCHAR(255)
 |NOT NULL
 |∅
-|Matched threshold instance. If no instance column is defined row number is used as an instance.
+|Matched threshold instance. 
 
 |match_count
 |INTEGER
@@ -30,6 +30,18 @@ Table stores matched instances by table threashold
 |NOT NULL
 |∅
 |Defines if this threshold, instance couple is active
+
+|tt_row_number
+|INTEGER
+|NOT NULL
+|∅
+|Row number
+
+|maint_copy
+|CHAR(1)
+|NOT NULL
+|∅
+|Flag that states that threshold happened before maintenance
 |===
 
 .Indexes
@@ -38,6 +50,6 @@ Table stores matched instances by table threashold
 |Name|Type|Fields
 |dct_threashold_instances_pkey
 |UNIQUE
-|threshold_id,instance
+|threshold_id,instance,maint_copy
 
 |===

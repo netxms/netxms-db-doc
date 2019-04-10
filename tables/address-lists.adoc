@@ -42,6 +42,18 @@ List of network ranges and subnets used by network discovery.
 |NOT NULL
 |∅
 |Network mark in CIDR format or end of the range address.
+
+|zone_uin
+|INTEGER
+|NOT NULL
+|∅
+|Zone unique identification number form <<t-zones>>
+
+|proxy_id
+|INTEGER
+|NOT NULL
+|∅
+|Node id from <<t-nodes>>
 |===
 
 .Indexes

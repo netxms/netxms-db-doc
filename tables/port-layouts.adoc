@@ -52,7 +52,7 @@ List of possible port layout options
 |VARCHAR(4000)
 |NULL
 |∅
-|Custom layout data. 
+|Custom layout data. Reserved for future use. 
 |===
 
 .Indexes

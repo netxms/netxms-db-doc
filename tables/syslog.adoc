@@ -54,6 +54,12 @@
 |NULL
 |∅
 |
+
+|zone_uin
+|INTEGER
+|NULL
+|∅
+|Zone uin
 |===
 
 .Indexes

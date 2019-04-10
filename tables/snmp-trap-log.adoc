@@ -42,6 +42,12 @@
 |NULL
 |∅
 |
+
+|zone_uin
+|INTEGER
+|NULL
+|∅
+|Zone unique identification number form <<t-zones>>
 |===
 
 .Indexes
