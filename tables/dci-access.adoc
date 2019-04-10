@@ -17,7 +17,7 @@ Access rights for dci
 |INTEGER
 |NOT NULL
 |∅
-|User id form <<t-users>>
+|User id from <<t-users>>
 |===
 
 .Indexes

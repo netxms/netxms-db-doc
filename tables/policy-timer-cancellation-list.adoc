@@ -17,7 +17,7 @@ List of cancelation action for EPP action delay timers
 |VARCHAR(127)
 |NOT NULL
 |∅
-|Timer kay form  <<t-scheduled-tasks>> `task_key`
+|Timer key from  <<t-scheduled-tasks>> `task_key`
 |===
 
 .Indexes

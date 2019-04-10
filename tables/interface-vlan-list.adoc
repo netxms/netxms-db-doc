@@ -1,5 +1,5 @@
 [[t-interface-vlan-list]]
-=== INTERFACE_VALN_LIST
+=== INTERFACE_VLAN_LIST
 
 Vlan to interface connection
 
@@ -11,7 +11,7 @@ Vlan to interface connection
 |INTEGER
 |NOT NULL
 |∅
-|Interface id form <<t-interfaces>>
+|Interface id from <<t-interfaces>>
 
 |🔑vlan_id
 |INTEGER

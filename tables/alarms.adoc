@@ -18,13 +18,13 @@ Cleaned up automatically by the housekeeper.
 |INTEGER
 |NOT NULL
 |∅
-|Bitmask indicating state of the alarm:
+|State of the alarm:
 
 * 0x00 - Outstanding
 * 0x01 - Acknowledged
 * 0x02 - Resolved
 * 0x03 - Terminated 
-* 0x10 - Sticky Acknowledged
+* 0x11 - Sticky Acknowledged
 
 |hd_state
 |INTEGER
@@ -155,7 +155,7 @@ Reference to <<t-items>>.
 |INTEGER
 |NULL
 |∅
-|Zone unique identification number form <<t-zones>>
+|Zone unique identification number from <<t-zones>>
 |===
 
 .Indexes

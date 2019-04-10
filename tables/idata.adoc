@@ -11,13 +11,13 @@ Contains historical values for single-value DCIs for the node. The table is popu
 |INTEGER
 |NOT NULL
 |∅
-|Object id form <<t-object-properties>>
+|Object id from <<t-object-properties>>
 
 |🔑item_id
 |INTEGER
 |NOT NULL
 |∅
-|Item id form <<t-items>>
+|Item id from <<t-items>>
 
 |🔑idata_timestamp
 |INTEGER

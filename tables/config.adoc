@@ -23,13 +23,13 @@ Server configuration.
 |INTEGER
 |NOT NULL
 |1
-|GUI visibility indicator
+|GUI visibility indicator.
 
 |need_server_restart
 |INTEGER
 |NOT NULL
 |0
-|Change take effect after server restart
+|Change take effect after server restart.
 
 |data_type
 |CHAR(1)
@@ -47,19 +47,13 @@ Server configuration.
 |CHAR(1)
 |NOT NULL
 |N
-|No used in current version
+|If set to non-zero, configuration parameter is visible to all users, even for those without granted access to server configuration.
 
 |description
 |VARCHAR(450)
 |NULL
 |∅
-|Not used in current version
-
-|possible_values
-|TEXT
-|NULL
-|∅
-|Not used in current version
+|Configuration parameter's description shown in the UI.
 |===
 
 .Indexes

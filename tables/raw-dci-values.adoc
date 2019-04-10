@@ -1,7 +1,7 @@
 [[t-raw-dci-values]]
 === RAW_DCI_VALUES
 
-
+Last collected DCI values
 
 .Columns
 [cols="21,17,13,10,39a"]
@@ -11,25 +11,25 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|DCI item id form <<t-items>>
 
 |raw_value
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Raw DCI value
 
 |transformed_value
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Transformed DCI value
 
 |last_poll_time
 |INTEGER
 |NOT NULL
 |∅
-|
+|Last poll time (as UNIx timestamp)
 |===
 
 .Indexes

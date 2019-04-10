@@ -1,7 +1,7 @@
 [[t-dashboard-associations]]
 === DASHBOARD_ASSOCIATIONS
 
-
+Associations between dashboards and other objects
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object id from <<t-object-properties>>
 
 |🔑dashboard_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Dashboard id from <<t-dashboards>>
 |===
 
 .Indexes

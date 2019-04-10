@@ -1,7 +1,7 @@
 [[t-persistent-storage]]
 === PERSISTENT_STORAGE
 
-Persistent storage table accessible form EPP and any script
+Persistent storage table accessible from EPP and any script
 
 .Columns
 [cols="15,18,13,10,44a"]

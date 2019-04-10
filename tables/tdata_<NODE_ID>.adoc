@@ -11,7 +11,7 @@ Contains historical values for table DCIs for the node. Table name is dynamic, <
 |INTEGER
 |NOT NULL
 |∅
-|Item id form <<t-dc-tables>>
+|Item id from <<t-dc-tables>>
 
 |🔑tdata_timestamp
 |INTEGER

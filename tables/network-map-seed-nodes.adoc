@@ -11,13 +11,13 @@ Nodes that will be used as a start point for automatic map build.
 |INTEGER
 |NOT NULL
 |∅
-|Network map id forn <<t-network-maps>>
+|Network map id from <<t-network-maps>>
 
 |🔑seed_node_id
 |INTEGER
 |NOT NULL
 |∅
-|Node is form <<t-nodes>>
+|Node is from <<t-nodes>>
 |===
 
 .Indexes

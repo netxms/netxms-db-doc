@@ -11,7 +11,7 @@ Racks
 |INTEGER
 |NOT NULL
 |∅
-|Rack id form object_properties
+|Rack id from object_properties
 
 |height
 |INTEGER

@@ -1,7 +1,7 @@
 [[t-subnets]]
 === SUBNETS
 
-
+Subnets
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,31 +11,31 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the object. Reference to <<t-object-properties>>.
 
 |ip_addr
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|Subnet IP address
 
 |ip_netmask
 |INTEGER
 |NOT NULL
 |∅
-|
+|Subnet network mask
 
 |zone_guid
 |INTEGER
 |NOT NULL
 |∅
-|
+|Zone unique identification number from <<t-zones>>
 
 |synthetic_mask
 |INTEGER
 |NOT NULL
 |∅
-|
+|Subnet synthetic network mask
 |===
 
 .Indexes

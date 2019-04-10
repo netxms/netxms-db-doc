@@ -1,7 +1,7 @@
 [[t-job-history]]
 === JOB_HISTORY
 
-
+Server job history table
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,67 +11,80 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |time_created
 |INTEGER
 |NOT NULL
 |∅
-|
+|Time when job was created (as UNIX timestamp)
 
 |time_started
 |INTEGER
 |NOT NULL
 |∅
-|
+|Time when job was started (as UNIX timestamp)
 
 |time_finished
 |INTEGER
 |NOT NULL
 |∅
-|
+|Time when job has finished (as UNIX timestamp)
 
 |job_type
 |VARCHAR(127)
 |NULL
 |∅
-|
+|Type of job. Known types:
+
+* DOWNLOAD_FILE
+* UPLOAD_FILE
+* DEPLOY_AGENT_POLICY
+* UNINSTALL_AGENT_POLICY
 
 |description
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Job description
 
 |additional_info
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Additional job info
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node id from <<t-nodes>>
 
 |user_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|User id from <<t-users>>
 
 |status
 |INTEGER
 |NOT NULL
 |∅
-|
+|Job status:
+
+* 0 - JOB_PENDING 
+* 1 - JOB_ACTIVE
+* 2 - JOB_ON_HOLD
+* 3 - JOB_COMPLETED
+* 4 - JOB_FAILED
+* 5 - JOB_CANCELLED
+* 6 - JOB_CANCEL_PENDING
 
 |failure_message
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Description of fail
 |===
 
 .Indexes

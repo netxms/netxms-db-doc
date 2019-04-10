@@ -47,7 +47,7 @@ List of network ranges and subnets used by network discovery.
 |INTEGER
 |NOT NULL
 |∅
-|Zone unique identification number form <<t-zones>>
+|Zone unique identification number from <<t-zones>>
 
 |proxy_id
 |INTEGER

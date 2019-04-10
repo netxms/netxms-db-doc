@@ -11,199 +11,244 @@ Nodes
 |INTEGER
 |NOT NULL
 |∅
-|Node id from object_properties
+|Node id from <<t-object-properties>>
 
 |primary_name
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Primary host name
 
 |primary_ip
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|Primary IP (resolved primary host name)
 
 |node_flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node flags:
+
+* NF_REMOTE_AGENT           0x00000080
+* NF_SNMP_SETTINGS_LOCKED   0x00200000
+* NF_DISABLE_DISCOVERY_POLL 0x00400000
+* NF_DISABLE_TOPOLOGY_POLL  0x00800000
+* NF_DISABLE_SNMP           0x01000000
+* NF_DISABLE_NXCP           0x02000000
+* NF_DISABLE_ICMP           0x04000000
+* NF_FORCE_ENCRYPTION       0x08000000
+* NF_DISABLE_STATUS_POLL    0x10000000
+* NF_DISABLE_CONF_POLL      0x20000000
+* NF_DISABLE_ROUTE_POLL     0x40000000
+* NF_DISABLE_DATA_COLLECT   0x80000000
 
 |runtime_flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Runtime flags:
+
+* NDF_QUEUED_FOR_STATUS_POLL     0x000001
+* NDF_QUEUED_FOR_CONFIG_POLL     0x000002
+* NDF_UNREACHABLE                0x000004
+* NDF_AGENT_UNREACHABLE          0x000008
+* NDF_SNMP_UNREACHABLE           0x000010
+* NDF_QUEUED_FOR_DISCOVERY_POLL  0x000020
+* NDF_FORCE_STATUS_POLL          0x000040
+* NDF_FORCE_CONFIGURATION_POLL   0x000080
+* NDF_QUEUED_FOR_ROUTE_POLL      0x000100
+* NDF_CPSNMP_UNREACHABLE         0x000200
+* NDF_RECHECK_CAPABILITIES       0x000400
+* NDF_POLLING_DISABLED           0x000800
+* NDF_CONFIGURATION_POLL_PASSED  0x001000
+* NDF_QUEUED_FOR_TOPOLOGY_POLL   0x002000
+* NDF_DELETE_IN_PROGRESS         0x004000
+* NDF_NETWORK_PATH_PROBLEM       0x008000
+* NDF_QUEUED_FOR_INSTANCE_POLL   0x010000
+* NDF_CACHE_MODE_NOT_SUPPORTED   0x020000
+* NDF_NEW_TUNNEL_BIND            0x040000
 
 |snmp_version
 |INTEGER
 |NOT NULL
 |∅
-|
+|SNMP version
+
+* 0 - SNMP_VERSION_1     
+* 1 - SNMP_VERSION_2C    
+* 3 - SNMP_VERSION_3     
 
 |snmp_port
 |INTEGER
 |NOT NULL
 |∅
-|
+|SNMP port
 
 |community
 |VARCHAR(127)
 |NULL
 |∅
-|
+|SNMP community string
 
 |usm_auth_password
 |VARCHAR(127)
 |NULL
 |∅
-|
+|SNMP v3 authentication password
 
 |usm_priv_password
 |VARCHAR(127)
 |NULL
 |∅
-|
+|SNMP v3 encryption password
 
 |usm_methods
 |INTEGER
 |NOT NULL
 |∅
-|
+|SNMP v3 authentication and ecryption methods
 
 |snmp_oid
 |VARCHAR(255)
 |NULL
 |∅
-|
+|SNMP object id
 
 |auth_method
 |INTEGER
 |NOT NULL
 |∅
-|
+|Agent authentication method
 
 |secret
 |VARCHAR(64)
 |NULL
 |∅
-|
+|Agent shared seecret
 
 |agent_port
 |INTEGER
 |NOT NULL
 |∅
-|
+|Agent port
 
 |status_poll_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Status poll types:
+
+* 0 - POLL_ICMP_PING 
+* 1 - POLL_SNMP 
+* 2 - POLL_NATIVE_AGENT
 
 |agent_version
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Agent version
 
 |platform_name
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Platform name as reported by agent
 
 |poller_node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Id of node from <<t-nodes>> used for network service polling for this node
 
 |zone_guid
 |INTEGER
 |NOT NULL
 |∅
-|
+|Zone unique identification number from <<t-zones>>
 
 |proxy_node
 |INTEGER
 |NOT NULL
 |∅
-|
+|Agent proxy node id from <<t-nodes>>
 
 |snmp_proxy
 |INTEGER
 |NOT NULL
 |∅
-|
+|SNMP proxy node id from <<t-nodes>>
 
 |icmp_proxy
 |INTEGER
 |NOT NULL
 |∅
-|
+|ICMP proxy node id from <<t-nodes>>
 
 |required_polls
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of polls for status change
 
 |uname
 |VARCHAR(255)
 |NULL
 |∅
-|
+|System description
 
 |use_ifxtable
 |INTEGER
 |NOT NULL
 |∅
-|
+|ifXTable usage mode:
+
+* 0 - IFXTABLE_DEFAULT Use global settings
+* 1 - IFXTABLE_ENABLED			
+* 2 - IFXTABLE_DISABLED			
 
 |snmp_sys_name
 |VARCHAR(127)
 |NULL
 |∅
-|
+|System name as reported by SNMP agent
 
 |snmp_sys_contact
 |VARCHAR(127)
 |NULL
 |∅
-|
+|System contact as reported by SNMP agent 
 
 |snmp_sys_location
 |VARCHAR(127)
 |NULL
 |∅
-|
+|System location as reported by SNMP agent
 
 |bridge_base_addr
 |VARCHAR(15)
 |NULL
 |∅
-|
+|Bridge base address
 
 |down_since
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unix timestamp of last SYS_NODE_DOWN event
 
 |boot_time
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node boot time (as UNIX timestamp)
 
 |driver_name
 |VARCHAR(32)
 |NULL
 |∅
-|
+|Network device driver name
 
 |rack_image_front
 |VARCHAR(36)
@@ -239,13 +284,17 @@ Nodes
 |CHAR(1)
 |NOT NULL
 |∅
-|
+|Agent cache mode:
+
+* 0 - AGENT_CACHE_DEFAULT Use global configuration
+* 1 - AGENT_CACHE_ON       
+* 2 - AGENT_CACHE_OFF      
 
 |last_agent_comm_time
 |INTEGER
 |NOT NULL
 |∅
-|
+|Last agent communication time (as UNIX timestamp)
 
 |syslog_msg_count
 |BIGINT
@@ -263,31 +312,37 @@ Nodes
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node type:
+
+* 0 - NODE_TYPE_UNKNOWN 
+* 1 - NODE_TYPE_PHYSICAL
+* 2 - NODE_TYPE_VIRTUAL 
+* 3 - NODE_TYPE_CONTROLLER 
+* 4 - NODE_TYPE_CONTAINER 
 
 |node_subtype
 |VARCHAR(127)
 |NULL
 |∅
-|
+|Node sub-type
 
 |ssh_login
 |VARCHAR(63)
 |NULL
 |∅
-|
+|SSH login
 
 |ssh_password
 |VARCHAR(63)
 |NULL
 |∅
-|
+|SSH password
 
 |ssh_proxy
 |INTEGER
 |NOT NULL
 |∅
-|
+|SSH proxy node id from <<t-nodes>>
 
 |port_rows
 |INTEGER
@@ -305,7 +360,11 @@ Nodes
 |CHAR(1)
 |NOT NULL
 |∅
-|
+|Agent compression mode:
+
+* 0 - NODE_AGENT_COMPRESSION_DEFAULT Use global configuration
+* 1 - NODE_AGENT_COMPRESSION_ENABLED 
+* 2 - NODE_AGENT_COMPRESSION_DISABLED
 
 |tunnel_id
 |VARCHAR(36)

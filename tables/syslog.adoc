@@ -1,7 +1,7 @@
 [[t-syslog]]
 === SYSLOG
 
-
+Stored syslog messages
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,55 +11,55 @@
 |BIGINT
 |NOT NULL
 |∅
-|
+|Unique identifier
 
 |msg_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Syslog message timestamp (as UNIX timestamp)
 
 |facility
 |INTEGER
 |NOT NULL
 |∅
-|
+|Facility
 
 |severity
 |INTEGER
 |NOT NULL
 |∅
-|
+|Severity
 
 |source_object_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Source object id from <<t-nodes>>
 
 |hostname
 |VARCHAR(127)
 |NULL
 |∅
-|
+|Source object host name
 
 |msg_tag
 |VARCHAR(32)
 |NULL
 |∅
-|
+|Syslog message tag
 
 |msg_text
 |TEXT
 |NULL
 |∅
-|
+|Syslog message text
 
 |zone_uin
 |INTEGER
 |NULL
 |∅
-|Zone uin
+|Zone unique identification number from <<t-zones>>
 |===
 
 .Indexes

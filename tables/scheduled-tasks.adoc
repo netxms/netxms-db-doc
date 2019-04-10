@@ -62,7 +62,7 @@ Scheduled task information
 |INTEGER
 |NOT NULL
 |∅
-|Scheduled task owner form <<t-users>>
+|Scheduled task owner from <<t-users>>
 
 |object_id
 |INTEGER

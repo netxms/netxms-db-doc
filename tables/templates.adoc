@@ -11,25 +11,28 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier
 
 |version
 |INTEGER
 |NOT NULL
 |∅
-|
+|Template version
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Template flags:
+
+* TF_AUTO_APPLY            0x00000001
+* TF_AUTO_REMOVE           0x00000002
 
 |apply_filter
 |TEXT
 |NULL
 |∅
-|
+|NXSL template auto apply script.
 |===
 
 .Indexes

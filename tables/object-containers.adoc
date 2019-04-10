@@ -1,7 +1,7 @@
 [[t-object-containers]]
 === OBJECT_CONTAINERS
 
-
+All types of object containers like: node container, template group, policy group, network map group, business services, node link and deshboard group. 
 
 .Columns
 [cols="19,17,13,10,41a"]
@@ -11,25 +11,36 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique identifier.
 
 |object_class
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object class:
+
+* 5 - OBJECT_CONTAINER
+* 9 - OBJECT_TEMPLATEGROUP
+* 15 - OBJECT_POLICYGROUP
+* 20 - OBJECT_NETWORKMAPGROUP
+* 28 - OBJECT_BUSINESSSERVICE
+* 29 - OBJECT_NODELINK
+* 36 - OBJECT_DASHBOARDGROUP
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Flags:
+
+* CF_AUTO_BIND             0x00000001
+* CF_AUTO_UNBIND           0x00000002
 
 |auto_bind_filter
 |TEXT
 |NULL
 |∅
-|
+|NXSL autobind filter script.
 |===
 
 .Indexes

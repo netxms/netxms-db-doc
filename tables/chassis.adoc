@@ -11,7 +11,7 @@ Chassis
 |INTEGER
 |NOT NULL
 |∅
-|Chassis id form object_properties
+|Chassis id from <<t-object-properties>>
 
 |controller_id
 |INTEGER

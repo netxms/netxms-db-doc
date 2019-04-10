@@ -63,17 +63,11 @@ Certificate activity log
 |∅
 |Subject
 
-|subject
-|VARCHAR(36)
-|NULL
-|∅
-|Subject
-
 |serial
 |VARCHAR(36)
 |NULL
 |∅
-|Subject
+|Serial
 |===
 
 .Indexes

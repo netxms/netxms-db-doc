@@ -12,7 +12,7 @@ Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100
 |INTEGER
 |NOT NULL
 |∅
-|Item id form <<t-items>>
+|Item id from <<t-items>>
 
 |🔑idata_timestamp
 |INTEGER

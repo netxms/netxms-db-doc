@@ -11,7 +11,7 @@ List of known access points, as collected from wireless controllers.
 |INTEGER
 |NOT NULL
 |∅
-|Record primary key
+|ID of the object. Reference to <<t-object-properties>>.
 
 |node_id
 |INTEGER

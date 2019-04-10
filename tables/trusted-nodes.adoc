@@ -1,7 +1,7 @@
 [[t-trusted-nodes]]
 === TRUSTED_NODES
 
-
+Trusted nodes - used for cross-node data collection. Source object is an object providing data (it can be node or condition), and target node is a node owning DCI.
 
 .Columns
 [cols="21,17,13,10,39a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object id from <<t-object-properties>>
 
 |🔑target_node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object id from <<t-object-properties>>
 |===
 
 .Indexes

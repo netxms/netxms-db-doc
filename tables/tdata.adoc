@@ -11,13 +11,13 @@ Contains historical values for table DCIs for the node. The table is populated o
 |INTEGER
 |NOT NULL
 |∅
-|Object id form <<t-object-properties>>
+|Object id from <<t-object-properties>>
 
 |🔑item_id
 |INTEGER
 |NOT NULL
 |∅
-|Item id form <<t-dc-tables>>
+|Item id from <<t-dc-tables>>
 
 |🔑tdata_timestamp
 |INTEGER

@@ -47,7 +47,7 @@
 |INTEGER
 |NULL
 |∅
-|Zone unique identification number form <<t-zones>>
+|Zone unique identification number from <<t-zones>>
 |===
 
 .Indexes

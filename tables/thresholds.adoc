@@ -1,7 +1,7 @@
 [[t-thresholds]]
 === THRESHOLDS
 
-
+Threshold checking rules
 
 .Columns
 [cols="24,17,13,10,36a"]
@@ -11,97 +11,114 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Threshold unique identifier
 
 |item_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Item id from <<t-items>>
 
 |sequence_number
 |INTEGER
 |NOT NULL
 |∅
-|
+|Rule sequence number
 
 |fire_value
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Fire value
 
 |rearm_value
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Rearm value (not used)
 
 |check_function
 |INTEGER
 |NOT NULL
 |∅
-|
+|Threshold functions:
+
+* 0 - F_LAST       
+* 1 - F_AVERAGE    
+* 2 - F_DEVIATION  
+* 3 - F_DIFF       
+* 4 - F_ERROR      
+* 5 - F_SUM        
+* 6 - F_SCRIPT     
 
 |check_operation
 |INTEGER
 |NOT NULL
 |∅
-|
+|Threshold operations:
+
+* 0 - OP_LE        
+* 1 - OP_LE_EQ     
+* 2 - OP_EQ        
+* 3 - OP_GT_EQ     
+* 4 - OP_GT        
+* 5 - OP_NE        
+* 6 - OP_LIKE      
+* 7 - OP_NOTLIKE   
 
 |sample_count
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of samples
 
 |script
 |TEXT
 |NULL
 |∅
-|
+|NXSL comparison script
 
 |event_code
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event conde to fire in case of threshold violation from <<t-event-cfg>>
 
 |rearm_event_code
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event conde to fire in case of threshold rearm from <<t-event-cfg>>
 
 |repeat_interval
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event generation repeat interval
 
 |current_state
 |INTEGER
 |NOT NULL
 |∅
-|
+|Current threshold state (reach or not)
 
 |current_severity
 |INTEGER
 |NOT NULL
 |∅
-|
+|Current severity
 
 |match_count
 |INTEGER
 |NOT NULL
 |∅
-|
+|Threshold match count
 
 |last_event_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Last generated event timestamp (as UNIX timestamp)
 
 |state_before_maint
 |CHAR(1)

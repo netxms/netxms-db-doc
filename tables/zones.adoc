@@ -11,7 +11,7 @@ Zones
 |INTEGER
 |NOT NULL
 |∅
-|Zone id from object_properties
+|Zone id from <<t-object-properties>>
 
 |zone_guid
 |INTEGER

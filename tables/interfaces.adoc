@@ -1,7 +1,7 @@
 [[t-interfaces]]
 === INTERFACES
 
-
+Interface information
 
 .Columns
 [cols="22,17,13,10,38a"]
@@ -11,133 +11,153 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Record primary key
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node id from <<t-nodes>>
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Interface flags:
+
+* IF_SYNTHETIC_MASK        0x01
+* IF_PHYSICAL_PORT         0x02
+* IF_EXCLUDE_FROM_TOPOLOGY 0x04
+* IF_LOOPBACK              0x08
+* IF_CREATED_MANUALLY      0x10
+* IF_PEER_REFLECTION       0x20  /* topology information obtained by reflection */
+* IF_EXPECTED_STATE_MASK   0x30000000	/* 2-bit field holding expected interface state */
 
 |if_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|If type. (SNMP standard values)
 
 |if_index
 |INTEGER
 |NOT NULL
 |∅
-|
+|Index of interface
 
 |mtu
 |INTEGER
 |NOT NULL
 |∅
-|
+|MTU (bytes)
 
 |speed
 |BIGINT
 |NOT NULL
 |∅
-|
+|Speed (bps)
 
 |bridge_port
 |INTEGER
 |NOT NULL
 |∅
-|
+|Bridge port number
 
 |phy_slot
 |INTEGER
 |NOT NULL
 |∅
-|
+|Physical slot number
 
 |phy_port
 |INTEGER
 |NOT NULL
 |∅
-|
+|Physical port number
 
 |peer_node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Peer node id from <<t-nodes>>
 
 |peer_if_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Peer interface id from <<t-interfaces>>
 
 |peer_proto
 |INTEGER
 |NOT NULL
 |∅
-|
+|Discovery protocol used for peer discovery
 
 |mac_addr
 |VARCHAR(12)
 |NOT NULL
 |∅
-|
+|MAC address
 
 |required_polls
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of polls for status change
 
 |admin_state
 |INTEGER
 |NOT NULL
 |∅
-|
+|Interface administrative states:
+
+* 0 - IF_ADMIN_STATE_UNKNOWN
+* 1 - IF_ADMIN_STATE_UP     
+* 2 - IF_ADMIN_STATE_DOWN   
+* 3 - IF_ADMIN_STATE_TESTING
 
 |oper_state
 |INTEGER
 |NOT NULL
 |∅
-|
+|Interface operational states:
+
+* 0 - IF_OPER_STATE_UNKNOWN    
+* 1 - IF_OPER_STATE_UP         
+* 2 - IF_OPER_STATE_DOWN       
+* 3 - IF_OPER_STATE_TESTING    
+* 4 - IF_OPER_STATE_DORMANT    
+* 5 - IF_OPER_STATE_NOT_PRESENT
 
 |dot1x_pae_state
 |INTEGER
 |NOT NULL
 |∅
-|
+|802.1x PAE state
 
 |dot1x_backend_state
 |INTEGER
 |NOT NULL
 |∅
-|
+|802.1x backend state
 
 |description
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Interface description
 
 |alias
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Interface alias
 
 |iftable_suffix
 |VARCHAR(127)
 |NULL
 |∅
-|
+|SNMP OID suffix in ifTable
 
 |parent_iface
 |INTEGER

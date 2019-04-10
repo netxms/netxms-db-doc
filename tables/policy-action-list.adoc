@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|Event processing policy rule id form <<t-event-policy>>
+|Event processing policy rule id from <<t-event-policy>>
 
 |🔑action_id
 |INTEGER
 |NOT NULL
 |∅
-|Action id form <<t-actions>>
+|Action id from <<t-actions>>
 
 |timer_delay
 |INTEGER
