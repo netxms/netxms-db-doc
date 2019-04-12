@@ -1,7 +1,7 @@
 [[t-persons]]
 === PERSONS
 
-
+Reserved for future use. 
 
 .Columns
 [cols="15,17,13,10,45a"]

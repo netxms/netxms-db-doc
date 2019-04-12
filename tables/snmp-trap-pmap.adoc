@@ -1,7 +1,7 @@
 [[t-snmp-trap-pmap]]
 === SNMP_TRAP_PMAP
 
-
+SNMP trap parameters mapping
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,31 +11,34 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Trap id from <<t-snmp-trap-cfg>>
 
 |🔑parameter
 |INTEGER
 |NOT NULL
 |∅
-|
+|Parameter sequence number
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Flags: 
+
+* 0 - BY_OBJECT_ID 
+* 1 - BY_POSITION 
 
 |snmp_oid
 |VARCHAR(255)
 |NULL
 |∅
-|
+|SNMP trap oid
 
 |description
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Description
 |===
 
 .Indexes

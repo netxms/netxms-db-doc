@@ -11,13 +11,13 @@ Agent policies to node binding
 |INTEGER
 |NOT NULL
 |∅
-|Unique policy identifier
+|Unique policy identifier from <<t-ap-common>>
 
 |🔑node_id
 |INTEGER
 |NOT NULL
 |∅
-|Unique node identifier
+|Unique node identifier from <<t-nodes>>
 |===
 
 .Indexes

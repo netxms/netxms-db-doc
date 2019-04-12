@@ -1,7 +1,7 @@
 [[t-script-library]]
 === SCRIPT_LIBRARY
 
-
+Script library
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,25 +11,25 @@
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|Script GUID
 
 |🔑script_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Script unique identifier
 
 |script_name
 |VARCHAR(255)
 |NOT NULL
 |∅
-|
+|Script name
 
 |script_code
 |TEXT
 |NULL
 |∅
-|
+|NXSL script
 |===
 
 .Indexes

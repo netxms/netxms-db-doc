@@ -38,7 +38,7 @@ Scheduled task information
 |VARCHAR(1023)
 |NULL
 |∅
-|
+|Scheduled task parameters (script name in case if script execution scheduled, ...)
 
 |execution_time
 |INTEGER
@@ -56,7 +56,12 @@ Scheduled task information
 |INTEGER
 |NOT NULL
 |∅
-|
+|Flags:
+
+* 1 - DISABLED 
+* 2 - EXECUTED 
+* 4 - RUNNING 
+* 8 - SYSTEM 
 
 |owner
 |INTEGER

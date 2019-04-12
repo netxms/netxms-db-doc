@@ -11,7 +11,7 @@ Table stores matched instances by table threashold
 |INTEGER
 |NOT NULL
 |∅
-|Threshold id from <<t-dct-threasholds>>
+|Threshold id from <<t-dct-thresholds>>
 
 |instance
 |VARCHAR(255)

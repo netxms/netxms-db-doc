@@ -55,7 +55,20 @@ Reference to <<t-templates>>.
 |INTEGER
 |NOT NULL
 |∅
-|
+|Data collection table flags:
+
+* DCF_ADVANCED_SCHEDULE       0x0001
+* DCF_ALL_THRESHOLDS          0x0002
+* DCF_RAW_VALUE_OCTET_STRING  0x0004
+* DCF_SHOW_ON_OBJECT_TOOLTIP  0x0008
+* DCF_AGGREGATE_FUNCTION_MASK 0x0070
+* DCF_AGGREGATE_ON_CLUSTER    0x0080
+* DCF_TRANSFORM_AGGREGATED    0x0100
+* DCF_NO_STORAGE              0x0200
+* DCF_CALCULATE_NODE_STATUS   0x0400
+* DCF_SHOW_IN_OBJECT_OVERVIEW 0x0800
+* DCF_CACHE_MODE_MASK         0x3000
+* DCF_AGGREGATE_WITH_ERRORS   0x4000
 
 |source
 |INTEGER
@@ -96,13 +109,13 @@ Reference to <<t-nodes>>.
 |VARCHAR(255)
 |NULL
 |∅
-|
+|System tag used by different system modules to save module information 
 
 |resource_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Cluster resource id from <<t-cluster-resources>>
 
 |proxy_node
 |INTEGER
@@ -114,19 +127,19 @@ Reference to <<t-nodes>>.
 |TEXT
 |NULL
 |∅
-|
+|Data collection table XML configuration for Performance tab
 
 |transformation_script
 |TEXT
 |NULL
 |∅
-|
+|NXSL transformation script
 
 |comments
 |TEXT
 |NULL
 |∅
-|
+|Data collection table comment
 
 |instance
 |VARCHAR(255)

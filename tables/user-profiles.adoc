@@ -1,7 +1,7 @@
 [[t-user-profiles]]
 === USER_PROFILES
 
-User profiles
+User variables
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,19 +11,19 @@ User profiles
 |INTEGER
 |NOT NULL
 |∅
-|
+|user id form <<t-users>>
 
 |🔑var_name
 |VARCHAR(255)
 |NOT NULL
 |∅
-|
+|Variable name
 
 |var_value
 |TEXT
 |NOT NULL
 |∅
-|
+|Variable value
 |===
 
 .Indexes

@@ -1,7 +1,7 @@
 [[t-policy-source-list]]
 === POLICY_SOURCE_LIST
 
-
+Event processing policy source objects
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Rule id from <<t-event-policy>>
 
 |🔑object_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object id from <<t-object-properties>>
 |===
 
 .Indexes

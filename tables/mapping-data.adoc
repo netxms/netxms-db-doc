@@ -1,7 +1,7 @@
 [[t-mapping-data]]
 === MAPPING_DATA
 
-
+Mapping tables content
 
 .Columns
 [cols="15,18,13,10,44a"]
@@ -11,25 +11,25 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Mapping table id form <<t-mapping-tables>>
 
 |🔑md_key
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Maping data key
 
 |md_value
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Mapping data value
 
 |description
 |VARCHAR(4000)
 |NULL
 |∅
-|
+|Maping value description
 |===
 
 .Indexes

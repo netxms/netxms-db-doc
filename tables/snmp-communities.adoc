@@ -1,7 +1,7 @@
 [[t-snmp-communities]]
 === SNMP_COMMUNITIES
 
-
+List of possible community strings
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique comunity id
 
 |community
 |VARCHAR(255)
 |NULL
 |∅
-|
+|SNMP comunity
 |===
 
 .Indexes

@@ -59,67 +59,77 @@ System users
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of grace logins
 
 |auth_method
 |INTEGER
 |NOT NULL
 |∅
-|
+|Authentication method:
+
+* 0 - AUTH_NETXMS_PASSWORD
+* 1 - AUTH_RADIUS
+* 2 - AUTH_CERTIFICATE
+* 3 - AUTH_CERT_OR_PASSWD
+* 4 - AUTH_CERT_OR_RADIUS
 
 |cert_mapping_method
 |INTEGER
 |NOT NULL
 |∅
-|
+|Certifiacte mapping method:
+
+* 0 - USER_MAP_CERT_BY_SUBJECT 
+* 1 - USER_MAP_CERT_BY_PUBKEY 
+* 2 - USER_MAP_CERT_BY_CN 
 
 |cert_mapping_data
 |TEXT
 |NULL
 |∅
-|
+|Certificate mapping data
 
 |auth_failures
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of authentication failures
 
 |last_passwd_change
 |INTEGER
 |NOT NULL
 |∅
-|
+|Date of last password change (UNIX timestamp)
 
 |min_passwd_length
 |INTEGER
 |NOT NULL
 |∅
-|
+|Minimal password lenght
 
 |disabled_until
 |INTEGER
 |NOT NULL
 |∅
-|
+|Timesamp till what date user is disabled (UNIX timestamp)
 
 |last_login
 |INTEGER
 |NOT NULL
 |∅
-|
+|Last login time (UNIX timestamp)
 
 |password_history
 |TEXT
 |NULL
 |∅
-|
+|Password history
 
 |xmpp_id
 |VARCHAR(127)
 |NULL
 |∅
-|
+|XMPP id
 
 |ldap_dn
 |TEXT

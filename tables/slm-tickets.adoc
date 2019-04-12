@@ -1,7 +1,7 @@
 [[t-slm-tickets]]
 === SLM_TICKETS
 
-
+SLA tickets
 
 .Columns
 [cols="19,17,13,10,41a"]
@@ -11,37 +11,37 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Ticker id
 
 |service_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Service id
 
 |check_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Cehck id
 
 |create_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Creation timestamp
 
 |close_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Clos timestamp
 
 |reason
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Reason
 |===
 
 .Indexes

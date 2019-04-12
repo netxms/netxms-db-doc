@@ -1,7 +1,7 @@
 [[t-policy-action-list]]
 === POLICY_ACTION_LIST
 
-
+Event processing policy actions
 
 .Columns
 [cols="15,17,13,10,45a"]

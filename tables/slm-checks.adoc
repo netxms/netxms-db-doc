@@ -1,7 +1,7 @@
 [[t-slm-checks]]
 === SLM_CHECKS
 
-
+SLA service checks
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,49 +11,52 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique SLM check
 
 |type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Type:
+
+* 1 - threshold
+* 2 - script
 
 |content
 |TEXT
 |NULL
 |∅
-|
+|NXSL script chack
 
 |threshold_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Threshold id.  Reserved for future use. 
 
 |reason
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Reason
 
 |is_template
 |INTEGER
 |NOT NULL
 |∅
-|
+|Defines if this object is template object
 
 |template_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Service check tebplate id form <<t-slm-checks>>
 
 |current_ticket
 |INTEGER
 |NOT NULL
 |∅
-|
+|Current ticket 
 |===
 
 .Indexes

@@ -17,13 +17,13 @@ Racks
 |INTEGER
 |NOT NULL
 |∅
-|
+|Rack height in units
 
 |top_bottom_num
 |CHAR(1)
 |NOT NULL
 |∅
-|
+|If rack numbering starts from the top or form the buttom (true/false)
 
 |passive_elements
 |TEXT

@@ -1,7 +1,7 @@
 [[t-snmp-trap-cfg]]
 === SNMP_TRAP_CFG
 
-
+SNMP trap configuration
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,37 +11,37 @@
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|SNMP trap GUID
 
 |🔑trap_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|SNMP trap configuration id
 
 |snmp_oid
 |VARCHAR(255)
 |NULL
 |∅
-|
+|SNMP trap oid
 
 |event_code
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event code form <<t-event-cfg>>. Will be generated in case if trap will come. 
 
 |user_tag
 |VARCHAR(63)
 |NULL
 |∅
-|
+|User tag
 
 |description
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Description
 |===
 
 .Indexes

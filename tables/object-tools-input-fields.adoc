@@ -1,7 +1,7 @@
 [[t-object-tools-input-fields]]
 === OBJECT_TOOLS_INPUT_FIELDS
 
-
+Input fields for object tools
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,37 +11,41 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object tool id from <<t-object-tools>>
 
 |🔑name
 |VARCHAR(31)
 |NOT NULL
 |∅
-|
+|Input field name
 
 |input_type
 |CHAR(1)
 |NOT NULL
 |∅
-|
+|Input type:
+
+* 0 - TEXT 
+* 1 - PASSWORD 
+* 2 - NUMBER 
 
 |display_name
 |VARCHAR(127)
 |NULL
 |∅
-|
+|Input field display name
 
 |sequence_num
 |INTEGER
 |NOT NULL
 |∅
-|
+|Input field sequence number
 
 |config
 |TEXT
 |NULL
 |∅
-|
+|XML config of input field
 |===
 
 .Indexes

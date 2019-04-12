@@ -1,7 +1,7 @@
 [[t-node-links]]
 === NODE_LINKS
 
-
+SLA node links
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique node link id from <<t-object-properties>>
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node id form <<t-nodes>>
 |===
 
 .Indexes

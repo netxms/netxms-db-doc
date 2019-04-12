@@ -1,7 +1,7 @@
 [[t-network-map-links]]
 === NETWORK_MAP_LINKS
 
-
+Links on network maps
 
 .Columns
 [cols="19,17,13,10,41a"]
@@ -11,55 +11,59 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map id from <<t-network-maps>>
 
 |element1
 |INTEGER
 |NOT NULL
 |∅
-|
+|Start element id from <<t-network-map-elements>>
 
 |element2
 |INTEGER
 |NOT NULL
 |∅
-|
+|End element id <<t-network-map-elements>>
 
 |link_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Link type:
+
+* 0 - LINK_TYPE_NORMAL 
+* 1 - LINK_TYPE_VPN 
+* 2 - LINK_TYPE_MULTILINK 
 
 |link_name
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Link name
 
 |connector_name1
 |VARCHAR(255)
 |NULL
 |∅
-|
+|First element connector name
 
 |connector_name2
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Second element connector name
 
 |element_data
 |TEXT
 |NULL
 |∅
-|
+|Element XML configuration
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map link flags. Currently there are no flags defined.  
 |===
 
 .Indexes

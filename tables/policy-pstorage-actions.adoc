@@ -11,19 +11,19 @@ Table that links epp with persistent storage
 |INTEGER
 |NOT NULL
 |∅
-|Foreign key from event_policy table
+|Foreign key from <<t-event-policy>> table
 
 |🔑ps_key
 |VARCHAR(255)
 |NOT NULL
 |∅
-|Value that should be set for persistent storage entry
+|Persistent storage key 
 
 |value
 |VARCHAR(2000)
 |NULL
 |∅
-|
+|Value that should be set for persistent storage entry
 
 |🔑action
 |INTEGER

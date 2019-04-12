@@ -1,7 +1,7 @@
 [[t-userdb-custom-attributes]]
 === USERDB_CUSTOM_ATTRIBUTES
 
-
+Custom attributes for user database objects
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,19 +11,19 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object id form <<t-users>>
 
 |🔑attr_name
 |VARCHAR(255)
 |NOT NULL
 |∅
-|
+|Attribute name
 
 |attr_value
 |TEXT
 |NOT NULL
 |∅
-|
+|Attribute value
 |===
 
 .Indexes

@@ -1,7 +1,7 @@
 [[t-slm-agreements]]
 === SLM_AGREEMENTS
 
-
+SLA - agreements. Reserved for future use. 
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,43 +11,43 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique agreement id
 
 |service_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Service id
 
 |org_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Origin id
 
 |uptime
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Required uptime
 
 |period
 |INTEGER
 |NOT NULL
 |∅
-|
+|Period
 
 |start_date
 |INTEGER
 |NOT NULL
 |∅
-|
+|Start date
 
 |notes
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Notes
 |===
 
 .Indexes

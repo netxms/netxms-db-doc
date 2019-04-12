@@ -1,7 +1,7 @@
 [[t-templates]]
 === TEMPLATES
 
-
+Data collection templates
 
 .Columns
 [cols="15,17,13,10,45a"]

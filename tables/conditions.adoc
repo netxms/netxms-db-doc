@@ -35,13 +35,33 @@ Conditions definition table.
 |INTEGER
 |NOT NULL
 |∅
-|
+|Condition active status:
+
+* 0 - STATUS_NORMAL
+* 1 - STATUS_WARNING
+* 2 - STATUS_MINOR
+* 3 - STATUS_MAJOR
+* 4 - STATUS_CRITICAL
+* 5 - STATUS_UNKNOWN
+* 6 - STATUS_UNMANAGED
+* 7 - STATUS_DISABLED
+* 8 - STATUS_TESTING
 
 |inactive_status
 |INTEGER
 |NOT NULL
 |∅
-|
+|Condition inactive status:
+
+* 0 - STATUS_NORMAL
+* 1 - STATUS_WARNING
+* 2 - STATUS_MINOR
+* 3 - STATUS_MAJOR
+* 4 - STATUS_CRITICAL
+* 5 - STATUS_UNKNOWN
+* 6 - STATUS_UNMANAGED
+* 7 - STATUS_DISABLED
+* 8 - STATUS_TESTING
 
 |script
 |TEXT

@@ -1,7 +1,7 @@
 [[t-licenses]]
 === LICENSES
 
-
+License repository
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|License unique identifier
 
 |content
 |TEXT
 |NULL
 |∅
-|
+|License content
 |===
 
 .Indexes

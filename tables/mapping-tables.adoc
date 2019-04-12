@@ -1,7 +1,7 @@
 [[t-mapping-tables]]
 === MAPPING_TABLES
 
-
+Mapping tables
 
 .Columns
 [cols="15,18,13,10,44a"]
@@ -11,25 +11,27 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Unique mapping table id
 
 |name
 |VARCHAR(63)
 |NOT NULL
 |∅
-|
+|Mapping table name
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Mapping table flags:
+
+* MTF_NUMERIC_KEYS	0x00000001
 
 |description
 |VARCHAR(4000)
 |NULL
 |∅
-|
+|Mapping table description
 |===
 
 .Indexes

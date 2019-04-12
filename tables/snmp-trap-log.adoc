@@ -1,7 +1,7 @@
 [[t-snmp-trap-log]]
 === SNMP_TRAP_LOG
 
-
+Extended SNMP trap log
 
 .Columns
 [cols="18,17,13,10,42a"]
@@ -11,37 +11,37 @@
 |BIGINT
 |NOT NULL
 |∅
-|
+|Unique trap id
 
 |trap_timestamp
 |INTEGER
 |NOT NULL
 |∅
-|
+|Trap timestamp (UNIX timestamp)
 
 |ip_addr
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|Trap source IP address
 
 |object_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Trap source object id from <<t-nodes>>
 
 |trap_oid
 |VARCHAR(255)
 |NOT NULL
 |∅
-|
+|Trap oid
 
 |trap_varlist
 |TEXT
 |NULL
 |∅
-|
+|Trap variable list
 
 |zone_uin
 |INTEGER

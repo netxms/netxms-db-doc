@@ -1,7 +1,7 @@
 [[t-object-tools]]
 === OBJECT_TOOLS
 
-
+Object tools
 
 .Columns
 [cols="24,17,13,10,36a"]
@@ -11,73 +11,89 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object tool unique identifier
 
 |guid
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|Object tool GUID
 
 |tool_name
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Object tool name
 
 |tool_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object tool type:
+
+* 0 - TYPE_INTERNAL 
+* 1 - TYPE_ACTION 
+* 2 - TYPE_TABLE_SNMP 
+* 3 - TYPE_TABLE_AGENT 
+* 4 - TYPE_URL 
+* 5 - TYPE_LOCAL_COMMAND 
+* 6 - TYPE_SERVER_COMMAND 
+* 7 - TYPE_FILE_DOWNLOAD 
+* 8 - TYPE_SERVER_SCRIPT 
 
 |tool_data
 |TEXT
 |NULL
 |∅
-|
+|Tool data (file name for file download, or command name for internal command...)
 
 |description
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Object tool description 
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object tool flags:
+
+* 0x00000001 - ASK_CONFIRMATION 
+* 0x00000002 - GENERATES_OUTPUT 
+* 0x00000004 - DISABLED 
+* 0x00000008 - SHOW_IN_COMMANDS 
+* 0x00000010 - SNMP_INDEXED_BY_VALUE 
 
 |tool_filter
 |TEXT
 |NULL
 |∅
-|
+|XML configuration for filtring objects object tool to be shown on  
 
 |confirmation_text
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Confirmation text
 
 |command_name
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Command name (with path)
 
 |command_short_name
 |VARCHAR(31)
 |NULL
 |∅
-|
+|Command short name
 
 |icon
 |TEXT
 |NULL
 |∅
-|
+|Command icon
 |===
 
 .Indexes

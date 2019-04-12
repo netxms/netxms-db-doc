@@ -53,49 +53,80 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |INTEGER
 |NOT NULL
 |∅
-|
+|Defins if current object inherits access rights form parent (0 or 1)
 
 |status_calc_alg
 |INTEGER
 |NOT NULL
 |∅
-|
+|Status calculation algorithms:
+
+* 0 - SA_CALCULATE_DEFAULT 
+* 1 - SA_CALCULATE_MOST_CRITICAL 
+* 2 - SA_CALCULATE_SINGLE_THRESHOLD 
+* 3 - SA_CALCULATE_MULTIPLE_THRESHOLDS 
 
 |status_prop_alg
 |INTEGER
 |NOT NULL
 |∅
-|
+|Status propagation algorithms
+
+* 0 - SA_PROPAGATE_DEFAULT 
+* 1 - SA_PROPAGATE_UNCHANGED 
+* 2 - SA_PROPAGATE_FIXED 
+* 3 - SA_PROPAGATE_RELATIVE 
+* 4 - SA_PROPAGATE_TRANSLATED 
 
 |status_fixed_val
 |INTEGER
 |NOT NULL
 |∅
-|
+|Fixed value for status if SA_PROPAGATE_FIXED propagation algorithms is used. Status options:
+
+* 0 - STATUS_NORMAL
+* 1 - STATUS_WARNING
+* 2 - STATUS_MINOR
+* 3 - STATUS_MAJOR
+* 4 - STATUS_CRITICAL
+* 5 - STATUS_UNKNOWN
+* 6 - STATUS_UNMANAGED
+* 7 - STATUS_DISABLED
+* 8 - STATUS_TESTING
 
 |status_shift
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of positions status is shifted (status+status_shift)
 
 |status_translation
 |VARCHAR(8)
 |NOT NULL
 |∅
-|
+|HEX string containing 4 bytes. Each byte represents a status mapping in status propagation configuration. Status byte order:
+
+* 1 warning 
+* 2 medium 
+* 3 major 
+* 4 critical
 
 |status_single_threshold
 |INTEGER
 |NOT NULL
 |∅
-|
+|"Single threshold" value in status colculation 
 
 |status_thresholds
 |VARCHAR(8)
 |NOT NULL
 |∅
-|
+|HEX string containing 4 bytes. Each byte represents threshold value for "Multiple thresholds" status calculation configuration. Status byte order:
+
+* 1 warning 
+* 2 medium 
+* 3 major 
+* 4 critical
 
 |comments
 |TEXT
@@ -137,13 +168,13 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |VARCHAR(36)
 |NOT NULL
 |∅
-|
+|Immage GUID form <<t-images>>, that will be used to display object on network maps.
 
 |submap_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Drill down object id from <<t-network-maps>> or <<t-dashboards>>
 
 |country
 |VARCHAR(63)
@@ -173,7 +204,7 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |BIGINT
 |NOT NULL
 |∅
-|
+|Event id of maintenance entered event if currently in maintenance mode
 
 |state_before_maint
 |INTEGER

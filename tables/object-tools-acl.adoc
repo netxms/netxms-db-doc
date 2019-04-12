@@ -1,7 +1,7 @@
 [[t-object-tools-acl]]
 === OBJECT_TOOLS_ACL
 
-
+Access list for object tools
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,13 +11,13 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Tool id from <<t-object-tools>>
 
 |🔑user_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|User id form <<t-users>>
 |===
 
 .Indexes

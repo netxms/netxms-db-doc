@@ -11,7 +11,7 @@ Business services for defining SLA.
 |INTEGER
 |NOT NULL
 |∅
-|Unique identifier
+|Unique identifier from <<t-object-properties>>
 |===
 
 .Indexes

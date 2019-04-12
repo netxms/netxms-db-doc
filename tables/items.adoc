@@ -55,7 +55,20 @@ Reference to <<t-templates>>.
 |INTEGER
 |NOT NULL
 |∅
-|
+|Data collection item flags:
+
+* DCF_ADVANCED_SCHEDULE       0x0001
+* DCF_ALL_THRESHOLDS          0x0002
+* DCF_RAW_VALUE_OCTET_STRING  0x0004
+* DCF_SHOW_ON_OBJECT_TOOLTIP  0x0008
+* DCF_AGGREGATE_FUNCTION_MASK 0x0070
+* DCF_AGGREGATE_ON_CLUSTER    0x0080
+* DCF_TRANSFORM_AGGREGATED    0x0100
+* DCF_NO_STORAGE              0x0200
+* DCF_CALCULATE_NODE_STATUS   0x0400
+* DCF_SHOW_IN_OBJECT_OVERVIEW 0x0800
+* DCF_CACHE_MODE_MASK         0x3000
+* DCF_AGGREGATE_WITH_ERRORS   0x4000
 
 |source
 |INTEGER
@@ -74,7 +87,16 @@ Reference to <<t-nodes>>.
 |INTEGER
 |NOT NULL
 |∅
-|
+|Type of data:
+
+* 0 - DCI_DT_INT
+* 1 - DCI_DT_UINT
+* 2 - DCI_DT_INT64
+* 3 - DCI_DT_UINT64
+* 4 - DCI_DT_STRING
+* 5 - DCI_DT_FLOAT
+* 6 - DCI_DT_NULL
+* 255 - DCI_DT_DEPRECATED (used internally by agent)
 
 |polling_interval
 |INTEGER
@@ -102,103 +124,133 @@ Reference to <<t-nodes>>.
 |INTEGER
 |NOT NULL
 |∅
-|
+|SNMP raw value type:
+
+* 0 - SNMP_RAWTYPE_NONE
+* 1 - SNMP_RAWTYPE_INT32
+* 2 - SNMP_RAWTYPE_UINT32
+* 3 - SNMP_RAWTYPE_INT64
+* 4 - SNMP_RAWTYPE_UINT64
+* 5 - SNMP_RAWTYPE_DOUBLE
+* 6 - SNMP_RAWTYPE_IP_ADDR
+* 7 - SNMP_RAWTYPE_MAC_ADDR
 
 |delta_calculation
 |INTEGER
 |NOT NULL
 |∅
-|
+|Delta calculation methods for DCI:
+
+* 0 - DCM_ORIGINAL_VALUE
+* 1 - DCM_SIMPLE
+* 2 - DCM_AVERAGE_PER_SECOND
+* 3 - DCM_AVERAGE_PER_MINUTE
 
 |transformation
 |TEXT
 |NULL
 |∅
-|
+|NXSL transformation script
 
 |instance
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Instance
 
 |system_tag
 |VARCHAR(255)
 |NULL
 |∅
-|
+|System tag used by different system modules to save module information
 
 |resource_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Cluster resource id from <<t-cluster-resources>>
 
 |proxy_node
 |INTEGER
 |NOT NULL
 |∅
-|
+|ID of the proxy node. Reference to <<t-nodes>>.
 
 |base_units
 |INTEGER
 |NOT NULL
 |∅
-|
+|DCI base units:
+
+* 0 - DCI_BASEUNITS_OTHER 
+* 1 - DCI_BASEUNITS_CUSTOM 
+* 2 - DCI_BASEUNITS_BYTES 
+* 3 - DCI_BASEUNITS_BITS 
+* 4 - DCI_BASEUNITS_SECONDS 
+* 5 - DCI_BASEUNITS_PERCENTS 
+* 6 - DCI_BASEUNITS_BITS_PER_SECOND 
+* 7 - DCI_BASEUNITS_BYTES_PER_SECOND 
 
 |unit_multiplier
 |INTEGER
 |NOT NULL
 |∅
-|
+|Reserved for future use. 
 
 |custom_units_name
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Reserved for future use. 
 
 |perftab_settings
 |TEXT
 |NULL
 |∅
-|
+|Data collection table XML configuration for Performance tab
 
 |instd_method
 |INTEGER
 |NOT NULL
 |∅
-|
+|Method of instance discovery:
+
+* 0 – IDM_NONE 
+* 1 – IDM_AGENT_LIST 
+* 2 – IDM_AGENT_TABLE  
+* 3 – IDM_SNMP_WALK_VALUES 
+* 4 – IDM_SNMP_WALK_OIDS 
+* 5 – IDM_SCRIPT 
 
 |instd_data
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Data for instance discovery (Srcipt name, Agent list...)
 
 |instd_filter
 |TEXT
 |NULL
 |∅
-|
+|NXSL instance discovery filter
 
 |samples
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of samples used for reading counter (only for "Windows preformance  counter" origin).
 
 |npe_name
 |VARCHAR(15)
 |NULL
 |∅
-|
+|Prediction engine name
 
 |comments
 |TEXT
 |NULL
 |∅
-|
+|Data collection item comment
 
 |instance_retention_time
 |INTEGER

@@ -1,7 +1,7 @@
 [[t-network-maps]]
 === NETWORK_MAPS
 
-
+Network maps
 
 .Columns
 [cols="22,17,13,10,38a"]
@@ -11,91 +11,114 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map id unique id from <<t-object-properties>>
 
 |map_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map type:
+
+* 0 - MAP_TYPE_CUSTOM 
+* 1 - MAP_TYPE_LAYER2_TOPOLOGY 
+* 2 - MAP_TYPE_IP_TOPOLOGY 
 
 |layout
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map layout:
 
-|seed
-|INTEGER
-|NOT NULL
-|∅
-|
+* 0x7FFF - MAP_LAYOUT_MANUAL 
+* 0 - MAP_LAYOUT_SPRING 
+* 1 - MAP_LAYOUT_RADIAL 
+* 2 - MAP_LAYOUT_HTREE 
+* 3 - MAP_LAYOUT_VTREE 
+* 4 - MAP_LAYOUT_SPARSE_VTREE 
 
 |radius
 |INTEGER
 |NOT NULL
 |∅
-|
+|Riscovery radius form automatic maps
 
 |background
 |VARCHAR(36)
 |NULL
 |∅
-|
+|UUID of background immage
 
 |bg_latitude
 |VARCHAR(20)
 |NULL
 |∅
-|
+|Background latitude, when map is used as a background
 
 |bg_longitude
 |VARCHAR(20)
 |NULL
 |∅
-|
+|Background longitude, when map is used as a background
 
 |bg_zoom
 |INTEGER
 |NULL
 |∅
-|
+|Background zoom, when map is used as a background
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map flags:
+
+* MF_SHOW_STATUS_ICON      0x00000001
+* MF_SHOW_STATUS_FRAME     0x00000002
+* MF_SHOW_STATUS_BKGND     0x00000004
+* MF_SHOW_END_NODES        0x00000008
+* MF_CALCULATE_STATUS      0x00000010
+* MF_FILTER_OBJECTS        0x00000020
 
 |bg_color
 |INTEGER
 |NOT NULL
 |∅
-|
+|RGB representation of background color
 
 |link_color
 |INTEGER
 |NOT NULL
 |∅
-|
+|Default link color (RGB)
 
 |link_routing
 |INTEGER
 |NOT NULL
 |∅
-|
+|Default link routing:
+
+* 0 - ROUTING_DEFAULT 
+* 1 - ROUTING_DIRECT 
+* 2 - ROUTING_MANHATTAN 
+* 3 - ROUTING_BENDPOINTS 
 
 |object_display_mode
 |INTEGER
 |NOT NULL
 |∅
-|
+|Object display mode:
+
+* 0 - ICON  
+* 1 - SMALL_LABEL  
+* 2 - LARGE_LABEL  
+* 3 - STATUS 
+* 4 - FLOOR_PLAN 
 
 |filter
 |TEXT
 |NULL
 |∅
-|
+|Network map NXSL object filter for automatic maps
 |===
 
 .Indexes

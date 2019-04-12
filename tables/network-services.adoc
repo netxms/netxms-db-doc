@@ -1,7 +1,7 @@
 [[t-network-services]]
 === NETWORK_SERVICES
 
-
+Network services
 
 .Columns
 [cols="17,17,13,10,43a"]
@@ -11,61 +11,70 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network service unique identifier from <<t-object-properties>>
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Service location node id form <<t-nodes>>
 
 |service_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Service type:
+
+* 0 - NETSRV_CUSTOM
+* 1 - NETSRV_SSH
+* 2 - NETSRV_POP3
+* 3 - NETSRV_SMTP
+* 4 - NETSRV_FTP
+* 5 - NETSRV_HTTP
+* 6 - NETSRV_HTTPS
+* 7 - NETSRV_TELNET
 
 |ip_bind_addr
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|Listen IP address
 
 |ip_proto
 |INTEGER
 |NOT NULL
 |∅
-|
+|IP protocol
 
 |ip_port
 |INTEGER
 |NOT NULL
 |∅
-|
+|TCP/UDP port
 
 |check_request
 |TEXT
 |NULL
 |∅
-|
+|Check request
 
 |check_responce
 |TEXT
 |NULL
 |∅
-|
+|Check response
 
 |poller_node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node id that does polling form <<t-nodes>> if polling should be done not from service parent node.
 
 |required_polls
 |INTEGER
 |NOT NULL
 |∅
-|
+|Number of pols required to change service status
 |===
 
 .Indexes

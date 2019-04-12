@@ -53,7 +53,7 @@ Mobile devices from object_properties
 |VARCHAR(64)
 |NULL
 |∅
-|
+|User id
 
 |battery_level
 |INTEGER

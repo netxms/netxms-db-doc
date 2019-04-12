@@ -1,7 +1,7 @@
 [[t-network-map-elements]]
 === NETWORK_MAP_ELEMENTS
 
-
+Elements of network maps
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,31 +11,38 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map id <<t-network-maps>>
 
 |🔑element_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Element id
 
 |element_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Element type:
+
+* 0 - MAP_ELEMENT_GENERIC 
+* 1 - MAP_ELEMENT_OBJECT 
+* 2 - MAP_ELEMENT_DECORATION 
+* 3 - MAP_ELEMENT_DCI_CONTAINER 
+* 4 - MAP_ELEMENT_DCI_IMAGE 
+* 5 - MAP_ELEMENT_TEXT_BOX 
 
 |element_data
 |TEXT
 |NOT NULL
 |∅
-|
+|Element data in XML format
 
 |flags
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network map element flags. Currently there are no flags defined. 
 |===
 
 .Indexes
