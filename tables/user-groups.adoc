@@ -65,6 +65,12 @@ System user groups
 |NULL
 |∅
 |LDAP unique id if field set
+
+|created
+|INTEGER
+|NOT NULL
+|∅
+|Group creation time (UNIX timestamp)
 |===
 
 .Indexes

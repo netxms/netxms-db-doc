@@ -1,0 +1,136 @@
+[[t-sensors]]
+=== SENSORS
+
+Sensors specific information
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the object. Reference to <<t-object-properties>>.
+
+|proxy_node
+|INTEGER
+|NOT NULL
+|∅
+|Sensor proxy node <<t-nodes>>.
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Sensor flags. Currently no flags definde
+
+|mac_address
+|VARCHAR(16)
+|NULL
+|∅
+|MAC address
+
+|device_class
+|INTEGER
+|NOT NULL
+|∅
+|Sensor device class:
+
+* 0 - SENSOR_CLASS_UNKNOWN 
+* 1 - SENSOR_UPS 
+* 2 - SENSOR_WATER_METER 
+* 3 - SENSOR_ELECTR_METER 
+
+|vendor
+|VARCHAR(128)
+|NULL
+|∅
+|Vendor
+
+|communication_protocol
+|INTEGER
+|NOT NULL
+|∅
+|Communication protocol type:
+
+* 0 - SENSOR_PROTO_UNKNOWN 
+* 1 - COMM_LORAWAN 
+* 2 - COMM_DLMS 
+
+|xml_config
+|VARCHAR(4000)
+|NULL
+|∅
+|Sensor XML configuration. Contain protocol specific configuration
+
+|xml_reg_config
+|VARCHAR(4000)
+|NULL
+|∅
+|Sensor XML configuration. Contain protocol connection information
+
+|serial_number
+|VARCHAR(256)
+|NULL
+|∅
+|Device serial number
+
+|device_address
+|VARCHAR(256)
+|NULL
+|∅
+|Device address
+
+|meta_type
+|VARCHAR(256)
+|NULL
+|∅
+|Device meta type
+
+|description
+|VARCHAR(512)
+|NULL
+|∅
+|Device description 
+
+|last_connection_time
+|INTEGER
+|NOT NULL
+|∅
+|Last connection type (as UINIX timestamp)
+
+|frame_count
+|INTEGER
+|NOT NULL
+|∅
+|Frame count (zero when no info)
+
+|signal_strenght
+|INTEGER
+|NOT NULL
+|∅
+|Signal streight (1 when no information)
+
+|signal_noise
+|INTEGER
+|NOT NULL
+|∅
+|Signal noise (*10 from origin number)
+
+|frequency
+|INTEGER
+|NOT NULL
+|∅
+|Signal frequencty (*10 from origin number)
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|sensors_pkey
+|UNIQUE
+|id
+
+|===
