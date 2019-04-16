@@ -1,7 +1,7 @@
 [[t-event-group-members]]
 === EVENT_GROUP_MEMBERS
 
-
+Reserved for future use.
 
 .Columns
 [cols="15,17,13,10,45a"]
