@@ -125,6 +125,12 @@ Threshold checking rules
 |NOT NULL
 |∅
 |Threshold state before maintenance
+
+|last_checked_value
+|VARCHAR(255)
+|NULL
+|∅
+|Last value chacked against threshold value
 |===
 
 .Indexes
