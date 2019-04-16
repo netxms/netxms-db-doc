@@ -1,7 +1,7 @@
 [[t-dct-threshold-conditions]]
 === DCT_THRESHOLD_CONDITIONS
 
-
+Table threshold conditions
 
 .Columns
 [cols="23,17,13,10,37a"]
@@ -11,37 +11,46 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Threshold id form <<t-dct-threshold-instances>>
 
 |🔑group_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Group id
 
 |🔑sequence_number
 |INTEGER
 |NOT NULL
 |∅
-|
+|Sequence id 
 
 |column_name
 |VARCHAR(63)
 |NULL
 |∅
-|
+|Column name
 
 |check_operation
 |INTEGER
 |NOT NULL
 |∅
-|
+|Check operation:
+
+* 0 - OP_LE        
+* 1 - OP_LE_EQ     
+* 2 - OP_EQ        
+* 3 - OP_GT_EQ     
+* 4 - OP_GT        
+* 5 - OP_NE        
+* 6 - OP_LIKE      
+* 7 - OP_NOTLIKE   
 
 |check_value
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Check value
 |===
 
 .Indexes

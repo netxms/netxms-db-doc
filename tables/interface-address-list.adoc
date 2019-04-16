@@ -1,7 +1,7 @@
 [[t-interface-address-list]]
 === INTERFACE_ADDRESS_LIST
 
-
+Interface IP addresses
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,19 +11,19 @@
 |INTEGER
 |NOT NULL
 |∅
-|
+|Interface id form <<t-ifaces>>
 
 |🔑ip_addr
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|IP addess
 
 |ip_netmask
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network mask
 |===
 
 .Indexes
