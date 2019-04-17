@@ -36,8 +36,8 @@ Contains historical values for table DCIs for the node. The table is populated o
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|idx_tdata_<NODE_ID>
+|tdata_key
 |NORMAL
-|item_id,tdata_timestamp
+|node_id,item_id,tdata_timestamp
 
 |===

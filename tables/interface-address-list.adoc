@@ -11,7 +11,7 @@ Interface IP addresses
 |INTEGER
 |NOT NULL
 |∅
-|Interface id form <<t-ifaces>>
+|Interface id form <<t-interfaces>>
 
 |🔑ip_addr
 |VARCHAR(48)
