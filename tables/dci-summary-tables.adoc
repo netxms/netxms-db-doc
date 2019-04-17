@@ -41,7 +41,10 @@ Configuration of DCI summary tables.
 |INTEGER
 |NOT NULL
 |∅
-|
+|Flags: 
+
+* 0x0001 - MULTI_INSTANCE 
+* 0x0002 - TABLE_DCI_SOURCE 
 
 |columns
 |VARCHAR(255)
