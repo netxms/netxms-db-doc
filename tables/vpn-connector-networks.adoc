@@ -1,7 +1,7 @@
 [[t-vpn-connector-networks]]
 === VPN_CONNECTOR_NETWORKS
 
-This table is deprecated.
+VPN connector networks
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,25 +11,28 @@ This table is deprecated.
 |INTEGER
 |NOT NULL
 |∅
-|
+|VPN unique id from <<t-object-properties>>
 
 |network_type
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network type
+
+* 0 - local 
+* 1 - remote
 
 |🔑ip_addr
 |VARCHAR(48)
 |NOT NULL
 |∅
-|
+|IP address
 
 |ip_netmask
 |INTEGER
 |NOT NULL
 |∅
-|
+|Network mask
 |===
 
 .Indexes

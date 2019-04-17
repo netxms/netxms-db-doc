@@ -1,7 +1,7 @@
 [[t-vpn-connectors]]
 === VPN_CONNECTORS
 
-This table is deprecated.
+VPN connectors
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,19 +11,19 @@ This table is deprecated.
 |INTEGER
 |NOT NULL
 |∅
-|
+|Vpn id form <<vpn-connector-networks>>
 
 |node_id
 |INTEGER
 |NOT NULL
 |∅
-|
+|Node id from <<t-nodes>>
 
 |peer_gateway
 |INTEGER
 |NOT NULL
 |∅
-|
+|Peer gateway. Id form <<t-nodes>>
 |===
 
 .Indexes
