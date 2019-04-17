@@ -1,0 +1,104 @@
+[[t-node-components]]
+=== NODE_COMPONENTS
+
+Node hardware components retrieved using Entity MIB.
+
+.Columns
+[cols="21,18,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|Node object ID. Reference to <<t-nodes>>.
+
+|🔑component_index
+|INTEGER
+|NOT NULL
+|∅
+|Unique component index.
+
+|parent_index
+|INTEGER
+|NOT NULL
+|∅
+|Index of parent component (0 for root component).
+
+|position
+|INTEGER
+|NOT NULL
+|∅
+|Relative position within parent component.
+
+|component_class
+|INTEGER
+|NOT NULL
+|∅
+|Physical class of the component.
+
+* 1 – Other
+* 2 – Unknown
+* 3 – Chassis
+* 4 – Backplane
+* 5 - Container
+* 6 - Power supply
+* 7 - Fan
+* 8 - Sensor
+* 9 - Module
+* 10 - Port
+* 11 - Stack
+* 12 - CPU
+
+|if_index
+|INTEGER
+|NOT NULL
+|∅
+|Interface index of related network interface or 0.
+
+|name
+|VARCHAR(255)
+|NULL
+|∅
+|Component's name.
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Component's description.
+
+|model
+|VARCHAR(255)
+|NULL
+|∅
+|Component's model name.
+
+|serial_number
+|VARCHAR(63)
+|NULL
+|∅
+|Component's serial number.
+
+|vendor
+|VARCHAR(63)
+|NULL
+|∅
+|Component's vendor name.
+
+|firmware
+|VARCHAR(127)
+|NULL
+|∅
+|Component's firmware information.
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|node_components_pkey
+|UNIQUE
+|node_id, component_index
+
+|===
