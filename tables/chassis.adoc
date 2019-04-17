@@ -19,12 +19,6 @@ Chassis
 |∅
 |Id of node object providing management capabilities for this chassis
 
-|flags
-|INTEGER
-|NOT NULL
-|∅
-|Chassis options as bit flags
-
 |rack_id
 |INTEGER
 |NOT NULL

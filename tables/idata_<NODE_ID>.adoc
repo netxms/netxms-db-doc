@@ -25,6 +25,12 @@ Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100
 |NULL
 |∅
 |Collected value.
+
+|raw_value
+|VARCHAR(255)
+|NULL
+|∅
+|Raw value. 
 |===
 
 .Indexes

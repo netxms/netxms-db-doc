@@ -27,20 +27,6 @@ All types of object containers like: node container, template group, policy grou
 * 29 - OBJECT_NODELINK
 * 36 - OBJECT_DASHBOARDGROUP
 
-|flags
-|INTEGER
-|NOT NULL
-|∅
-|Flags:
-
-* CF_AUTO_BIND             0x00000001
-* CF_AUTO_UNBIND           0x00000002
-
-|auto_bind_filter
-|TEXT
-|NULL
-|∅
-|NXSL autobind filter script.
 |===
 
 .Indexes

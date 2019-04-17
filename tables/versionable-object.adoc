@@ -1,0 +1,31 @@
+[[t-versionable-object]]
+=== VERSIONABLE_OBJECT
+
+Versionning table for objects
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the object. Reference to <<t-object-properties>>.
+
+|version
+|INTEGER
+|NOT NULL
+|∅
+|Object version
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|versionable_object_pkey
+|UNIQUE
+|object_id
+
+|===

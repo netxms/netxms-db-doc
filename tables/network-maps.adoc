@@ -66,19 +66,6 @@ Network maps
 |∅
 |Background zoom, when map is used as a background
 
-|flags
-|INTEGER
-|NOT NULL
-|∅
-|Network map flags:
-
-* MF_SHOW_STATUS_ICON      0x00000001
-* MF_SHOW_STATUS_FRAME     0x00000002
-* MF_SHOW_STATUS_BKGND     0x00000004
-* MF_SHOW_END_NODES        0x00000008
-* MF_CALCULATE_STATUS      0x00000010
-* MF_FILTER_OBJECTS        0x00000020
-
 |bg_color
 |INTEGER
 |NOT NULL

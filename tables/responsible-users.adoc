@@ -1,0 +1,31 @@
+[[t-responsible-users]]
+=== RESPONSIBLE_USERS
+
+Object responsible users.
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the object. Reference to <<t-object-properties>>.
+
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id. Reference to <<t-users>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|responsible_users_pkey
+|UNIQUE
+|object_id,user_id
+
+|===

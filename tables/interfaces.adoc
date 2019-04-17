@@ -19,20 +19,6 @@ Interface information
 |∅
 |Node id from <<t-nodes>>
 
-|flags
-|INTEGER
-|NOT NULL
-|∅
-|Interface flags:
-
-* IF_SYNTHETIC_MASK        0x01
-* IF_PHYSICAL_PORT         0x02
-* IF_EXCLUDE_FROM_TOPOLOGY 0x04
-* IF_LOOPBACK              0x08
-* IF_CREATED_MANUALLY      0x10
-* IF_PEER_REFLECTION       0x20  /* topology information obtained by reflection */
-* IF_EXPECTED_STATE_MASK   0x30000000	/* 2-bit field holding expected interface state */
-
 |if_type
 |INTEGER
 |NOT NULL

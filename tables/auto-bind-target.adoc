@@ -1,0 +1,43 @@
+[[t-auto-bind-target]]
+=== AUTO_BIND_TARGET
+
+Auto bind information for objects(Templae, Container objects auto bind information)
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the object. Reference to <<t-templates>> ot <<t-object-containers>>.
+
+|bind_filter
+|TEXT
+|NULL
+|∅
+|Auto bind NXSL filter
+
+|bind_flag
+|CHAR(1)
+|NULL
+|∅
+|Flag that states if auto bind is turned on 
+
+|unbind_flag
+|CHAR(1)
+|NULL
+|∅
+|Flag that states if auto unbind is turned on 
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|auto_bind_target_pkey
+|UNIQUE
+|object_id
+
+|===

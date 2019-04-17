@@ -1,0 +1,61 @@
+[[t-hardware-inventory]]
+=== HARDWARE_INVENTORY
+
+Node hardware inventory
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the object. Reference to <<t-nodes>>.
+
+|component_type
+|VARCHAR(12)
+|NOT NULL
+|∅
+|Component type
+
+|component_index
+|INTEGER
+|NOT NULL
+|∅
+|Component index
+
+|vendor
+|VARCHAR(63)
+|NULL
+|∅
+|Component vendor
+
+|model
+|VARCHAR(63)
+|NULL
+|∅
+|Component model
+
+|capacity
+|INTEGER
+|NOT NULL
+|∅
+|Access point serial number
+
+|serial_number
+|VARCHAR(63)
+|NULL
+|∅
+|Component serial number
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|hardware_inventory_pkey
+|UNIQUE
+|node_id,component_type,component_index
+
+|===

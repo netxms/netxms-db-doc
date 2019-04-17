@@ -18,6 +18,12 @@ List of possible community strings
 |NULL
 |∅
 |SNMP comunity
+
+|zone
+|INTEGER
+|NOT NULL
+|∅
+|Zone id form <<t-zones>>
 |===
 
 .Indexes

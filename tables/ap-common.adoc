@@ -7,35 +7,44 @@ Agent policies common attributes
 [cols="15,17,13,10,45a"]
 |===
 |Name|Type|State|Default|Description
-|🔑id
-|INTEGER
+|🔑guid
+|VARCHAR(36)
 |NOT NULL
 |∅
 |Unique policy identifier
 
-|policy_type
+|policy_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Policy name
+
+|owner_id
 |INTEGER
 |NOT NULL
 |∅
-|Policy type
+|Owning template id from <<t-templates>>
+
+|policy_type
+|VARCAHR(31)
+|NOT NULL
+|∅
+|Policy type:
+
+* AgentConfig
+* LogParserConfig
+
+|file_content
+|TEXT
+|NULL
+|∅
+|File content (Agent configuration file content or log parser content...)
 
 |version
 |INTEGER
 |NOT NULL
 |∅
 |Policy version
-
-|flags
-|INTEGER
-|NOT NULL
-|∅
-|Common policy flags
-
-|deploy_filter
-|TEXT
-|NOT NULL
-|∅
-|NXSL auto apply filter
 |===
 
 .Indexes
@@ -44,6 +53,6 @@ Agent policies common attributes
 |Name|Type|Fields
 |ap_common_pkey
 |UNIQUE
-|id
+|guid
 
 |===

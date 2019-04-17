@@ -19,12 +19,6 @@ Sensors specific information
 |∅
 |Sensor proxy node <<t-nodes>>.
 
-|flags
-|INTEGER
-|NOT NULL
-|∅
-|Sensor flags. Currently no flags definde
-
 |mac_address
 |VARCHAR(16)
 |NULL

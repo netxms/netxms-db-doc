@@ -35,7 +35,7 @@ Contains historical values for single-value DCIs for the node. The table is popu
 |VARCHAR(255)
 |NULL
 |∅
-|Raw value. Not used in 2.2.
+|Raw value. 
 |===
 
 .Indexes

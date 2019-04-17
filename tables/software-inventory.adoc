@@ -1,0 +1,61 @@
+[[t-software-inventory]]
+=== SOFTWARE_INVENTORY
+
+Node software inventory
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the object. Reference to <<t-nodes>>.
+
+|name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Software name
+
+|version
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Software version
+
+|vendor
+|VARCHAR(63)
+|NULL
+|∅
+|Software version
+
+|install_date
+|INTEGER
+|NOT NULL
+|∅
+|Software installation date (UNIX timestamp)
+
+|url
+|VARCHAR(255)
+|NULL
+|∅
+|Installation URL
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Software description
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|software_inventory_pkey
+|UNIQUE
+|node_id,version,name
+
+|===
