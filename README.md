@@ -1,6 +1,6 @@
 # NetXMS Data Dictionary
 
-Branches "master" and "develop" match corresponding NetXMS branches in public repo (http://git.netxms.org/public/netxms.git).
+Branches "master" and "stable-2.2" match corresponding NetXMS branches in public repo (http://git.netxms.org/public/netxms.git).
 
 # Notes
 ## Local setup
