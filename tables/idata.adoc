@@ -42,7 +42,7 @@ Contains historical values for single-value DCIs for the node. The table is popu
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|idx_idata_<NODE_ID>_id_timestamp
+|idata_key
 |NORMAL
 |node_id,item_id,idata_timestamp
 
