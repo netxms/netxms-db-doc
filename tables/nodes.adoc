@@ -425,6 +425,7 @@ Nodes
 * 0x00080000 - NC_IS_WIFI_CONTROLLER  Node is wireless network controller. 
 * 0x00100000 - NC_IS_SMCLP  Node supports SMCLP protocol. 
 * 0x00200000 - NC_IS_NEW_POLICY_TYPES  Defines if agent is already upgraded to new policy type. 
+* 0x00400000 - NC_IS_USER_AGENT_INSTALLED Defines if user agent is installed. 
 |===
 
 .Indexes
