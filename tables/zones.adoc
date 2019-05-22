@@ -19,12 +19,6 @@ Zones
 |∅
 |Zone GUID
 
-|proxy_node
-|INTEGER
-|NOT NULL
-|∅
-|ID of proxy node for this zone
-
 |snmp_ports
 |VARCHAR(512)
 |NULL

@@ -1,0 +1,31 @@
+[[t-zone-proxies]]
+=== ZONE_PROXIES
+
+Zones proxy list
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Zone id from <<t-zones>>
+
+|proxy_node
+|INTEGER
+|NOT NULL
+|∅
+|Proxy node id from <<t-nodes>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|zone_proxies_pkey
+|UNIQUE
+|object_id,proxy_node
+
+|===
