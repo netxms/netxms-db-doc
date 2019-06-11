@@ -1,0 +1,55 @@
+[[t-user-agent-messages]]
+=== USER_AGENT_MESSAGES
+
+User agent messages current and logs
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|User agent message id
+
+|message
+|VARCHAR(1023)
+|NULL
+|∅
+|Message
+
+|objects
+|VARCHAR(1023)
+|NOT NULL
+|∅
+|Coma separaed object id list from <<t-object-properties>>
+
+|start_time
+|INTEGER
+|NOT NULL
+|∅
+|Message display start time as unix timestamp. 0 - in case if one time message
+
+|end_time
+|INTEGER
+|NOT NULL
+|∅
+|Message display end time as unix timestamp. 0 - in case if one time message
+
+|recall
+|CHAR(1)
+|NOT NULL
+|∅
+|Flag, that represents if mesasage is recalled
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|user_agent_messages_pkey
+|UNIQUE
+|id
+
+|===
