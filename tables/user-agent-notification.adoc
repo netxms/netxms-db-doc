@@ -1,7 +1,7 @@
-[[t-user-agent-messages]]
+[[t-user-agent-notification]]
 === USER_AGENT_MESSAGES
 
-User agent messages current and logs
+User agent notifications current and logs
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -11,7 +11,7 @@ User agent messages current and logs
 |INTEGER
 |NOT NULL
 |∅
-|User agent message id
+|User agent notification id
 
 |message
 |VARCHAR(1023)
@@ -29,13 +29,13 @@ User agent messages current and logs
 |INTEGER
 |NOT NULL
 |∅
-|Message display start time as unix timestamp. 0 - in case if one time message
+|Message display start time as unix timestamp. 0 - in case if one time notification
 
 |end_time
 |INTEGER
 |NOT NULL
 |∅
-|Message display end time as unix timestamp. 0 - in case if one time message
+|Message display end time as unix timestamp. 0 - in case if one time notification
 
 |recall
 |CHAR(1)
@@ -48,7 +48,7 @@ User agent messages current and logs
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|user_agent_messages_pkey
+|user_agent_notification_pkey
 |UNIQUE
 |id
 
