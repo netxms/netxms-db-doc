@@ -54,6 +54,12 @@ List of network ranges and subnets used by network discovery.
 |NOT NULL
 |∅
 |Node id from <<t-nodes>>
+
+|comment
+|VARCHAR(255)
+|NULL
+|∅
+|Comment to credential entry
 |===
 
 .Indexes

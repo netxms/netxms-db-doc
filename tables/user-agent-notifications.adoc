@@ -1,5 +1,5 @@
-[[t-user-agent-notification]]
-=== USER_AGENT_MESSAGES
+[[t-user-agent-notifications]]
+=== USER_AGENT_NOTIFICATIONS
 
 User agent notifications current and logs
 
@@ -48,7 +48,7 @@ User agent notifications current and logs
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|user_agent_notification_pkey
+|user_agent_notifications_pkey
 |UNIQUE
 |id
 
