@@ -55,12 +55,6 @@ All events which was emmited in the system. Table is cleaned up automatically by
 |∅
 |If event was correlated, this field contains root event which cause further events to be emmited.
 
-|user_tag
-|VARCHAR(63)
-|NULL
-|∅
-|
-
 |zone_uin
 |INTEGER
 |NULL
@@ -72,6 +66,12 @@ All events which was emmited in the system. Table is cleaned up automatically by
 |NULL
 |∅
 |Event raw data
+
+|tags
+|VARCHAR(2000)
+|NULL
+|∅
+|Event tags coma separated
 |===
 
 .Indexes

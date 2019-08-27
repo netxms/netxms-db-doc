@@ -156,6 +156,18 @@ Reference to <<t-items>>.
 |NULL
 |∅
 |Zone unique identification number from <<t-zones>>
+
+|rule_guid
+|VARCHAR(36)
+|NULL
+|∅
+|Alarm key.
+
+|event_tags
+|VARCHAR(2000)
+|NULL
+|∅
+|Coma separated event tag list
 |===
 
 .Indexes

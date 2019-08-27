@@ -26,13 +26,13 @@ Node hardware inventory
 |Component index
 
 |vendor
-|VARCHAR(63)
+|VARCHAR(127)
 |NULL
 |∅
 |Component vendor
 
 |model
-|VARCHAR(63)
+|VARCHAR(127)
 |NULL
 |∅
 |Component model
@@ -48,6 +48,12 @@ Node hardware inventory
 |NULL
 |∅
 |Component serial number
+
+|part_number
+|VARCHAR(63)
+|NULL
+|∅
+|Component part number
 |===
 
 .Indexes

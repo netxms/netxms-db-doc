@@ -1,7 +1,7 @@
-[[t-tdata]]
-=== TDATA
+[[t-tdata-sc-default]]
+=== TDATA_SC_DEFAULT
 
-Contains historical values for table DCIs for the node. The table is populated only if single table performance data is enabled. Not used when timescale is enabled.
+Contains historical values for table DCIs with retention time equal to default retention time. The table is populated only if timescale is enabled.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -31,7 +31,7 @@ Contains historical values for table DCIs for the node. The table is populated o
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|tdata_key
+|tdata_sc_default_key
 |NORMAL
 |item_id,tdata_timestamp
 

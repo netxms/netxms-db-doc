@@ -1,0 +1,43 @@
+[[t-notification-channels]]
+=== NOTIFICATION_CHANNELS
+
+Configuration for notification channels
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Notification name
+
+|driver_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Driver name
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Channel description
+
+|configuration
+|TEXT
+|NULL
+|∅
+|Notification channel configuration 
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|notification_channels_pkey
+|UNIQUE
+|name
+
+|===

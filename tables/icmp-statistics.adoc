@@ -1,0 +1,67 @@
+[[t-icmp-statistics]]
+=== ICMP_STATISTICS
+
+Node ICMP statistics
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the node. Reference to <<t-nodes>>.
+
+|poll_target
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Poll target
+
+|min_response_time
+|INTEGER
+|NOT NULL
+|∅
+|Target minimal target response time
+
+|max_response_time
+|INTEGER
+|NOT NULL
+|∅
+|Target maximal response time
+
+|avg_response_time
+|INTEGER
+|NOT NULL
+|∅
+|Target average response time
+
+|last_response_time
+|INTEGER
+|NOT NULL
+|∅
+|Target last response time
+
+|sample_count
+|INTEGER
+|NOT NULL
+|∅
+|Target sample count
+
+|raw_response_times
+|TEXT
+|NULL
+|∅
+|All raw data for the period in hex. 3 hex numbers for each number.
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|icmp_statistics_pkey
+|UNIQUE
+|object_id,poll_target
+
+|===

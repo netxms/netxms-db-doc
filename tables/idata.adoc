@@ -1,17 +1,12 @@
 [[t-idata]]
 === IDATA
 
-Contains historical values for single-value DCIs for the node. The table is populated only if single table performance data is enabled. 
+Contains historical values for single-value DCIs for the node. The table is populated only if single table performance data is enabled. Not used when timescale is enabled.
 
 .Columns
 [cols="15,17,13,10,45a"]
 |===
 |Name|Type|State|Default|Description
-|🔑node_id
-|INTEGER
-|NOT NULL
-|∅
-|Object id from <<t-object-properties>>
 
 |🔑item_id
 |INTEGER
@@ -44,6 +39,6 @@ Contains historical values for single-value DCIs for the node. The table is popu
 |Name|Type|Fields
 |idata_key
 |NORMAL
-|node_id,item_id,idata_timestamp
+|item_id,idata_timestamp
 
 |===

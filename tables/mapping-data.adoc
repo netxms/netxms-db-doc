@@ -20,7 +20,7 @@ Mapping tables content
 |Maping data key
 
 |md_value
-|VARCHAR(255)
+|VARCHAR(4000)
 |NULL
 |∅
 |Mapping data value

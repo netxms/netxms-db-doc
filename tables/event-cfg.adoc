@@ -48,6 +48,12 @@ Event templates
 |NULL
 |∅
 |Event description
+
+|tags
+|VARCHAR(2000)
+|NULL
+|∅
+|Event tags coma separated
 |===
 
 .Indexes

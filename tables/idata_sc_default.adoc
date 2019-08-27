@@ -1,13 +1,13 @@
-[[t-idata-node-id]]
-=== IDATA_<NODE_ID>
+[[t-idata-sc-default]]
+=== IDATA_SC_DEFAULT
 
-Contains historical values for single-value DCIs for the node.
-Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100"). The table is populated only if single table performance data is disabled. Not used when timescale is enabled.
+Contains historical values for single-value DCIs with retention time equal to current default retention time. The table is populated only if timescale is enabled.
 
 .Columns
 [cols="15,17,13,10,45a"]
 |===
 |Name|Type|State|Default|Description
+
 |🔑item_id
 |INTEGER
 |NOT NULL
@@ -18,7 +18,7 @@ Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100
 |INTEGER
 |NOT NULL
 |∅
-|Unix time stamp
+|Unix time stamp for collected value
 
 |idata_value
 |VARCHAR(255)
@@ -37,7 +37,7 @@ Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "IDATA_100
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|idx_idata_<NODE_ID>_id_timestamp
+|idata_sc_default_key
 |NORMAL
 |item_id,idata_timestamp
 

@@ -66,6 +66,12 @@ for server execute – path to the application, etc.
 |NOT NULL
 |∅
 |Action GUID
+
+|channel_name
+|VARCHAR(36)
+|NULL
+|∅
+|Notification channel name
 |===
 
 .Indexes

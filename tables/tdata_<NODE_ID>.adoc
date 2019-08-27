@@ -1,7 +1,7 @@
 [[t-tdata-node-id]]
 === TDATA_<NODE_ID>
 
-Contains historical values for table DCIs for the node. Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "TDATA_100"). The table is populated only if single table performance data is disabled. 
+Contains historical values for table DCIs for the node. Table name is dynamic, <NODE_ID> is replaced by actuall node id (e.g. "TDATA_100"). The table is populated only if single table performance data is disabled. Not used when timescale is enabled.
 
 .Columns
 [cols="15,17,13,10,45a"]

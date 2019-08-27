@@ -1,0 +1,31 @@
+[[t-icmp-target-address-list]]
+=== ICMP_TARGET_ADDRESS_LIST
+
+List of addtitional ping targets for the node 
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the node. Reference to <<t-nodes>>.
+
+|ip_addr
+|VARCHAR(48)
+|NOT NULL
+|∅
+|IP address
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|icmp_target_address_list_pkey
+|UNIQUE
+|node_id,ip_addr
+
+|===

@@ -183,6 +183,12 @@ Reference to <<t-nodes>>.
 |NOT NULL
 |∅
 |Start for grade period for deleted instance
+
+|related_object
+|INTEGER
+|NOT NULL
+|∅
+|Related object
 |===
 
 .Indexes

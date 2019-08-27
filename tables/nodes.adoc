@@ -176,7 +176,7 @@ Nodes
 |System contact as reported by SNMP agent 
 
 |snmp_sys_location
-|VARCHAR(127)
+|VARCHAR(255)
 |NULL
 |∅
 |System location as reported by SNMP agent
@@ -426,6 +426,12 @@ Nodes
 * 0x00100000 - NC_IS_SMCLP  Node supports SMCLP protocol. 
 * 0x00200000 - NC_IS_NEW_POLICY_TYPES  Defines if agent is already upgraded to new policy type. 
 * 0x00400000 - NC_IS_USER_AGENT_INSTALLED Defines if user agent is installed. 
+
+|icmp_poll_mode
+|CHAR(1)
+|NOT NULL
+|∅
+|Icmp poll mode 0 - default, 1 - on, 2 - off
 |===
 
 .Indexes

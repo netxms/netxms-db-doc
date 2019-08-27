@@ -49,11 +49,11 @@ Interface information
 |∅
 |Bridge port number
 
-|phy_slot
+|phy_module
 |INTEGER
 |NOT NULL
 |∅
-|Physical slot number
+|Physical module
 
 |phy_port
 |INTEGER
@@ -150,6 +150,18 @@ Interface information
 |NOT NULL
 |∅
 |Interface id from <<t-interfaces>>
+
+|phy_chassis
+|INTEGER
+|NOT NULL
+|∅
+|Physical chassis
+
+|phy_pic
+|INTEGER
+|NOT NULL
+|∅
+|Physical interface card
 |===
 
 .Indexes
