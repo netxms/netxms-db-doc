@@ -42,6 +42,12 @@ SNMP trap configuration
 |NULL
 |∅
 |Description
+
+|transformation_script
+|TEXT
+|NULL
+|∅
+|NXSL transformation script
 |===
 
 .Indexes
