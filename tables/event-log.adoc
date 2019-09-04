@@ -72,6 +72,26 @@ All events which was emmited in the system. Table is cleaned up automatically by
 |NULL
 |∅
 |Event tags coma separated
+
+|origin
+|INTEGER
+|NOT NULL
+|∅
+|Event origin. Possible options:
+
+* 0 - SYSTEM 
+* 1 - AGENT 
+* 2 - CLIENT
+* 3 - SYSLOG
+* 4 - SNMP
+* 5 - NXSL
+* 6 - REMOTE_SERVER 
+
+|origin_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Unix time stamp of the event on origin. 
 |===
 
 .Indexes
