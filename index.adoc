@@ -1,6 +1,6 @@
 = NetXMS Data Dictionary
 Raden Solutions, SIA <info@radensolutions.com>
-v2.2.13, April 10, 2019
+v3.0, September 16, 2019
 :toc: left
 :toclevels: 3
 :icons: font
