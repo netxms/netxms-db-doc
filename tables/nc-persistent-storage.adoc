@@ -1,0 +1,37 @@
+[[t-nc-persistent-storage]]
+=== NC_PERSISTENT_STORAGE
+
+Notification channel persistent storage
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑channel_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Channel name form <<t-notification-channels>>
+
+|🔑entry_name
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Entry name
+
+|entry_value
+|VARCHAR(2000)
+|NOT NULL
+|∅
+|Entry value
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|nc_persistent_storage_pkey
+|UNIQUE
+|channel_name,entry_name
+
+|===

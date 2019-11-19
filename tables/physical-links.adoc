@@ -1,0 +1,79 @@
+[[t-physical-links]]
+=== PHYSICAL_LINKS
+
+Physical links
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique physical link id
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Physical link description
+
+|left_object_id
+|INTEGER
+|NOT NULL
+|∅
+|Rack or interface id form <<t-object-properties>>
+
+|left_patch_pannel_id
+|INTEGER
+|NOT NULL
+|∅
+|Patch panel id form <<t-rack-passive-elements>>
+
+|left_port_number
+|INTEGER
+|NOT NULL
+|∅
+|Port number
+
+|left_front
+|CHAR(1)
+|NOT NULL
+|∅
+|Flag that states if connection is form the front or from the back. "1" for the front and "0" for the back connection. 
+
+|right_object_id
+|INTEGER
+|NOT NULL
+|∅
+|Rack or interface id form <<t-object-properties>>
+
+|right_patch_pannel_id
+|INTEGER
+|NOT NULL
+|∅
+|Patch panel id form <<t-rack-passive-elements>>
+
+|right_port_number
+|INTEGER
+|NOT NULL
+|∅
+|Port number
+
+|right_front
+|CHAR(1)
+|NOT NULL
+|∅
+|Flag that states if connection is form the front or from the back. "1" for the front and "0" for the back connection. 
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|physical_links_pkey
+|UNIQUE
+|id
+
+|===

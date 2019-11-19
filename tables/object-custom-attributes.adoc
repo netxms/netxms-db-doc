@@ -24,6 +24,12 @@ Object custom attributes
 |NULL
 |∅
 |Object attribute value
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Object attribute value
 |===
 
 .Indexes

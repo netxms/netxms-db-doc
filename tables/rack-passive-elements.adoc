@@ -1,0 +1,69 @@
+[[t-rack-passive-elements]]
+=== RACKS_PASSIVE_ELEMENTS
+
+Rack passive elements 
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Passive element unique id
+
+|rack_id
+|INTEGER
+|NOT NULL
+|∅
+|Rack id form <<t-racks>>
+
+|name
+|VARCHAR(255)
+|NULL
+|∅
+|Passive element name
+
+|type
+|INTEGER
+|NOT NULL
+|∅
+|Passive element type:
+
+* PATCH_PANEL = 0
+* FILLER_PANEL = 1
+* ORGANISER = 2
+
+|position
+|INTEGER
+|NOT NULL
+|∅
+|Passive element position
+
+|orientation
+|INTEGER
+|NOT NULL
+|∅
+|Passive element orientation:
+
+* FILL = 0
+* FRONT = 1
+* REAR = 2
+
+|port_count
+|INTEGER
+|NOT NULL
+|∅
+|Passive element port count for patch panel
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|rack_passive_element_pkey
+|UNIQUE
+|id
+
+|===

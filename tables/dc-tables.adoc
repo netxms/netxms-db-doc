@@ -57,14 +57,12 @@ Reference to <<t-templates>>.
 |∅
 |Data collection table flags:
 
-* DCF_ADVANCED_SCHEDULE       0x0001
 * DCF_ALL_THRESHOLDS          0x0002
 * DCF_RAW_VALUE_OCTET_STRING  0x0004
 * DCF_SHOW_ON_OBJECT_TOOLTIP  0x0008
 * DCF_AGGREGATE_FUNCTION_MASK 0x0070
 * DCF_AGGREGATE_ON_CLUSTER    0x0080
 * DCF_TRANSFORM_AGGREGATED    0x0100
-* DCF_NO_STORAGE              0x0200
 * DCF_CALCULATE_NODE_STATUS   0x0400
 * DCF_SHOW_IN_OBJECT_OVERVIEW 0x0800
 * DCF_CACHE_MODE_MASK         0x3000
@@ -189,6 +187,39 @@ Reference to <<t-nodes>>.
 |NOT NULL
 |∅
 |Related object
+
+|polling_interval_src
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Source for polling interval calculation
+
+|retention_time_src
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Source for retention time calculation
+
+|polling_schedule_type
+|CHAR(1)
+|NOT NULL
+|∅
+|Polling schedule type:
+
+* DC_POLLING_SCHEDULE_DEFAULT = 0
+* DC_POLLING_SCHEDULE_CUSTOM = 1
+* DC_POLLING_SCHEDULE_ADVANCED = 2
+
+|retention_type
+|CHAR(1)
+|NOT NULL
+|∅
+|Retention type:
+
+* DC_RETENTION_DEFAULT = 0
+* DC_RETENTION_CUSTOM = 1
+* DC_RETENTION_NONE = 2
+
 |===
 
 .Indexes

@@ -11,7 +11,7 @@ Racks
 |INTEGER
 |NOT NULL
 |∅
-|Rack id from object_properties
+|Rack id from <<t-object-properties>>
 
 |height
 |INTEGER
@@ -24,12 +24,6 @@ Racks
 |NOT NULL
 |∅
 |If rack numbering starts from the top or form the buttom (true/false)
-
-|passive_elements
-|TEXT
-|NULL
-|∅
-|Rack passive elements
 |===
 
 .Indexes
