@@ -18,12 +18,6 @@ Zones
 |NOT NULL
 |∅
 |Zone GUID
-
-|snmp_ports
-|VARCHAR(512)
-|NULL
-|∅
-|List of SNMP ports, that will be automatically checked for nodes to collect SNMP data
 |===
 
 .Indexes

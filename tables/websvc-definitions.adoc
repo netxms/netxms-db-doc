@@ -80,6 +80,17 @@ Web service definition table
 |NULL
 |∅
 |Web service description
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Web service bit flags:
+
+ * 1 - Verify certificate
+ * 2 - Verify host
+
+
 |===
 
 .Indexes

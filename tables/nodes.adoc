@@ -71,14 +71,8 @@ Nodes
 |∅
 |SNMP object id
 
-|auth_method
-|INTEGER
-|NOT NULL
-|∅
-|Agent authentication method
-
 |secret
-|VARCHAR(64)
+|VARCHAR(88)
 |NULL
 |∅
 |Agent shared seecret
@@ -493,6 +487,11 @@ Nodes
 |∅
 |EtherNet/IP port
 
+|hardware_id
+|VARCHAR(40)
+|NULL
+|∅
+|Node's unique hardware id
 |===
 
 .Indexes

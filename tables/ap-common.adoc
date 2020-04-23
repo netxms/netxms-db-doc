@@ -45,6 +45,15 @@ Agent policies common attributes
 |NOT NULL
 |∅
 |Policy version
+
+|flags
+|INTEGER
+|NOT NULL
+|∅
+|Flags:
+
+ * 1 - EXPAND_MACRO
+
 |===
 
 .Indexes

@@ -15,7 +15,7 @@ Contains historical values for single-value DCIs with retention time more than 1
 |Item id from <<t-items>>
 
 |🔑idata_timestamp
-|INTEGER
+|TIMESTAMPTZ
 |NOT NULL
 |∅
 |Unix time stamp for collected value

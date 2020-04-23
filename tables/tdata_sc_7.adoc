@@ -15,7 +15,7 @@ Contains historical values for table DCIs with retention time [1 -7] days. The t
 |Item id from <<t-dc-tables>>
 
 |🔑tdata_timestamp
-|INTEGER
+|TIMESTAMPTZ
 |NOT NULL
 |∅
 |Unix time stamp for collected value
