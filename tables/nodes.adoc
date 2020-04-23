@@ -223,17 +223,11 @@ Nodes
 |∅
 |Height in rack (in rack units)
 
-|rack_id
+|physical_container_id
 |INTEGER
 |NOT NULL
 |∅
-|Related rack object ID
-
-|chassis_id
-|INTEGER
-|NOT NULL
-|∅
-|ID of chassis object this node belongs to
+|Related rack or chassis object ID
 
 |agent_cache_mode
 |CHAR(1)
@@ -432,6 +426,73 @@ Nodes
 |NOT NULL
 |∅
 |Icmp poll mode 0 - default, 1 - on, 2 - off
+
+|chassis_placement_config
+|VARCHAR(2000)
+|NULL
+|∅
+|Chassis placement XML configuration
+
+|vendor
+|VARCHAR(127)
+|NULL
+|∅
+|Vendor
+
+|product_name
+|VARCHAR(127)
+|NULL
+|∅
+|Product name
+
+|product_version
+|VARCHAR(15)
+|NULL
+|∅
+|Product version
+
+|product_code
+|VARCHAR(31)
+|NULL
+|∅
+|Product code
+
+|serial_number
+|VARCHAR(31)
+|NULL
+|∅
+|Serial number
+
+|cip_device_type
+|INTEGER
+|NOT NULL
+|∅
+|CIP device type
+
+|cip_status
+|INTEGER
+|NOT NULL
+|∅
+|CIP status
+
+|cip_state
+|INTEGER
+|NOT NULL
+|∅
+|CIP state
+
+|eip_port
+|INTEGER
+|NOT NULL
+|∅
+|EtherNet/IP port
+
+|eip_proxy
+|INTEGER
+|NOT NULL
+|∅
+|EtherNet/IP port
+
 |===
 
 .Indexes

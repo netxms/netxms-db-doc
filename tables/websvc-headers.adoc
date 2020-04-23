@@ -1,0 +1,37 @@
+[[t-websvc-headers]]
+=== WEBSVC_HEADERS
+
+Web service header definition table
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑websvc_id
+|INTEGER
+|NOT NULL
+|∅
+|Web service id form <<t-websvc-definitions>>.
+
+|🔑name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Header name
+
+|value
+|VARCHAR(2000)
+|NULL
+|∅
+|Header content
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|websvc_headers_pkey
+|UNIQUE
+|websvc_id,name
+
+|===

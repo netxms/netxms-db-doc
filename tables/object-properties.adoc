@@ -293,6 +293,11 @@ Sensor state flags:
 * 0x00040000 - SSF_ACTIVE 
 * 0x00080000 - SSF_CONF_UPDATE_PENDING 
 
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|Object creation time
 |===
 
 .Indexes

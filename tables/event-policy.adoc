@@ -53,19 +53,31 @@ Event processing policy.
 |VARCHAR(255)
 |NULL
 |∅
-|
+|Alarm key generation pattern
 
 |alarm_timeout
 |INTEGER
 |NOT NULL
 |∅
-|
+|Alarm timeout time
 
 |alarm_timeout_event
 |INTEGER
 |NOT NULL
 |∅
-|
+|Event generated on alarm timeout
+
+|rca_script_name
+|VARCHAR(255)
+|NULL
+|∅
+|Name of the root cause analysis script.
+
+|alarm_impact
+|VARCHAR(1000)
+|NULL
+|∅
+|Alarm impact text.
 |===
 
 .Indexes

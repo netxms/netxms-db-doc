@@ -153,7 +153,7 @@ Reference to <<t-items>>.
 
 |zone_uin
 |INTEGER
-|NULL
+|NOT NULL
 |∅
 |Zone unique identification number from <<t-zones>>
 
@@ -168,6 +168,24 @@ Reference to <<t-items>>.
 |NULL
 |∅
 |Coma separated event tag list
+
+|parent_alarm_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the parent alarm <<t-alarms>>
+
+|rca_script_name
+|VARCHAR(255)
+|NULL
+|∅
+|Name of the root cause analysis script.
+
+|impact
+|VARCHAR(1000)
+|NULL
+|∅
+|Alarm impact text
 |===
 
 .Indexes

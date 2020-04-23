@@ -1,0 +1,93 @@
+[[t-websvc-definitions]]
+=== WEBSVC_DEFINITIONS
+
+Web service definition table
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Web service id
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Web service GUID
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Web service name
+
+|url
+|VARCHAR(4000)
+|NULL
+|∅
+|Web service URL
+
+|auth_type
+|INTEGER
+|NOT NULL
+|∅
+|Authentication type:
+
+ * 0 - NONE
+ * 1 - BASIC
+ * 2 - DIGEST
+ * 3 - NTLM
+ * 4 - BEARER
+ * 5 - ANY
+ * 6 - ANYSAFE
+
+|login
+|VARCHAR(255)
+|NULL
+|∅
+|Web service login name
+
+|password
+|VARCHAR(255)
+|NULL
+|∅
+|Web service password
+
+|password
+|VARCHAR(255)
+|NULL
+|∅
+|Web service password
+
+|cache_retention_time
+|INTEGER
+|NOT NULL
+|∅
+|Cache retention time
+
+|request_timeout
+|INTEGER
+|NOT NULL
+|∅
+|Request timeout time
+
+|description
+|VARCHAR(2000)
+|NULL
+|∅
+|Web service description
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|websvc_definitions_pkey
+|UNIQUE
+|id
+
+|===

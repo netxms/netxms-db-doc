@@ -300,6 +300,11 @@ Reference to <<t-nodes>>.
 * DC_RETENTION_CUSTOM = 1
 * DC_RETENTION_NONE = 2
 
+|snmp_version
+|INTEGER
+|NOT NULL
+|∅
+|SNMP version
 |===
 
 .Indexes

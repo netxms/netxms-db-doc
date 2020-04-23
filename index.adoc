@@ -1,6 +1,6 @@
 = NetXMS Data Dictionary
 Raden Solutions, SIA <info@radensolutions.com>
-v3.1, September 16, 2019
+v3.2, September 16, 2019
 :toc: left
 :toclevels: 3
 :icons: font
@@ -153,6 +153,8 @@ include::tables/usm-credentials.adoc[]
 include::tables/versionable-object.adoc[]
 include::tables/vpn-connector-networks.adoc[]
 include::tables/vpn-connectors.adoc[]
+include::tables/websvc-definitions.adoc[]
+include::tables/websvc-headers.adoc[]
 include::tables/zmq-subscription.adoc[]
 include::tables/zone-proxies.adoc[]
 include::tables/zones.adoc[]
