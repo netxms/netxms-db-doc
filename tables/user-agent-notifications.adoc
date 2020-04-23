@@ -41,7 +41,13 @@ User agent notifications current and logs
 |CHAR(1)
 |NOT NULL
 |∅
-|Flag, that represents if mesasage is recalled
+|Flag, that represents if message is recalled
+
+|on_startup
+|CHAR(1)
+|NOT NULL
+|∅
+|Flag, that represents if message is startup message
 |===
 
 .Indexes
