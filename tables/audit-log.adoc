@@ -78,6 +78,18 @@ Log of all user actions.
 |NULL
 |∅
 |Diff from old and new value. Object data is represented in json format
+
+|value_type
+|VARCHAR(1)
+|NOT NULL
+|∅
+|Value type for old_value and new_value fields.
+
+|hmac
+|VARCHAR(64)
+|NOT NULL
+|∅
+|HMAC calculated using all audit log fields. 
 |===
 
 .Indexes
