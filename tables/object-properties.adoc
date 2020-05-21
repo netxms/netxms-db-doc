@@ -298,6 +298,12 @@ Sensor state flags:
 |NOT NULL
 |∅
 |Object creation time
+
+|maint_initiator
+|INTEGER
+|NOT NULL
+|∅
+|Maintenance initiator user id from <<t-users>>
 |===
 
 .Indexes
