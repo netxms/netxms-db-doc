@@ -1,0 +1,37 @@
+[[t-dci-delete-list]]
+=== DCI_DELETE_LIST
+
+List of DCI's that should be deleted on housekeeper
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑
+|INTEGER
+|NOT NULL
+|∅
+|Object id. Reference form <<t-object-properties>>.
+
+|🔑dci_id
+|INTEGER
+|NOT NULL
+|∅
+|DCI ID. Reference to either <<t-items>> or <<t-dc-tables>>.
+
+|type
+|CHAR(1)
+|NOT NULL
+|∅
+|DCI type. `t` for table DCI and `i` for a regular DCI. 
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dci_delete_list_pkey
+|UNIQUE
+|node_id,dci_id
+
+|===

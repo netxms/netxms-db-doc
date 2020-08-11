@@ -48,6 +48,18 @@ User agent notifications current and logs
 |NOT NULL
 |∅
 |Flag, that represents if message is startup message
+
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|Notification creation time as unix timestamp. 
+
+|created_by
+|INTEGER
+|NOT NULL
+|∅
+|Creator id form <<t-users>>
 |===
 
 .Indexes
