@@ -58,7 +58,7 @@ include::tables/dct-column-names.adoc[]
 include::tables/dct-node-map.adoc[]
 include::tables/dct-threshold-conditions.adoc[]
 include::tables/dct-thresholds.adoc[]
-include::tables/event-cfg.adoc[]/
+include::tables/event-cfg.adoc[]
 include::tables/event-log.adoc[]
 include::tables/event-policy.adoc[]
 include::tables/graph-acl.adoc[]
