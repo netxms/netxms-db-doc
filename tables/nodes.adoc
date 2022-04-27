@@ -63,7 +63,7 @@ Nodes
 |INTEGER
 |NOT NULL
 |∅
-|SNMP v3 authentication and ecryption methods
+|SNMP v3 authentication and encryption methods
 
 |snmp_oid
 |VARCHAR(255)
@@ -75,7 +75,7 @@ Nodes
 |VARCHAR(88)
 |NULL
 |∅
-|Agent shared seecret
+|Agent shared secret
 
 |agent_port
 |INTEGER
@@ -474,6 +474,12 @@ Nodes
 |NOT NULL
 |∅
 |CIP state
+
+|cip_vendor_code
+|INTEGER
+|NOT NULL
+|∅
+|CIP vendor code
 
 |eip_port
 |INTEGER

@@ -53,7 +53,7 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |INTEGER
 |NOT NULL
 |∅
-|Defins if current object inherits access rights form parent (0 or 1)
+|Defines if current object inherits access rights form parent (0 or 1)
 
 |status_calc_alg
 |INTEGER
@@ -138,7 +138,7 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |INTEGER
 |NOT NULL
 |∅
-|Lacation type(Undefined, Manual, Automatic)
+|Lactation type(Undefined, Manual, Automatic)
 
 |latitude
 |VARCHAR(20)
@@ -168,7 +168,7 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |VARCHAR(36)
 |NOT NULL
 |∅
-|Immage GUID form <<t-images>>, that will be used to display object on network maps.
+|Image GUID form <<t-images>>, that will be used to display object on network maps.
 
 |submap_id
 |INTEGER
@@ -304,6 +304,12 @@ Sensor state flags:
 |NOT NULL
 |∅
 |Maintenance initiator user id from <<t-users>>
+
+|alias
+|VARCHAR(255)
+|NULL
+|∅
+|Object alias
 |===
 
 .Indexes

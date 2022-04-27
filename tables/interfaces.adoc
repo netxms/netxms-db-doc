@@ -133,12 +133,6 @@ Interface information
 |∅
 |Interface description
 
-|alias
-|VARCHAR(255)
-|NULL
-|∅
-|Interface alias
-
 |iftable_suffix
 |VARCHAR(127)
 |NULL

@@ -23,13 +23,19 @@ Event processing policy actions
 |INTEGER
 |NOT NULL
 |∅
-|Time to wait befor action to be executed
+|Time to wait before action to be executed
 
 |timer_key
 |VARCHAR(127)
 |NULL
 |∅
-|Timmer key
+|Timer key
+
+|blocking_timer_key
+|VARCHAR(127)
+|NULL
+|∅
+|Blocking timer key
 |===
 
 .Indexes
