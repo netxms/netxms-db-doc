@@ -148,6 +148,18 @@ System users
 |NOT NULL
 |∅
 |User creation time (UNIX timestamp)
+
+|email
+|VARCHAR(127)
+|NULL
+|∅
+|E-mail
+
+|phone_number
+|VARCHAR(63)
+|NULL
+|∅
+|Phone number
 |===
 
 .Indexes

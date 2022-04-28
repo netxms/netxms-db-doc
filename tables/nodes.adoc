@@ -521,6 +521,12 @@ Nodes
 |NULL
 |∅
 |SNMP engine id
+
+|ssh_port
+|INTEGER
+|NOT NULL
+|∅
+|SSH port for node
 |===
 
 .Indexes
