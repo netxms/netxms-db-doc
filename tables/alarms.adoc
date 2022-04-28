@@ -185,7 +185,13 @@ Reference to <<t-items>>.
 |VARCHAR(1000)
 |NULL
 |∅
-|Alarm impact text
+|Alarm impact text.
+
+|rule_description
+|VARCHAR(255)
+|NULL
+|∅
+|Description of EEP rule that generated this alarm
 |===
 
 .Indexes

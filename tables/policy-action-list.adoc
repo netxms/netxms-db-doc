@@ -36,6 +36,12 @@ Event processing policy actions
 |NULL
 |∅
 |Blocking timer key
+
+|snooze_time
+|INTEGER
+|NOT NULL
+|∅
+|Snooze time for action
 |===
 
 .Indexes

@@ -156,6 +156,30 @@ Interface information
 |NOT NULL
 |∅
 |Physical interface card
+
+|oper_slast_known_oper_statetate
+|INTEGER
+|NOT NULL
+|∅
+|Last known interface operational states:
+
+* 0 - IF_OPER_STATE_UNKNOWN    
+* 1 - IF_OPER_STATE_UP         
+* 2 - IF_OPER_STATE_DOWN       
+* 3 - IF_OPER_STATE_TESTING    
+* 4 - IF_OPER_STATE_DORMANT    
+* 5 - IF_OPER_STATE_NOT_PRESENT
+
+|last_known_admin_state
+|INTEGER
+|NOT NULL
+|∅
+|Last known Interface administrative states:
+
+* 0 - IF_ADMIN_STATE_UNKNOWN
+* 1 - IF_ADMIN_STATE_UP     
+* 2 - IF_ADMIN_STATE_DOWN   
+* 3 - IF_ADMIN_STATE_TESTING
 |===
 
 .Indexes

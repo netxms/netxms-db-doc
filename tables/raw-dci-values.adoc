@@ -29,7 +29,13 @@ Last collected DCI values
 |INTEGER
 |NOT NULL
 |∅
-|Last poll time (as UNIx timestamp)
+|Last poll time (as UNIX timestamp)
+
+|cache_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Timestamp of the oldest value in cash for this DCI (as UNIX timestamp)
 |===
 
 .Indexes

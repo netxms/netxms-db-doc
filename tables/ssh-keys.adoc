@@ -1,0 +1,43 @@
+[[t-aah-keys]]
+=== SSH_KEYS
+
+Table stores SSH keys configuration
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique key identifier. 
+
+|name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Key name
+
+|public_key
+|VARCHAR(700)
+|NULL
+|∅
+|Public key
+
+|private_key
+|VARCHAR(1710)
+|NULL
+|∅
+|Private key
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ssh_keys_pkey
+|UNIQUE
+|id
+
+|===

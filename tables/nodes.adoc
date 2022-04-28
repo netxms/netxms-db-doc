@@ -527,6 +527,12 @@ Nodes
 |NOT NULL
 |∅
 |SSH port for node
+
+|ssh_key_id
+|INTEGER
+|NOT NULL
+|∅
+|SSH key id form <<t-ssh-keys>>
 |===
 
 .Indexes
