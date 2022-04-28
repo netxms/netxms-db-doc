@@ -1,0 +1,53 @@
+[[t-dc-targets]]
+=== DC_TARGETS
+
+Data collection targets table. Any object capable of data collection will contain record here. 
+
+.Columns
+[cols="23,18,13,10,36a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the object from <<t-object-properties>>
+
+|config_poll_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Last configuration poll timestamp.
+
+|instance_poll_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Last instance poll timestamp.
+
+|geolocation_ctrl_mode
+|INTEGER
+|NOT NULL
+|∅
+|Control mode for configured geo areas:
+
+* GEOLOCATION_NO_CONTROL - 0
+* GEOLOCATION_RESTRICTED_AREAS - 1
+* GEOLOCATION_ALLOWED_AREAS - 2
+
+|geo_areas
+|VARCHAR(2000)
+|NULL
+|∅
+|Coma separated list of geo area ids for this object. 
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dc_targets_pkey
+|UNIQUE
+|id
+
+|===

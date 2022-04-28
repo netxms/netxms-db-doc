@@ -498,6 +498,29 @@ Nodes
 |NULL
 |∅
 |Node's unique hardware id
+
+|agent_cert_mapping_method
+|CHAR(1)
+|NOT NULL
+|∅
+|Certificate mapping method:
+
+*  MAP_CERTIFICATE_BY_SUBJECT - 0
+*  MAP_CERTIFICATE_BY_PUBKEY - 1
+*  MAP_CERTIFICATE_BY_CN - 2
+*  MAP_CERTIFICATE_BY_TEMPLATE_ID - 3
+
+|agent_cert_mapping_data
+|VARCHAR(500)
+|NULL
+|∅
+|Agent certificate mapping data
+
+|snmp_engine_id
+|VARCHAR(255)
+|NULL
+|∅
+|SNMP engine id
 |===
 
 .Indexes

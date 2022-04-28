@@ -1,0 +1,43 @@
+[[t-object-categories]]
+=== OBJECT_CATEGORIES
+
+Categories of object
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier.
+
+|name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Category name.
+
+|icon
+|VARCHAR(36)
+|NULL
+|∅
+|Icon uid from <<t-images>> used as icon image.
+
+|map_image
+|VARCHAR(36)
+|NULL
+|∅
+|Icon uid from <<t-images>> used as map image.
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|object_categories_pkey
+|UNIQUE
+|id
+
+|===

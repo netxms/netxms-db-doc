@@ -1,0 +1,92 @@
+[[t-win-event-log]]
+=== WIN_EVENT_LOG
+
+Windows event log
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|BIGINT
+|NOT NULL
+|∅
+|Record unique id.
+
+|event_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Unix time stamp of event when it came to server.
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|Source node of the event. Reference to <<t-nodes>>.
+
+|zone_uin
+|INTEGER
+|NOT NULL
+|∅
+|Zone unique identification number from <<t-zones>>.
+
+|origin_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Unix time stamp of event when it was created on windows node.
+
+|log_name
+|VARCHAR(63)
+|NULL
+|∅
+|Alarm key.
+
+|event_source
+|VARCHAR(127)
+|NULL
+|∅
+|Source of the windows event.
+
+|event_severity
+|INTEGER
+|NOT NULL
+|∅
+|Windows event severity.
+
+|event_code
+|INTEGER
+|NOT NULL
+|∅
+|Windows event code.
+
+|message
+|VARCHAR(2000)
+|NULL
+|∅
+|Windows event message.
+
+|raw_data
+|TEXT
+|NULL
+|∅
+|Raw Windows event data.
+|===
+
+.Indexes
+[cols="33,15,52a"]
+|===
+|Name|Type|Fields
+|win_event_log_pkey
+|UNIQUE
+|id
+
+|idx_win_event_log_timestamp
+|NORMAL
+|event_timestamp
+
+|idx_win_event_log_node
+|NORMAL
+|node_id
+|===

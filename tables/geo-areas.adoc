@@ -1,0 +1,43 @@
+[[t-geo-areas]]
+=== GEO_AREAS
+
+Geo area for device area monitoring.
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier.
+
+|name
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Area name.
+
+|comments
+|TEXT
+|NULL
+|∅
+|Text comment.
+
+|configuration
+|TEXT
+|NULL
+|∅
+|Area border configuration
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|geo_areas_pkey
+|UNIQUE
+|id
+
+|===

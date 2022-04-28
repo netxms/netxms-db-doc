@@ -60,6 +60,34 @@ Mobile devices from object_properties
 |NOT NULL
 |∅
 |Battery charge level
+
+|comm_protocol
+|VARCHAR(31)
+|NULL
+|∅
+|Communication protocol. One of:
+
+* UNKNOWN
+* NXCP 
+* NTCB/FLEX
+
+|speed
+|VARCHAR(20)
+|NOT NULL
+|∅
+|Speed in km/h. -1 if unknown.
+
+|direction
+|INTEGER
+|NOT NULL
+|∅
+|Direction in azimuth degrees. -1 if unknown.
+
+|altitude
+|INTEGER
+|NOT NULL
+|∅
+|Altitude above see level in meeters. 0 if unknown. 
 |===
 
 .Indexes

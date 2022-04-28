@@ -198,12 +198,12 @@ Reference to <<t-items>>.
 
 |Name|Type|Fields
 |idx_alarms_source_object_id
-|UNIQUE
+|NORMAL
 |source_object_id
 
 |Name|Type|Fields
 |idx_alarms_last_change_time
-|UNIQUE
+|NORMAL
 |last_change_time
 
 |===

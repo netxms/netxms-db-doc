@@ -164,7 +164,7 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |∅
 |Last received location time
 
-|image
+|map_image
 |VARCHAR(36)
 |NOT NULL
 |∅
@@ -297,19 +297,31 @@ Sensor state flags:
 |INTEGER
 |NOT NULL
 |∅
-|Object creation time
+|Object creation time.
 
 |maint_initiator
 |INTEGER
 |NOT NULL
 |∅
-|Maintenance initiator user id from <<t-users>>
+|Maintenance initiator user id from <<t-users>>.
 
 |alias
 |VARCHAR(255)
 |NULL
 |∅
 |Object alias
+
+|name_on_map
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Object name on network map.
+
+|category
+|INTEGER
+|NOT NULL
+|∅
+|Object category id from <<t-object-categories>>.
 |===
 
 .Indexes
