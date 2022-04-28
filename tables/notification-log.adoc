@@ -1,0 +1,65 @@
+[[t-notification-log]]
+=== NOTIFICATION_LOG
+
+Table contains log for all sent notifications
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|BIGINT
+|NOT NULL
+|∅
+|Unique id.
+
+|notification_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|UNIX timestamp when notification was sent
+
+|notification_channel
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Name of notification channel form <<t-notification-channels>>
+
+|recipient
+|VARCHAR(2000)
+|NULL
+|∅
+|Recipient list
+
+|subject
+|VARCHAR(2000)
+|NULL
+|∅
+|Message subject
+
+|message
+|VARCHAR(2000)
+|NULL
+|∅
+|Message
+
+|success
+|CHAR(1)
+|NULL
+|∅
+|"1" if message sent successfully and "0" if not
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|notification_log_pkey
+|UNIQUE
+|id,notification_timestamp
+
+|idx_notification_log_timestamp
+|NORMAL
+|notification_timestamp
+
+|===

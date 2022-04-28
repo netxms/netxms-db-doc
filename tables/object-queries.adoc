@@ -1,0 +1,49 @@
+[[t-object-queries]]
+=== OBJECT_QUERIES
+
+Saved object queries
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique id of saved object query.
+
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|GUID of saved object query.
+
+|name
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Name
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Description
+
+|script
+|TEXT
+|NULL
+|∅
+|Object query filtering script.
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|object_queries_pkey
+|UNIQUE
+|id
+
+|===

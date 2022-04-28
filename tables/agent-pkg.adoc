@@ -42,6 +42,27 @@ List of the agent upgrade packages stored on the server and available for deploy
 |NULL
 |∅
 |Description of the package, as loaded from NPI file.
+
+|agent_pkg
+|VARCHAR(15)
+|NULL
+|∅
+|Package type:
+
+* executable
+* msi
+* msp
+* msu
+* deb
+* /usr/bin/rpm
+* tgz
+* agent-installer
+
+|command
+|VARCHAR(255)
+|NULL
+|∅
+|Command to install package
 |===
 
 .Indexes

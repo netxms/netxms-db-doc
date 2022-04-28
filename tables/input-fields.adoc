@@ -1,23 +1,32 @@
-[[t-object-tools-input-fields]]
-=== OBJECT_TOOLS_INPUT_FIELDS
+[[t-input-fields]]
+=== INPUT_FIELDS
 
-Input fields for object tools
+Input fields for object tools or object queries
 
 .Columns
 [cols="16,17,13,10,44a"]
 |===
 |Name|Type|State|Default|Description
-|🔑tool_id
+|🔑owner_id
 |INTEGER
 |NOT NULL
 |∅
-|Object tool id from <<t-object-tools>>
+|Object id from <<t-object-tools>> or from <<t-object-queries>>. 
 
 |🔑name
 |VARCHAR(31)
 |NOT NULL
 |∅
 |Input field name
+
+|🔑category
+|CHAR(1)
+|NOT NULL
+|∅
+|Input filed category:
+
+* Q - Object query 
+* T - Object tools 
 
 |input_type
 |CHAR(1)
@@ -41,19 +50,22 @@ Input fields for object tools
 |∅
 |Input field sequence number
 
-|config
-|TEXT
-|NULL
+|flags
+|INTEGER
+|NOT NULL
 |∅
-|XML config of input field
+|Input field bit flags:
+
+* Validate password 1
+
 |===
 
 .Indexes
 [cols="33,15,52a"]
 |===
 |Name|Type|Fields
-|object_tools_input_fields_pkey
+|input_fields_pkey
 |UNIQUE
-|tool_id,name
+|category,owner_id,name
 
 |===

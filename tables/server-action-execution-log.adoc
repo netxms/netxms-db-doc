@@ -1,0 +1,89 @@
+[[t-server-action-execution-log]]
+=== SERVER_ACTION_EXECUTION_LOG
+
+Contains log of all executed server actions.
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|BIGINT
+|NOT NULL
+|∅
+|Unique identifier.
+
+|action_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|UNIX timestamp when action was executed.
+
+|action_id
+|INTEGER
+|NOT NULL
+|∅
+|Action id form <<t-actions>>.
+
+|action_name
+|VARCHAR(63)
+|NULL
+|∅
+|Action name form <<t-actions>>.
+
+|channel_name
+|VARCHAR(63)
+|NULL
+|∅
+|Channel name form <<t-notification-channels>>.
+
+|recipient
+|VARCHAR(2000)
+|NULL
+|∅
+|Recipient list.
+
+|subject
+|VARCHAR(2000)
+|NULL
+|∅
+|Message subject.
+
+|action_data
+|VARCHAR(2000)
+|NULL
+|∅
+|Action data.
+
+|event_id
+|BIGINT
+|NOT NULL
+|∅
+|ID of event that triggered this action execution form <<t-event-log>>.
+
+|event_code
+|INTEGER
+|NULL
+|∅
+|Code of event template that triggered this action execution form <<t-event-cfg>>.
+
+|success
+|CHAR(1)
+|NULL
+|∅
+|"1" if message sent successfully and "0" if not.
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|server_action_execution_log_pkey
+|UNIQUE
+|id,action_timestamp
+
+|idx_srv_action_log_timestamp
+|NORMAL
+|action_timestamp
+
+|===

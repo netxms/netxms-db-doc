@@ -7,11 +7,17 @@ Links on network maps
 [cols="19,17,13,10,41a"]
 |===
 |Name|Type|State|Default|Description
-|map_id
+|🔑map_id
 |INTEGER
 |NOT NULL
 |∅
 |Network map id from <<t-network-maps>>
+
+|🔑link_id
+|INTEGER
+|NOT NULL
+|∅
+|Link id
 
 |element1
 |INTEGER
@@ -64,12 +70,40 @@ Links on network maps
 |NOT NULL
 |∅
 |Network map link flags. Currently there are no flags defined.  
+
+color_source
+|INTEGER
+|NOT NULL
+|∅
+|Source of color:
+
+* MAP_LINK_COLOR_SOURCE_UNDEFINED - -1
+* MAP_LINK_COLOR_SOURCE_DEFAULT - 0
+* MAP_LINK_COLOR_SOURCE_OBJECT_STATUS - 1
+* MAP_LINK_COLOR_SOURCE_CUSTOM_COLOR - 2
+* MAP_LINK_COLOR_SOURCE_SCRIPT - 3
+
+|color
+|INTEGER
+|NOT NULL
+|∅
+|Int representation of RGB color
+
+|color_provider
+|VARCHAR(255)
+|NULL
+|∅
+|Color provide script name
 |===
 
 .Indexes
 [cols="35,15,50a"]
 |===
 |Name|Type|Fields
+|network_map_links_map_id_pkey
+|UNIQUE
+|map_id,link_id
+
 |idx_network_map_links_map_id
 |NORMAL
 |map_id

@@ -83,16 +83,6 @@ Nodes
 |∅
 |Agent port
 
-|status_poll_type
-|INTEGER
-|NOT NULL
-|∅
-|Status poll types:
-
-* 0 - POLL_ICMP_PING 
-* 1 - POLL_SNMP 
-* 2 - POLL_NATIVE_AGENT
-
 |agent_version
 |VARCHAR(63)
 |NULL

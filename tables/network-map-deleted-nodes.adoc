@@ -1,0 +1,49 @@
+[[t-network-map-deleted-nodes]]
+=== NETWORK_MAP_DELETED_NODES
+
+Stores location on map for deleted objects (to restore it location if object will come back)
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑map_id
+|INTEGER
+|NOT NULL
+|∅
+|Network map id <<t-network-maps>>
+
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object if form <<t-object-properties>>
+
+|element_index
+|INTEGER
+|NOT NULL
+|∅
+|Index of deleted object
+
+|position_x
+|INTEGER
+|NOT NULL
+|∅
+|Element x coordinate position on map
+
+|position_y
+|INTEGER
+|NOT NULL
+|∅
+|Element y coordinate position on map
+|===
+
+.Indexes
+[cols="32,15,53a"]
+|===
+|Name|Type|Fields
+|network_map_deleted_nodes_pkey
+|UNIQUE
+|map_id,object_id
+
+|===

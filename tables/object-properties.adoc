@@ -313,7 +313,7 @@ Sensor state flags:
 
 |name_on_map
 |VARCHAR(63)
-|NOT NULL
+|NULL
 |∅
 |Object name on network map.
 
@@ -322,6 +322,18 @@ Sensor state flags:
 |NOT NULL
 |∅
 |Object category id from <<t-object-categories>>.
+
+|region
+|VARCHAR(63)
+|NULL
+|∅
+|Address region
+
+|district
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Address district
 |===
 
 .Indexes

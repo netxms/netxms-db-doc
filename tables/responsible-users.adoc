@@ -18,6 +18,12 @@ Object responsible users.
 |NOT NULL
 |∅
 |User id. Reference to <<t-users>>
+
+|tag
+|VARCHAR(31)
+|NOT NULL
+|∅
+|User escalation tag
 |===
 
 .Indexes
