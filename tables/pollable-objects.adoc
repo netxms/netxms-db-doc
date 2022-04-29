@@ -1,0 +1,37 @@
+[[t-pollable-objects]]
+=== POLLABLE_OBJECTS
+
+This table contains all objects that have polls.
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Rack id from <<t-object-properties>>
+
+|config_poll_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Configuration poll UNIX timestamp
+
+|instance_poll_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Configuration poll UNIX timestamp
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|pollable_objects_pkey
+|UNIQUE
+|id
+
+|===

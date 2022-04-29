@@ -225,6 +225,15 @@ Reference to <<t-nodes>>.
 |NOT NULL
 |∅
 |SNMP version
+
+|state_flags
+|INTEGER
+|NOT NULL
+|∅
+|State bit flags:
+
+* DCO_STATE_DISABLED_BY_USER 1
+
 |===
 
 .Indexes

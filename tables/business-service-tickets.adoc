@@ -1,7 +1,7 @@
-[[t-slm-tickets]]
-=== SLM_TICKETS
+[[t-business-service-tickets]]
+=== BUSINESS_SERVICE_TICKETS
 
-SLA tickets
+Business service tickets opened on failed checks
 
 .Columns
 [cols="19,17,13,10,41a"]
@@ -42,13 +42,32 @@ SLA tickets
 |NULL
 |∅
 |Reason
+
+|check_description
+|VARCHAR(255)
+|NULL
+|∅
+|Check description
+
+|original_ticket_id
+|INTEGER
+|NOT NULL
+|∅
+|Original ticket id from <<t-business-service-tickets>>
+
+|original_service_id
+|INTEGER
+|NOT NULL
+|∅
+|Original ticket id from <<t-business-services>>
+
 |===
 
 .Indexes
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|slm_tickets_pkey
+|business_service_tickets_pkey
 |UNIQUE
 |ticket_id
 

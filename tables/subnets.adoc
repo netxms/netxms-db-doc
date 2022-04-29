@@ -30,12 +30,6 @@ Subnets
 |NOT NULL
 |∅
 |Zone unique identification number from <<t-zones>>
-
-|synthetic_mask
-|INTEGER
-|NOT NULL
-|∅
-|Subnet synthetic network mask
 |===
 
 .Indexes

@@ -523,6 +523,18 @@ Nodes
 |NOT NULL
 |∅
 |SSH key id form <<t-ssh-keys>>
+
+|syslog_codepage
+|VARCHAR(15)
+|NULL
+|∅
+|Code page used for syslog messages from this node.
+
+|snmp_codepage
+|VARCHAR(15)
+|NULL
+|∅
+|Code page used for SNMP messages from this node.
 |===
 
 .Indexes

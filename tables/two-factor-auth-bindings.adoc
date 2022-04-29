@@ -1,0 +1,37 @@
+[[t-two-factor-auth-bindings]]
+=== TWO_FACTOR_AUTHENTICATION_BINDINGS
+
+Two factor authentication method configuration.
+
+.Columns
+[cols="21,17,13,10,39a"]
+|===
+|Name|Type|State|Default|Description
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id form <<t-users>>
+
+|name
+|VARCAHR(63)
+|NULL
+|∅
+|Driver name form <<t-two-factor-auth-methods>>
+
+|configuration
+|TEXT
+|NULL
+|∅
+|Configuration
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|two_factor_auth_methods_pkey
+|UNIQUE
+|user_id,name
+
+|===

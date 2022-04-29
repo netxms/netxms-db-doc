@@ -1,7 +1,7 @@
-[[t-business-services]]
-=== BUSINESS_SERVICES
+[[t-business-service-prototypes]]
+=== BUSINESS_SERVICE_PROTOTYPES
 
-Business services for defining SLA.
+Business services prototype to create other business services form it.
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -13,17 +13,33 @@ Business services for defining SLA.
 |∅
 |Unique identifier from <<t-object-properties>>
 
-|prototype_id
+|instance_method
 |INTEGER
 |NOT NULL
 |∅
-|Prototype id form <<t-business-service-prototypes>> or 0
+|Instance method:
 
-|instance
+* Agent List - 1
+* Agent Table - 2
+* Script - 5
+
+|instance_source
+|INTEGER
+|NOT NULL
+|∅
+|Instance source object from <<t-object-properties>>
+
+|instance_data
 |VARCAHR(1023)
 |NULL
 |∅
-|Instance
+|Instance data
+
+|instance_filter
+|TEXT
+|NULL
+|∅
+|Instance NXSL filter
 
 |object_status_threshold
 |INTEGER
@@ -42,7 +58,7 @@ Business services for defining SLA.
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|business_services_pkey
+|business_service_prototypes_pkey
 |UNIQUE
 |id
 

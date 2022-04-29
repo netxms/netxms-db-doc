@@ -11,7 +11,7 @@ VPN connectors
 |INTEGER
 |NOT NULL
 |∅
-|Vpn id form <<vpn-connector-networks>>
+|Vpn id form <<t-vpn-connector-networks>>
 
 |node_id
 |INTEGER

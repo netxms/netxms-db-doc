@@ -13,23 +13,29 @@ Auto bind information for objects(Templae, Container objects auto bind informati
 |∅
 |ID of the object. Reference to <<t-templates>> ot <<t-object-containers>>.
 
-|bind_filter
+|bind_filter_1
 |TEXT
 |NULL
 |∅
-|Auto bind NXSL filter
+|First auto bind NXSL filter
 
-|bind_flag
-|CHAR(1)
+|bind_filter_2
+|TEXT
 |NULL
 |∅
-|Flag that states if auto bind is turned on 
+|Second auto bind NXSL filter
 
-|unbind_flag
-|CHAR(1)
-|NULL
+|flags
+|INTEGER
+|NOT NULL
 |∅
-|Flag that states if auto unbind is turned on 
+|Bind bit flags:
+
+* AAF_AUTO_APPLY_1 - 0x00000001
+* AAF_AUTO_REMOVE_1 - 0x00000002
+* AAF_AUTO_APPLY_2 - 0x00000004
+* AAF_AUTO_REMOVE_2 - 0x00000008
+
 |===
 
 .Indexes

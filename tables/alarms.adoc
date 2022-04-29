@@ -192,6 +192,12 @@ Reference to <<t-items>>.
 |NULL
 |∅
 |Description of EEP rule that generated this alarm
+
+|last_state_change_time
+|INTEGER
+|NOT NULL
+|∅
+|Last time alarm changed state
 |===
 
 .Indexes

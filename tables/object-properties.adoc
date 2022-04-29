@@ -334,6 +334,12 @@ Sensor state flags:
 |NOT NULL
 |∅
 |Address district
+
+|comments_source
+|TEXT
+|NULL
+|∅
+|Source text of comments with unexpanded macros. 
 |===
 
 .Indexes

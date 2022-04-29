@@ -1,0 +1,77 @@
+[[t-alarm-state-changes]]
+=== ALARM_STATE_CHANGES
+
+Log of alarm state changes.
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|BIGINT
+|NOT NULL
+|∅
+|Unique identifier.
+
+|alarm_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the alarm. Reference to <<t-alarms>>.
+
+|prev_state
+|INTEGER
+|NOT NULL
+|∅
+|Previous state:
+
+* 0x00 - Outstanding
+* 0x01 - Acknowledged
+* 0x02 - Resolved
+* 0x03 - Terminated 
+* 0x11 - Sticky Acknowledged
+
+|new_state
+|INTEGER
+|NOT NULL
+|∅
+|New state state:
+
+* 0x00 - Outstanding
+* 0x01 - Acknowledged
+* 0x02 - Resolved
+* 0x03 - Terminated 
+* 0x11 - Sticky Acknowledged
+
+|change_time
+|INTEGER
+|NOT NULL
+|∅
+|Unix time stamp of change.
+
+|prev_state_duration
+|INTEGER
+|NOT NULL
+|∅
+|Previous state duration in seconds. 
+
+|change_by
+|INTEGER
+|NOT NULL
+|∅
+|User id that made state change <<t-users>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|idx_alarm_state_changes_by_id
+|NORMAL
+|alarm_id
+
+|alarm_state_changes_pkey
+|UNIQUE
+|record_id
+
+|===

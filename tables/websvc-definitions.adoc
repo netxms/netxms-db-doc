@@ -90,7 +90,23 @@ Web service definition table
  * 1 - Verify certificate
  * 2 - Verify host
 
+|http_request_method
+|INTEGER
+|NOT NULL
+|∅
+|HTTP request method:
 
+* GET = 0
+* POST = 1
+* PUT = 2
+* DELETE = 3
+* PATCH = 4
+
+|request_data
+|INTEGER
+|NULL
+|∅
+|Request data
 |===
 
 .Indexes

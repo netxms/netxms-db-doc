@@ -13,18 +13,6 @@ Data collection targets table. Any object capable of data collection will contai
 |∅
 |ID of the object from <<t-object-properties>>
 
-|config_poll_timestamp
-|INTEGER
-|NOT NULL
-|∅
-|Last configuration poll timestamp.
-
-|instance_poll_timestamp
-|INTEGER
-|NOT NULL
-|∅
-|Last instance poll timestamp.
-
 |geolocation_ctrl_mode
 |INTEGER
 |NOT NULL
@@ -40,6 +28,12 @@ Data collection targets table. Any object capable of data collection will contai
 |NULL
 |∅
 |Coma separated list of geo area ids for this object. 
+
+|web_service_proxy
+|INTEGER
+|NOT NULL
+|∅
+|web service proxy node form <<t-nodes>>
 |===
 
 .Indexes

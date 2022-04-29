@@ -1,0 +1,100 @@
+[[t-business-service-checks]]
+=== BUSINESS_SERVICE_CHECKS
+
+Business service checks
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier.
+
+|type
+|INTEGER
+|NOT NULL
+|∅
+|Type:
+
+* 1 - threshold
+* 2 - script
+
+|content
+|TEXT
+|NULL
+|∅
+|NXSL script chack
+
+|current_ticket
+|INTEGER
+|NOT NULL
+|∅
+|Current ticket 
+
+|service_id
+|INTEGER
+|NOT NULL
+|∅
+|Service id form <<t-business-services>>.
+
+|related_object
+|INTEGER
+|NOT NULL
+|∅
+|Related object id form <<t-object-properties>>.
+
+|related_dci
+|INTEGER
+|NOT NULL
+|∅
+|Related DCI id form <<t-items>>.
+
+|status_threshold
+|INTEGER
+|NOT NULL
+|∅
+|Object or DCI status threshold.
+
+|description
+|VARCHAR(1023)
+|NULL
+|∅
+|Description.
+
+|current status of the check
+|INTEGER
+|NOT NULL
+|∅
+|0 if ok, 4 if failed.
+
+|failure_reason
+|VARCHAR(255)
+|NULL
+|∅
+|Failure reason.
+
+|prototype_service_id
+|INTEGER
+|NOT NULL
+|∅
+|Business service id form <<t-business-services>> or business service prototype <<t-business-service-prototypes>> that auto discovered this check or 0 if created manually.
+
+|prototype_check_id
+|INTEGER
+|NOT NULL
+|∅
+|Business service check prototype id for <<t-business-service-checks>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|business_service_checks_pkey
+|UNIQUE
+|id
+
+|===

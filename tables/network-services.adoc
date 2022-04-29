@@ -58,7 +58,7 @@ Network services
 |∅
 |Check request
 
-|check_responce
+|check_response
 |TEXT
 |NULL
 |∅

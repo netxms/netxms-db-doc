@@ -1,0 +1,43 @@
+[[t-business-services-downtime]]
+=== BUSINESS_SERVICES_DOWNTIME
+
+Business services downtime records.
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier.
+
+|service_id
+|INTEGER
+|NOT NULL
+|∅
+|Instance source object from <<t-business-services>>
+
+|from_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|UNIX timestamp when downtime started
+
+|to_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|UNIX timestamp when downtime stopped or 0
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|business_service_downtime_pkey
+|UNIQUE
+|record_id
+
+|===

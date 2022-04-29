@@ -19,12 +19,6 @@ Event processing policy actions
 |∅
 |Action id from <<t-actions>>
 
-|timer_delay
-|INTEGER
-|NOT NULL
-|∅
-|Time to wait before action to be executed
-
 |timer_key
 |VARCHAR(127)
 |NULL
@@ -37,11 +31,17 @@ Event processing policy actions
 |∅
 |Blocking timer key
 
-|snooze_time
-|INTEGER
-|NOT NULL
+|timer_delay
+|VARCHAR(127)
+|NULL
 |∅
-|Snooze time for action
+|Text that will be converted to delay timer
+
+|snooze_time
+|VARCHAR(127)
+|NULL
+|∅
+|Text that will be converted to snooze timer
 |===
 
 .Indexes

@@ -1,4 +1,4 @@
-[[t-aah-keys]]
+[[t-ssh-keys]]
 === SSH_KEYS
 
 Table stores SSH keys configuration
