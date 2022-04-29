@@ -180,6 +180,12 @@ Interface information
 * 1 - IF_ADMIN_STATE_UP     
 * 2 - IF_ADMIN_STATE_DOWN   
 * 3 - IF_ADMIN_STATE_TESTING
+
+|if_alias
+|VARCHAR(255)
+|NULL
+|∅
+|Interface alias
 |===
 
 .Indexes

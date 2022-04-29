@@ -125,12 +125,6 @@ System users
 |∅
 |Password history
 
-|xmpp_id
-|VARCHAR(127)
-|NULL
-|∅
-|XMPP id
-
 |ldap_dn
 |TEXT
 |NULL

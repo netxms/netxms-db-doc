@@ -535,6 +535,12 @@ Nodes
 |NULL
 |∅
 |Code page used for SNMP messages from this node.
+
+|fail_time_ssh
+|INTEGER
+|NOT NULL
+|∅
+|SSH connection fail UNIX timestamp
 |===
 
 .Indexes

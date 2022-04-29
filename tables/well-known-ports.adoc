@@ -1,7 +1,7 @@
-[[t-snmp-ports]]
-=== SNMP_PORTS
+[[t-well-known-ports]]
+=== WELL_KNOWN_PORTS
 
-List of SNMP ports, that will be automatically checked for nodes to collect SNMP data
+List of ports, that will be automatically checked for nodes to collect SNMP, SSH or other data
 
 .Columns
 [cols="15,17,13,10,45a"]
@@ -24,13 +24,23 @@ List of SNMP ports, that will be automatically checked for nodes to collect SNMP
 |NOT NULL
 |∅
 |Zone UIN form <<t-zones>>
+
+|tag
+|VARCAHR(15)
+|NOT NULL
+|∅
+|Port tag:
+
+* snmp
+* ssh
+
 |===
 
 .Indexes
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|shared_secrets_pkey
+|well_known_ports_pkey
 |UNIQUE
 |id,zone
 

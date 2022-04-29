@@ -1,0 +1,61 @@
+[[t-maintenance-journal]]
+=== MAINTENANCE_JOURNAL
+
+Maintenance journal
+
+.Columns
+[cols="15,18,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier
+
+|object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id form <<t-nodes>>
+
+|author
+|INTEGER
+|NOT NULL
+|∅
+|User id <<t-users>> that initiated maintenance.
+
+|last_edited_by
+|INTEGER
+|NOT NULL
+|∅
+|User id <<t-users>> that made last change.
+
+|description
+|TEXT
+|NULL
+|∅
+|Maintenance reason.
+
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|UNIX timestamp when object entered maintenance
+
+|modification_time
+|INTEGER
+|NOT NULL
+|∅
+|UNIX timestamp when object maintenance mode last changed
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|maintenance_journal_pkey
+|UNIQUE
+|record_id
+
+|===
