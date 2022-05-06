@@ -94,6 +94,8 @@ Reference to <<t-nodes>>.
 * 4 - DCI_DT_STRING
 * 5 - DCI_DT_FLOAT
 * 6 - DCI_DT_NULL
+* 7 - DCI_DT_COUNTER32
+* 8 - DCI_DT_COUNTER64
 * 255 - DCI_DT_DEPRECATED (used internally by agent)
 
 |polling_interval
