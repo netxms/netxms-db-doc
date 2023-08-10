@@ -31,7 +31,7 @@ Event processing policy.
 |∅
 |Comments as show in rule editor.
 
-|script
+|filter_script
 |TEXT
 |NULL
 |∅
@@ -78,6 +78,12 @@ Event processing policy.
 |NULL
 |∅
 |Alarm impact text.
+
+|action_script
+|TEXT
+|NULL
+|∅
+|Script thet will be executed as an action for event processing rule.
 |===
 
 .Indexes

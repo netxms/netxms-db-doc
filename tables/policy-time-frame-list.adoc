@@ -1,0 +1,49 @@
+[[t-policy-time-frame-list]]
+=== POLICY_TIME_FRAME_LIST
+
+Event processing policy time frame based filter
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|Rule id from <<t-event-policy>>
+
+|🔑time_frame_id
+|INTEGER
+|NOT NULL
+|∅
+|Time frame id
+
+|time_filter
+|INTEGER
+|NOT NULL
+|∅
+|Time range packed as BCD: startHour startMinute endHour endMinute
+
+|date_filter
+|INTEGER
+|NOT NULL
+|∅
+|Date filter bit masks. Bits:
+
+ * 0 - last day of month
+ * [1 - 31] - days of month
+ * [32 - 37] - days of the week
+ * [38 - 49] - months of year 
+
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|policy_time_frame_list_pkey
+|UNIQUE
+|rule_id,time_frame_id
+
+|===

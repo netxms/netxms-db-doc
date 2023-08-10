@@ -1,0 +1,31 @@
+[[t-trusted-objects]]
+=== TRUCTED_OBJECTS
+
+Trusted objects - used for cross-object access and data collection
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id from <<t-object-properties>>
+
+|🔑trusted_object_id
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Object id from <<t-object-properties>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|trusted_objects_pkey
+|UNIQUE
+|object_id,trusted_object_id
+
+|===

@@ -58,4 +58,11 @@ Maintenance journal
 |UNIQUE
 |record_id
 
+|idx_maintjrn_creation_time
+|NORMAL
+|creation_time
+
+|idx_maintjrn_object_id
+|NORMAL
+|object_id
 |===

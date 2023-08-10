@@ -19,15 +19,15 @@ OSPF neighbors
 |∅
 |Router id IP address
 
-|🔑area_id
+|area_id
 |VARCHAR(15)
 |NULL
 |∅
 |Area id IP address
 
-|ip_address
+|🔑ip_address
 |VARCHAR(48)
-|NULL
+|NOT NULL
 |∅
 |IP address
 
@@ -37,7 +37,7 @@ OSPF neighbors
 |∅
 |Remote node id form <<t-object-properties>>
 
-|if_index
+|🔑if_index
 |INTEGER
 |NOT NULL
 |∅
@@ -73,6 +73,6 @@ OSPF neighbors
 |Name|Type|Fields
 |ospf_neighbors_pkey
 |UNIQUE
-|node_id,router_id,if_index
+|node_id,router_id,if_index,ip_address
 
 |===

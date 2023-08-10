@@ -13,7 +13,7 @@ Certificate activity log
 |∅
 |Record primary key
 
-|timestamp
+|operation_timestamp
 |INTEGER
 |NOT NULL
 |∅
@@ -77,5 +77,9 @@ Certificate activity log
 |certificate_action_log_pkey
 |UNIQUE
 |record_id
+
+|idx_cert_action_log_timestamp
+|NORMAL
+|operation_timestamp
 
 |===

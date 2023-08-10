@@ -26,10 +26,10 @@ Table that links epp with persistent storage
 |Value that should be set for persistent storage entry
 
 |🔑action
-|INTEGER
+|CAHR(1)
 |NOT NULL
 |∅
-|Action that should be done on persistent storage entry set/delete
+|Action that should be done on persistent storage entry 1 for set, 2 for delete
 |===
 
 .Indexes

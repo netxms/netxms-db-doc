@@ -18,6 +18,12 @@ Event processing policy source objects
 |NOT NULL
 |∅
 |Object id from <<t-object-properties>>
+
+|🔑exclusion
+|CHAR(1)
+|NOT NULL
+|∅
+|1 if current entry is an exclusion entry
 |===
 
 .Indexes
@@ -26,6 +32,6 @@ Event processing policy source objects
 |Name|Type|Fields
 |policy_source_list_pkey
 |UNIQUE
-|rule_id,object_id
+|rule_id,object_id,exclusion
 
 |===

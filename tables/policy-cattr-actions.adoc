@@ -1,0 +1,43 @@
+[[t-policy-cattr-actions]]
+=== POLICY_CATTR_ACTIONS
+
+Event processing policy custom attribute operations
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑rule_id
+|INTEGER
+|NOT NULL
+|∅
+|Rule id form <<t-event-policy>>
+
+|🔑attribute_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Attribute name
+
+|🔑action
+|CHAR(1)
+|NOT NULL
+|∅
+|Action: 1 for set, 2 for delete
+
+|value
+|TEXT
+|NULL
+|∅
+|NEw attribute text
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|policy_cattr_actions_pkey
+|UNIQUE
+|rule_id,attribute_name,action
+
+|===
