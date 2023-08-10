@@ -541,6 +541,18 @@ Nodes
 |NOT NULL
 |∅
 |SSH connection fail UNIX timestamp
+
+|ospf_router_id
+|VARCHAR(15)
+|NULL
+|∅
+|OSPF router IP address
+
+|mqtt_proxy
+|INTEGER
+|NOT NULL
+|∅
+|MQTT froxy node id form <<t-nodes>>
 |===
 
 .Indexes

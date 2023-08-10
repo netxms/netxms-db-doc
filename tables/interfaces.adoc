@@ -186,6 +186,40 @@ Interface information
 |NULL
 |∅
 |Interface alias
+
+|ospf_area
+|VARCHAR(15)
+|NULL
+|∅
+|OSPF area IP address
+
+|ospf_if_type
+|INTEGER
+|NOT NULL
+|∅
+|OSPF interface type:
+
+* 0 - UNKNOWN
+* 1 - BROADCAST
+* 2 - NBMA 
+* 3 - POINT_TO_POINT 
+* 4 - POINT_TO_MULTIPOINT 
+
+|ospf_if_state
+|INTEGER
+|NOT NULL
+|∅
+|OSPF interface state:
+
+* 0 - UNKNOWN
+* 1 - DOWN
+* 2 - LOOPBACK 
+* 3 - WAITING 
+* 4 - POINT_TO_POINT 
+* 5 - DESIGNATED_ROUTER 
+* 6 - BACKUP_DESIGNATED_ROUTER 
+* 7 - OTHER_DESIGNATED_ROUTER 
+
 |===
 
 .Indexes

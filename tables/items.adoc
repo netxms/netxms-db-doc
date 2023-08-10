@@ -176,32 +176,17 @@ Reference to <<t-nodes>>.
 |∅
 |ID of the proxy node. Reference to <<t-nodes>>.
 
-|base_units
+|multiplier
 |INTEGER
 |NOT NULL
 |∅
-|DCI base units:
+|Multiplier. 0 - for default
 
-* 0 - DCI_BASEUNITS_OTHER 
-* 1 - DCI_BASEUNITS_CUSTOM 
-* 2 - DCI_BASEUNITS_BYTES 
-* 3 - DCI_BASEUNITS_BITS 
-* 4 - DCI_BASEUNITS_SECONDS 
-* 5 - DCI_BASEUNITS_PERCENTS 
-* 6 - DCI_BASEUNITS_BITS_PER_SECOND 
-* 7 - DCI_BASEUNITS_BYTES_PER_SECOND 
-
-|unit_multiplier
-|INTEGER
-|NOT NULL
-|∅
-|Reserved for future use. 
-
-|custom_units_name
+|units_name
 |VARCHAR(63)
 |NULL
 |∅
-|Reserved for future use. 
+|Unit name
 
 |perftab_settings
 |TEXT

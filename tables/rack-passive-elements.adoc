@@ -56,6 +56,24 @@ Rack passive elements
 |NOT NULL
 |∅
 |Passive element port count for patch panel
+
+|height
+|INTEGER
+|NOT NULL
+|∅
+|Element height
+
+|image_front
+|VARCHAR(36)
+|NULL
+|∅
+|Front image UUID from <<t-images>>
+
+|image_rear
+|VARCHAR(36)
+|NULL
+|∅
+|Rear image UUID from <<t-images>>
 |===
 
 .Indexes

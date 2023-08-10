@@ -1,0 +1,78 @@
+[[t-ospf-neighbors]]
+=== OSPF_NEIGHBORS
+
+OSPF neighbors
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|Node id form <<t-object-properties>>
+
+|🔑router_id
+|VARCHAR(15)
+|NOT NULL
+|∅
+|Router id IP address
+
+|🔑area_id
+|VARCHAR(15)
+|NULL
+|∅
+|Area id IP address
+
+|ip_address
+|VARCHAR(48)
+|NULL
+|∅
+|IP address
+
+|remote_node_id
+|INTEGER
+|NOT NULL
+|∅
+|Remote node id form <<t-object-properties>>
+
+|if_index
+|INTEGER
+|NOT NULL
+|∅
+|Interface index
+
+|is_virtual
+|CHAR(1)
+|NOT NULL
+|∅
+|'1' if virtual and '0' if not
+
+|neighbor_state
+|INTEGER
+|NOT NULL
+|∅
+|Neighbor state:
+
+* 0 - UNKNOWN
+* 1 - DOWN
+* 2 - ATTEMPT 
+* 3 - INIT 
+* 4 - TWO_WAY 
+* 5 - EXCHANGE_START 
+* 6 - EXCHANGE 
+* 7 - LOADING 
+* 8 - FULL 
+
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ospf_neighbors_pkey
+|UNIQUE
+|node_id,router_id,if_index
+
+|===

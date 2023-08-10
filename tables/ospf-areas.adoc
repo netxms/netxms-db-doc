@@ -1,0 +1,31 @@
+[[t-ospf-areas]]
+=== OSPF_AREAS
+
+OSPF areas
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑node_id
+|INTEGER
+|NOT NULL
+|∅
+|Node id form form <<t-object-properties>>
+
+|🔑area_id
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Area id IP address
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ospf_areas_pkey
+|UNIQUE
+|node_id,area_id
+
+|===

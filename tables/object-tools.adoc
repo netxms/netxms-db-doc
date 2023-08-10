@@ -95,6 +95,12 @@ Object tools
 |NULL
 |∅
 |Command icon
+
+|remote_port
+|INTEGER
+|NOT NULL
+|∅
+|Remote port for tool execution
 |===
 
 .Indexes

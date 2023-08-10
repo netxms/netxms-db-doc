@@ -19,13 +19,11 @@ List of all dashboards.
 |∅
 |Number of columns in in the dashboard.
 
-|options
+|display_priority
 |INTEGER
 |NOT NULL
 |∅
-|Bitmask of additional dashboard options. Known values:
-
-* 0x0001 – All columns should have equal width
+|Priority to display dashboard in object tabs. 0 - for automatic
 
 |===
 
