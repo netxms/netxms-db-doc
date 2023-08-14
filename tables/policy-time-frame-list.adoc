@@ -26,7 +26,7 @@ Event processing policy time frame based filter
 |Time range packed as BCD: startHour startMinute endHour endMinute
 
 |date_filter
-|INTEGER
+|BIGINT
 |NOT NULL
 |∅
 |Date filter bit masks. Bits:

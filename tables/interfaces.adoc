@@ -131,7 +131,7 @@ Interface information
 |VARCHAR(255)
 |NULL
 |∅
-|Interface description
+|Interface description - value of ifDescr for SNMP, equals to name for NetXMS agent
 
 |iftable_suffix
 |VARCHAR(127)
@@ -220,6 +220,25 @@ Interface information
 * 6 - BACKUP_DESIGNATED_ROUTER 
 * 7 - OTHER_DESIGNATED_ROUTER 
 
+|stp_port_state
+|INTEGER
+|NOT NULL
+|∅
+|STP port state:
+
+* 0 - UNKNOWN
+* 1 - DISABLED
+* 2 - BLOCKING 
+* 3 - LISTENING 
+* 4 - LEARNING 
+* 5 - FORWARDING 
+* 6 - BROKEN 
+
+|if_name
+|VARCHAR(255)
+|NULL
+|∅
+|Original interface name as received from SNMP or NetXMS agent (before expansion)
 |===
 
 .Indexes

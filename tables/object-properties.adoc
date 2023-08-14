@@ -170,7 +170,7 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |∅
 |Image GUID form <<t-images>>, that will be used to display object on network maps.
 
-|submap_id
+|drilldown_object_id
 |INTEGER
 |NOT NULL
 |∅
@@ -347,6 +347,12 @@ Sensor state flags:
 |NULL
 |∅
 |Source text of comments with unexpanded macros. 
+
+|asset_id
+|INTEGER
+|NOT NULL
+|∅
+|Linked asset_id
 |===
 
 .Indexes

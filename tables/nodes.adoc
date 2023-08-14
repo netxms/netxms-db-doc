@@ -553,6 +553,30 @@ Nodes
 |NOT NULL
 |∅
 |MQTT froxy node id form <<t-nodes>>
+
+|modbus_proxy
+|INTEGER
+|NOT NULL
+|∅
+|MODBUS froxy node id form <<t-nodes>>
+
+|modbus_tcp_port
+|INTEGER
+|NOT NULL
+|∅
+|MODBUS TCP port
+
+|modbus_unit_id
+|INTEGER
+|NOT NULL
+|∅
+|MODBUS unit id
+
+|snmp_context_engine_id
+|VARCHAR(255)
+|NULL
+|∅
+|SNMP context engine id
 |===
 
 .Indexes

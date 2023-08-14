@@ -1,0 +1,87 @@
+[[t-asset-change-log]]
+=== ASSET_CHANGE_LOG
+
+Asset change log
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|BIGINT
+|NOT NULL
+|∅
+|Record id
+
+|operation_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Operation timestamp
+
+|asset_id
+|INTEGER
+|NOT NULL
+|∅
+|Asset id
+
+|attribute_name
+|VARCHAR(63)
+|NULL
+|∅
+|Attribute name
+
+|operation
+|INTEGER
+|NOT NULL
+|∅
+|Operation
+
+ * 0 - Create
+ * 1 - Delete
+ * 2 - Update
+ * 3 - Link
+ * 4 - Unlink
+
+|old_value
+|INTEGER
+|NOT NULL
+|∅
+|Old value
+
+|new_value
+|INTEGER
+|NOT NULL
+|∅
+|New value
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>>
+
+|linked_object_id
+|INTEGER
+|NOT NULL
+|∅
+|Linke object id from <<t-object-properties>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|asset_change_log_pkey
+|UNIQUE
+|record_id
+
+|idx_srv_asset_log_asset_id
+|NORMAL
+|asset_id
+
+|idx_srv_asset_log_timestamp
+|NORMAL
+|operation_timestamp
+
+|===

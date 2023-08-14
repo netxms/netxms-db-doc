@@ -131,6 +131,12 @@ Threshold checking rules
 |NULL
 |∅
 |Last value chacked against threshold value
+
+|last_event_message
+|VARCHAR(2000)
+|NULL
+|∅
+|Last generated threshold event message
 |===
 
 .Indexes

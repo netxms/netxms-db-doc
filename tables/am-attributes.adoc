@@ -1,0 +1,98 @@
+[[t-am-attributes]]
+=== AM_ATTRIBUTES
+
+Asset management attributes
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑attr_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Attribute name
+
+|display_name
+|VARCHAR(255)
+|NULL
+|∅
+|Display name
+
+|data_type
+|INTEGER
+|NOT NULL
+|∅
+|Data type
+
+* 0 - String
+* 1 - Integer
+* 2 - Number
+* 3 - Boolean
+* 4 - Enum
+* 5 - MacAddress
+* 6 - IPAddress
+* 7 - UUID
+* 8 - ObjectReference
+* 9 - Date
+
+|is_mandatory
+|CHAR(1)
+|NOT NULL
+|∅
+|If attribute is mandatory 
+
+|is_unique
+|CHAR(1)
+|NOT NULL
+|∅
+|If attribute is unique 
+
+|is_hidden
+|CHAR(1)
+|NOT NULL
+|∅
+|If attribute is hidden 
+
+|autofill_script
+|TEXT
+|NULL
+|∅
+|Auto fill script
+
+|range_min
+|INTEGER
+|NOT NULL
+|∅
+|Range minimal value
+
+|range_max
+|INTEGER
+|NOT NULL
+|∅
+|Range maximal value
+
+|sys_type
+|INTEGER
+|NOT NULL
+|∅
+|System type:
+
+* 0 - None
+* 1 - Serial
+* 2 - IPAddress
+* 3 - MacAddress
+* 4 - Vendor
+* 5 - Model
+
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|am_attributes_pkey
+|UNIQUE
+|attr_name
+
+|===

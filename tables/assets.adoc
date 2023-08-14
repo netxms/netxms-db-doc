@@ -1,0 +1,43 @@
+[[t-assets]]
+=== ASSETS
+
+Assets
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Asset id
+
+|linked_object_id
+|INTEGER
+|NOT NULL
+|∅
+|Linked object
+
+|last_update_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Last update timestamp
+
+|last_update_uid
+|INTEGER
+|NOT NULL
+|∅
+|Last update UUID
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|assets_pkey
+|UNIQUE
+|id
+
+|===

@@ -1,0 +1,37 @@
+[[t-am-enum-values]]
+=== AM_ENUM_VALUES
+
+Possible values for asset management attributes of "enum" type
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑attr_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Attribute name
+
+|🔑attr_value
+|VARCHAR(63)
+|NULL
+|∅
+|Enum key
+
+|display_name
+|VARCHAR(255)
+|NOT NULL
+|∅
+|display name
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|am_enum_values_pkey
+|UNIQUE
+|attr_name,attr_value
+
+|===
