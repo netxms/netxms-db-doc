@@ -1,11 +1,11 @@
 = NetXMS Data Dictionary
 Raden Solutions, SIA <info@radensolutions.com>
-v4.1, April 29, 2022
+v4.4, October 11, 2023
 :toc: left
 :toclevels: 3
 :icons: font
 
-ifdef::html[+++You can download offline version here <a href="netxms-data-dictionary.pdf">here</a>.+++]
+ifdef::html[+++Download <a href="netxms-data-dictionary.pdf">PDF</a> for offline use.+++]
 
 == Introduction
 TBD
