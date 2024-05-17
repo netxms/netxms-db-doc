@@ -23,7 +23,7 @@ Table threshold configuration
 |INTEGER
 |NOT NULL
 |∅
-|Threashold proccessing sequence number
+|Threshold processing sequence number
 
 |activation_event
 |INTEGER

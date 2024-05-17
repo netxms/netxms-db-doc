@@ -1,7 +1,7 @@
 [[t-dct-threshold-instances]]
-=== DCT_THREASHOLD_INSTANCES
+=== DCT_THRESHOLD_INSTANCES
 
-Table stores matched instances by table threashold
+Table stores matched instances by table threshold
 
 .Columns
 [cols="16,17,13,10,44a"]
@@ -48,7 +48,7 @@ Table stores matched instances by table threashold
 [cols="30,15,55a"]
 |===
 |Name|Type|Fields
-|dct_threashold_instances_pkey
+|dct_threshold_instances_pkey
 |UNIQUE
 |threshold_id,instance,maint_copy
 
