@@ -4,7 +4,7 @@
 Object properties of NetObj and everything that is inherited from it(Dashboard, Interface, Node...)
 
 .Columns
-[cols="25,17,13,10,35a"]
+[options="header", stripes="even", cols="15,10,10,10,~a"]
 |===
 |Name|Type|State|Default|Description
 |🔑object_id
@@ -61,10 +61,10 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |∅
 |Status calculation algorithms:
 
-* 0 - SA_CALCULATE_DEFAULT 
-* 1 - SA_CALCULATE_MOST_CRITICAL 
-* 2 - SA_CALCULATE_SINGLE_THRESHOLD 
-* 3 - SA_CALCULATE_MULTIPLE_THRESHOLDS 
+* 0 - SA_CALCULATE_DEFAULT
+* 1 - SA_CALCULATE_MOST_CRITICAL
+* 2 - SA_CALCULATE_SINGLE_THRESHOLD
+* 3 - SA_CALCULATE_MULTIPLE_THRESHOLDS
 
 |status_prop_alg
 |INTEGER
@@ -72,11 +72,11 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |∅
 |Status propagation algorithms
 
-* 0 - SA_PROPAGATE_DEFAULT 
-* 1 - SA_PROPAGATE_UNCHANGED 
-* 2 - SA_PROPAGATE_FIXED 
-* 3 - SA_PROPAGATE_RELATIVE 
-* 4 - SA_PROPAGATE_TRANSLATED 
+* 0 - SA_PROPAGATE_DEFAULT
+* 1 - SA_PROPAGATE_UNCHANGED
+* 2 - SA_PROPAGATE_FIXED
+* 3 - SA_PROPAGATE_RELATIVE
+* 4 - SA_PROPAGATE_TRANSLATED
 
 |status_fixed_val
 |INTEGER
@@ -106,16 +106,16 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |∅
 |HEX string containing 4 bytes. Each byte represents a status mapping in status propagation configuration. Status byte order:
 
-* 1 warning 
-* 2 medium 
-* 3 major 
+* 1 warning
+* 2 medium
+* 3 major
 * 4 critical
 
 |status_single_threshold
 |INTEGER
 |NOT NULL
 |∅
-|"Single threshold" value in status colculation 
+|"Single threshold" value in status colculation
 
 |status_thresholds
 |VARCHAR(8)
@@ -123,9 +123,9 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |∅
 |HEX string containing 4 bytes. Each byte represents threshold value for "Multiple thresholds" status calculation configuration. Status byte order:
 
-* 1 warning 
-* 2 medium 
-* 3 major 
+* 1 warning
+* 2 medium
+* 3 major
 * 4 critical
 
 |comments
@@ -216,89 +216,41 @@ Object properties of NetObj and everything that is inherited from it(Dashboard, 
 |INTEGER
 |NOT NULL
 |∅
-|Object flags. 
+|Object flags.
 
-Node flags:
-
-* 0x00010000 - NF_REMOTE_AGENT 
-* 0x00020000 - NF_DISABLE_DISCOVERY_POLL 
-* 0x00040000 - NF_DISABLE_TOPOLOGY_POLL 
-* 0x00080000 - NF_DISABLE_SNMP 
-* 0x00100000 - NF_DISABLE_NXCP 
-* 0x00200000 - NF_DISABLE_ICMP 
-* 0x00400000 - NF_FORCE_ENCRYPTION 
-* 0x00800000 - NF_DISABLE_ROUTE_POLL 
-* 0x01000000 - NF_AGENT_OVER_TUNNEL_ONLY 
-* 0x02000000 - NF_SNMP_SETTINGS_LOCKED 
-
-Interfaces flags:
-
-* 0x01 - IF_SYNTHETIC_MASK 
-* 0x02 - IF_PHYSICAL_PORT 
-* 0x04 - IF_EXCLUDE_FROM_TOPOLOGY 
-* 0x08 - IF_LOOPBACK 
-* 0x10 - IF_CREATED_MANUALLY 
-* 0x20 - IF_PEER_REFLECTION  Topology information obtained by reflection
-* 0x30000000 - IF_EXPECTED_STATE_MASK  2-bit field holding expected interface state
-
-Templates flags:
-
-* 0x00000001 - TF_AUTO_APPLY 
-* 0x00000002 - TF_AUTO_REMOVE 
-
-Chassis flags:
-
-* 0x00000001 - CHF_BIND_UNDER_CONTROLLER 
-
-Object container flags:
-
-* 0x00000001 - CF_AUTO_BIND 
-* 0x00000002 - CF_AUTO_UNBIND 
-
-Network maps flags:
-
-* 0x00000001 - MF_SHOW_STATUS_ICON 
-* 0x00000002 - MF_SHOW_STATUS_FRAME 
-* 0x00000004 - MF_SHOW_STATUS_BKGND 
-* 0x00000008 - MF_SHOW_END_NODES 
-* 0x00000010 - MF_CALCULATE_STATUS 
-* 0x00000020 - MF_FILTER_OBJECTS 
-* 0x00000040 - MF_SHOW_LINK_DIRECTION
-* 0x00000080 - MF_USE_L1_TOPOLOGY
-* 0x00000100 - MF_CENTER_BKGND_IMAGE
-* 0x00000200 - MF_TRANSLUCENT_LABEL_BKGND
+See <<c-object-properties-flags>> for full list.
 
 |state
 |INTEGER
 |NOT NULL
 |∅
-|Object state. 
+|Object state.
 
 Data Collection Object (any object that supports data collection) status flags:
 
-* 0x00000001 - DCSF_UNREACHABLE 
-* 0x00000002 - DCSF_NETWORK_PATH_PROBLEM 
+* 0x00000001 - DCSF_UNREACHABLE
+* 0x00000002 - DCSF_NETWORK_PATH_PROBLEM
 
 Node state flags:
 
-* 0x00010000 - NSF_AGENT_UNREACHABLE 
-* 0x00020000 - NSF_SNMP_UNREACHABLE 
-* 0x00040000 - NSF_CPSNMP_UNREACHABLE 
-* 0x00080000 - NSF_CACHE_MODE_NOT_SUPPORTED 
+* 0x00010000 - NSF_AGENT_UNREACHABLE
+* 0x00020000 - NSF_SNMP_UNREACHABLE
+* 0x00040000 - NSF_CPSNMP_UNREACHABLE
+* 0x00080000 - NSF_CACHE_MODE_NOT_SUPPORTED
 * 0x00100000 - NSF_SNMP_TRAP_FLOOD
-* 0x00200000 - NSF_ICMP_UNREACHABLE           
-* 0x00400000 - NSF_SSH_UNREACHABLE            
+* 0x00200000 - NSF_ICMP_UNREACHABLE
+* 0x00400000 - NSF_SSH_UNREACHABLE
 
 Cluster state flags:
 
-* 0x00010000 - CLSF_DOWN 
+* 0x00010000 - CLSF_DOWN
 
 Sensor state flags:
 
-* 0x00010000 - SSF_PROVISIONED 
-* 0x00020000 - SSF_REGISTERED 
-* 0x00040000 - SSF_ACTIVE 
-* 0x00080000 - SSF_CONF_UPDATE_PENDING 
+* 0x00010000 - SSF_PROVISIONED
+* 0x00020000 - SSF_REGISTERED
+* 0x00040000 - SSF_ACTIVE
+* 0x00080000 - SSF_CONF_UPDATE_PENDING
 
 |creation_time
 |INTEGER
@@ -346,7 +298,7 @@ Sensor state flags:
 |TEXT
 |NULL
 |∅
-|Source text of comments with unexpanded macros. 
+|Source text of comments with unexpanded macros.
 
 |asset_id
 |INTEGER
@@ -363,4 +315,43 @@ Sensor state flags:
 |UNIQUE
 |object_id
 
+|===
+
+[[c-object-properties-flags]]
+.Constants for object flags
+[options="header", stripes="even", cols="10,25,10,~a"]
+|===
+|Component|Name|Value|Description
+|Node|NF_REMOTE_AGENT|0x00010000|
+|Node|NF_DISABLE_DISCOVERY_POLL|0x00020000|
+|Node|NF_DISABLE_TOPOLOGY_POLL|0x00040000|
+|Node|NF_DISABLE_SNMP|0x00080000|
+|Node|NF_DISABLE_NXCP|0x00100000|
+|Node|NF_DISABLE_ICMP|0x00200000|
+|Node|NF_FORCE_ENCRYPTION|0x00400000|
+|Node|NF_DISABLE_ROUTE_POLL|0x00800000|
+|Node|NF_AGENT_OVER_TUNNEL_ONLY|0x01000000|
+|Node|NF_SNMP_SETTINGS_LOCKED|0x02000000|
+|Interface|IF_SYNTHETIC_MASK|0x01|
+|Interface|IF_PHYSICAL_PORT|0x02|
+|Interface|IF_EXCLUDE_FROM_TOPOLOGY|0x04|
+|Interface|IF_LOOPBACK|0x08|
+|Interface|IF_CREATED_MANUALLY|0x10|
+|Interface|IF_PEER_REFLECTION|0x20|Topology information obtained by reflection
+|Interface|IF_EXPECTED_STATE_MASK|0x30000000|2-bit field holding expected interface state
+|Template|TF_AUTO_APPLY|0x00000001|
+|Template|TF_AUTO_REMOVE|0x00000002|
+|Chassis|CHF_BIND_UNDER_CONTROLLER|0x00000001|
+|Container|CF_AUTO_BIND|0x00000001|
+|Container|CF_AUTO_UNBIND|0x00000002|
+|Network Map|MF_SHOW_STATUS_ICON|0x00000001|
+|Network Map|MF_SHOW_STATUS_FRAME|0x00000002|
+|Network Map|MF_SHOW_STATUS_BKGND|0x00000004|
+|Network Map|MF_SHOW_END_NODES|0x00000008|
+|Network Map|MF_CALCULATE_STATUS|0x00000010|
+|Network Map|MF_FILTER_OBJECTS|0x00000020|
+|Network Map|MF_SHOW_LINK_DIRECTION|0x00000040|
+|Network Map|MF_USE_L1_TOPOLOGY|0x00000080|
+|Network Map|MF_CENTER_BKGND_IMAGE|0x00000100|
+|Network Map|MF_TRANSLUCENT_LABEL_BKGND|0x00000200|
 |===
