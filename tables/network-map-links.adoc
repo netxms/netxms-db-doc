@@ -37,9 +37,9 @@ Links on network maps
 |∅
 |Link type:
 
-* 0 - LINK_TYPE_NORMAL 
-* 1 - LINK_TYPE_VPN 
-* 2 - LINK_TYPE_MULTILINK 
+* 0 - LINK_TYPE_NORMAL
+* 1 - LINK_TYPE_VPN
+* 2 - LINK_TYPE_MULTILINK
 
 |link_name
 |VARCHAR(255)
@@ -69,9 +69,9 @@ Links on network maps
 |INTEGER
 |NOT NULL
 |∅
-|Network map link flags. Currently there are no flags defined.  
+|Network map link flags. Currently there are no flags defined.
 
-color_source
+|color_source
 |INTEGER
 |NOT NULL
 |∅
