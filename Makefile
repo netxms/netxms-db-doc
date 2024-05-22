@@ -34,7 +34,7 @@ pdf:
 	bundle exec asciidoctor-pdf --theme netxms -a pdf-themesdir=themes -a pdf-fontsdir=fonts -o build/netxms-data-dictionary.pdf index.adoc
 
 clean:
-	rm -rf build/nxsl.pdf build/nxsl.html
+	rm -rf build/netxms-data-dictionary.pdf build/netxms-data-dictionary.html
 
 watch:
 	$(WATCHCMD)
