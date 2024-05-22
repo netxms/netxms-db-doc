@@ -6,10 +6,19 @@ v4.5, {docdate}
 :icons: font
 :pdf-page-layout: landscape
 
-ifdef::html[+++Download <a href="netxms-data-dictionary.pdf">PDF</a> for offline use.+++]
+:table-caption!:
+
+<<<
 
 == Introduction
 TBD
+
+ifdef::html[]
+
+=== PDF Version
++++You can also download a <a href="netxms-data-dictionary.pdf">PDF version of this document</a>.+++
+
+endif::[]
 
 == Tables
 
