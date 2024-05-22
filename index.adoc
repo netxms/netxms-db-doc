@@ -11,7 +11,9 @@ v5.0, {docdate}
 <<<
 
 == Introduction
-TBD
+
+This document describes the structure and relationships of all tables, indexes, and constants within the NetXMS monitoring system.
+It is intended for report developers and administrators who need to understand the internal structure of the system.
 
 ifdef::html[]
 
