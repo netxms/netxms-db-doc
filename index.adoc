@@ -4,6 +4,7 @@ v4.5, {docdate}
 :toc: left
 :toclevels: 3
 :icons: font
+:pdf-page-layout: landscape
 
 ifdef::html[+++Download <a href="netxms-data-dictionary.pdf">PDF</a> for offline use.+++]
 
