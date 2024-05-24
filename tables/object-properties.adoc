@@ -4,7 +4,7 @@
 Object properties of NetObj and everything that is inherited from it(Dashboard, Interface, Node...)
 
 .Columns
-[options="header", stripes="even", cols="15,10,10,10,~a"]
+[options="header", cols="15,10,10,10,~a"]
 |===
 |Name|Type|State|Default|Description
 |🔑object_id
@@ -319,7 +319,7 @@ Sensor state flags:
 
 [[c-object-properties-flags]]
 .Constants for object flags
-[options="header", stripes="even", cols="10,25,10,~a"]
+[options="header", cols="10,25,10,~a"]
 |===
 |Component|Name|Value|Description
 |Node|NF_REMOTE_AGENT|0x00010000|

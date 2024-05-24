@@ -5,8 +5,9 @@ v5.0, {docdate}
 :toclevels: 3
 :icons: font
 :pdf-page-layout: landscape
-
 :table-caption!:
+:table-stripes: even
+:title-page:
 
 <<<
 

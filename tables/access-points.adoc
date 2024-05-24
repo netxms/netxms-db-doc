@@ -7,6 +7,7 @@ List of known access points, as collected from wireless controllers.
 [cols="16,17,13,10,44a"]
 |===
 |Name|Type|State|Default|Description
+
 |🔑id
 |INTEGER
 |NOT NULL

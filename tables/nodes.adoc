@@ -4,7 +4,7 @@
 Nodes
 
 .Columns
-[options="header", stripes="even", cols="15,10,10,10,~a"]
+[options="header", cols="15,10,10,10,~a"]
 |===
 |Name|Type|State|Default|Description
 |🔑id
