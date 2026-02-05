@@ -43,6 +43,12 @@ System users
 |∅
 |Account flags (locked, password never expire etc.)
 
+|ui_access_rules
+|VARCHAR(2000)
+|NULL
+|∅
+|UI access rules for restricting user interface elements
+
 |full_name
 |VARCHAR(127)
 |NULL
