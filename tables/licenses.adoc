@@ -14,7 +14,7 @@ License repository
 |License unique identifier
 
 |content
-|TEXT
+|VARCHAR(2000)
 |NULL
 |∅
 |License content

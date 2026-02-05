@@ -42,6 +42,12 @@ Event processing policy actions
 |NULL
 |∅
 |Text that will be converted to snooze timer
+
+|active
+|CHAR(1)
+|NOT NULL
+|∅
+|Action active flag
 |===
 
 .Indexes

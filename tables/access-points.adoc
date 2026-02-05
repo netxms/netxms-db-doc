@@ -27,7 +27,7 @@ List of known access points, as collected from wireless controllers.
 |ID of the wireless controller object from <<t-nodes>>.
 
 |mac_address
-|VARCHAR(12)
+|VARCHAR(16)
 |NULL
 |∅
 |Access point MAC address

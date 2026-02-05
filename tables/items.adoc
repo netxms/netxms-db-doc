@@ -85,7 +85,7 @@ Reference to <<t-nodes>>.
 |INTEGER
 |NOT NULL
 |∅
-|Type of data:
+|Type of input data:
 
 * 0 - DCI_DT_INT
 * 1 - DCI_DT_UINT
@@ -97,6 +97,12 @@ Reference to <<t-nodes>>.
 * 7 - DCI_DT_COUNTER32
 * 8 - DCI_DT_COUNTER64
 * 255 - DCI_DT_DEPRECATED (used internally by agent)
+
+|transformed_datatype
+|INTEGER
+|NOT NULL
+|∅
+|Type of data after transformation (same values as datatype)
 
 |polling_interval
 |INTEGER
@@ -254,6 +260,12 @@ Reference to <<t-nodes>>.
 |NOT NULL
 |∅
 |Related object
+
+|all_rearmed_event
+|INTEGER
+|NOT NULL
+|∅
+|Event code to be generated when all thresholds are rearmed
 
 |polling_interval_src
 |VARCHAR(255)

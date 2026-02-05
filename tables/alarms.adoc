@@ -218,4 +218,9 @@ Reference to <<t-items>>.
 |NORMAL
 |last_change_time
 
+|Name|Type|Fields
+|idx_alarms_alarm_state
+|NORMAL
+|alarm_state
+
 |===

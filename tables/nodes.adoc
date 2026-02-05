@@ -229,6 +229,24 @@ Nodes
 |∅
 |Last agent communication time (as UNIX timestamp)
 
+|path_check_reason
+|INTEGER
+|NOT NULL
+|∅
+|Path check reason
+
+|path_check_node_id
+|INTEGER
+|NOT NULL
+|∅
+|Path check node id from <<t-nodes>>
+
+|path_check_iface_id
+|INTEGER
+|NOT NULL
+|∅
+|Path check interface id from <<t-interfaces>>
+
 |syslog_msg_count
 |BIGINT
 |NOT NULL
@@ -276,6 +294,24 @@ Nodes
 |NOT NULL
 |∅
 |SSH proxy node id from <<t-nodes>>
+
+|vnc_password
+|VARCHAR(63)
+|NULL
+|∅
+|VNC password
+
+|vnc_port
+|INTEGER
+|NOT NULL
+|∅
+|VNC port
+
+|vnc_proxy
+|INTEGER
+|NOT NULL
+|∅
+|VNC proxy node id from <<t-nodes>>
 
 |port_rows
 |INTEGER
@@ -376,7 +412,7 @@ Nodes
 |Hypervisor info that might be or might not be. There can be some version information.
 
 |capabilities
-|INTEGER
+|BIGINT
 |NOT NULL
 |∅
 |Node capabilities:

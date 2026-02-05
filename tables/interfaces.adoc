@@ -80,8 +80,8 @@ Interface information
 |Discovery protocol used for peer discovery
 
 |mac_addr
-|VARCHAR(12)
-|NOT NULL
+|VARCHAR(16)
+|NULL
 |∅
 |MAC address
 

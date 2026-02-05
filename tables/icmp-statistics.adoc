@@ -43,6 +43,12 @@ Node ICMP statistics
 |∅
 |Target last response time
 
+|packet_loss
+|INTEGER
+|NOT NULL
+|∅
+|Packet loss percentage
+
 |sample_count
 |INTEGER
 |NOT NULL

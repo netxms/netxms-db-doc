@@ -48,6 +48,12 @@ Node software inventory
 |NULL
 |∅
 |Software description
+
+|uninstall_key
+|VARCHAR(255)
+|NULL
+|∅
+|Software uninstall key
 |===
 
 .Indexes
