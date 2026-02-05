@@ -1,0 +1,72 @@
+[[t-incident-activity-log]]
+=== INCIDENT_ACTIVITY_LOG
+
+Incident activity log
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier
+
+|incident_id
+|INTEGER
+|NOT NULL
+|∅
+|Incident id from <<t-incidents>>
+
+|timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Activity timestamp (as UNIX timestamp)
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>>
+
+|activity_type
+|INTEGER
+|NOT NULL
+|∅
+|Activity type
+
+|old_value
+|VARCHAR(255)
+|NULL
+|∅
+|Old value
+
+|new_value
+|VARCHAR(255)
+|NULL
+|∅
+|New value
+
+|details
+|VARCHAR(1000)
+|NULL
+|∅
+|Activity details
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|incident_activity_log_pkey
+|UNIQUE
+|id
+
+|idx_incident_activity_incident
+|NORMAL
+|incident_id
+
+|===
+

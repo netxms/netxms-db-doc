@@ -1,0 +1,38 @@
+[[t-object-ai-data]]
+=== OBJECT_AI_DATA
+
+Object AI data (key-value storage for AI agents)
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id from <<t-object-properties>>
+
+|🔑data_key
+|VARCHAR(127)
+|NOT NULL
+|∅
+|Data key
+
+|data_value
+|TEXT
+|NULL
+|∅
+|Data value
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|object_ai_data_pkey
+|UNIQUE
+|object_id,data_key
+
+|===
+

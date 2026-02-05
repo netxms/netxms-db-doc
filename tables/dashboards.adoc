@@ -25,6 +25,12 @@ List of all dashboards.
 |∅
 |Priority to display dashboard in object tabs. 0 - for automatic
 
+|forced_context_object_id
+|INTEGER
+|NOT NULL
+|∅
+|Forced context object id (0 = no forced context)
+
 |===
 
 .Indexes

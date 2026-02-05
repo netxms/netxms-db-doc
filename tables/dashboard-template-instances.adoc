@@ -1,0 +1,38 @@
+[[t-dashboard-template-instances]]
+=== DASHBOARD_TEMPLATE_INSTANCES
+
+Dashboard template instances
+
+.Columns
+[cols="22,17,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑dashboard_template_id
+|INTEGER
+|NOT NULL
+|∅
+|Dashboard template id from <<t-dashboard-templates>>
+
+|🔑instance_object_id
+|INTEGER
+|NOT NULL
+|∅
+|Instance object id from <<t-object-properties>>
+
+|instance_dashboard_id
+|INTEGER
+|NOT NULL
+|∅
+|Instance dashboard id from <<t-dashboards>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dashboard_template_instances_pkey
+|UNIQUE
+|dashboard_template_id,instance_object_id
+
+|===
+

@@ -89,7 +89,61 @@ Event processing policy.
 |TEXT
 |NULL
 |∅
-|Script thet will be executed as an action for event processing rule.
+|Script that will be executed as an action for event processing rule.
+
+|ai_instructions
+|TEXT
+|NULL
+|∅
+|AI instructions for processing this event
+
+|incident_delay
+|INTEGER
+|NOT NULL
+|∅
+|Delay in seconds for incident creation (0 = immediate)
+
+|incident_title
+|VARCHAR(255)
+|NULL
+|∅
+|Incident title template
+
+|incident_description
+|VARCHAR(2000)
+|NULL
+|∅
+|Incident description template
+
+|incident_ai_depth
+|INTEGER
+|NOT NULL
+|∅
+|AI analysis depth for incident
+
+|incident_ai_prompt
+|VARCHAR(2000)
+|NULL
+|∅
+|AI prompt for incident analysis
+
+|modified_by_guid
+|VARCHAR(36)
+|NULL
+|∅
+|GUID of user who last modified the rule
+
+|modified_by_name
+|VARCHAR(63)
+|NULL
+|∅
+|Name of user who last modified the rule
+
+|modification_time
+|INTEGER
+|NULL
+|∅
+|Last modification time (as UNIX timestamp)
 |===
 
 .Indexes

@@ -1,0 +1,48 @@
+[[t-incident-alarms]]
+=== INCIDENT_ALARMS
+
+Incident to alarm mapping
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑incident_id
+|INTEGER
+|NOT NULL
+|∅
+|Incident id from <<t-incidents>>
+
+|🔑alarm_id
+|INTEGER
+|NOT NULL
+|∅
+|Alarm id from <<t-alarms>>
+
+|linked_time
+|INTEGER
+|NOT NULL
+|∅
+|Time when alarm was linked to incident (as UNIX timestamp)
+
+|linked_by_user
+|INTEGER
+|NOT NULL
+|∅
+|User id who linked the alarm from <<t-users>>
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|incident_alarms_pkey
+|UNIQUE
+|incident_id,alarm_id
+
+|idx_incident_alarms_alarm
+|NORMAL
+|alarm_id
+
+|===
+

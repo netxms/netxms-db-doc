@@ -52,5 +52,9 @@ Persistent authentication tokens
 |UNIQUE
 |id
 
+|idx_auth_tokens_user_id
+|NORMAL
+|user_id
+
 |===
 

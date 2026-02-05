@@ -1,0 +1,32 @@
+[[t-port-stop-list]]
+=== PORT_STOP_LIST
+
+Port stop list - ports that should never be accessed by server
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑zone_uin
+|INTEGER
+|NOT NULL
+|∅
+|Zone UIN from <<t-zones>>
+
+|🔑port_range
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Port range specification
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|port_stop_list_pkey
+|UNIQUE
+|zone_uin,port_range
+
+|===
+

@@ -26,16 +26,16 @@ Last collected DCI values
 |Transformed DCI value
 
 |last_poll_time
-|INTEGER
+|BIGINT
 |NOT NULL
 |∅
-|Last poll time (as UNIX timestamp)
+|Last poll time (as UNIX timestamp with milliseconds)
 
 |cache_timestamp
-|INTEGER
+|BIGINT
 |NOT NULL
 |∅
-|Timestamp of the oldest value in cache for this DCI (as UNIX timestamp)
+|Timestamp of the oldest value in cache for this DCI (as UNIX timestamp with milliseconds)
 
 |anomaly_detected
 |CHAR(1)

@@ -614,6 +614,18 @@ Nodes
 |∅
 |MODBUS unit id
 
+|last_events
+|VARCHAR(255)
+|NULL
+|∅
+|Last events
+
+|decommission_time
+|INTEGER
+|NOT NULL
+|∅
+|Decommission time (as UNIX timestamp)
+
 |snmp_context_engine_id
 |VARCHAR(255)
 |NULL

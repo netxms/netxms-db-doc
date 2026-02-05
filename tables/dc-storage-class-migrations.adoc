@@ -1,0 +1,100 @@
+[[t-dc-storage-class-migrations]]
+=== DC_STORAGE_CLASS_MIGRATIONS
+
+Storage class migration tasks (TimescaleDB only)
+
+.Columns
+[cols="22,17,13,10,38a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier
+
+|dci_id
+|INTEGER
+|NOT NULL
+|∅
+|DCI id from <<t-items>> or <<t-dc-tables>>
+
+|dci_type
+|CHAR(1)
+|NOT NULL
+|∅
+|DCI type (I=item, T=table)
+
+|old_storage_class
+|CHAR(1)
+|NOT NULL
+|∅
+|Old storage class
+
+|new_storage_class
+|CHAR(1)
+|NOT NULL
+|∅
+|New storage class
+
+|status
+|CHAR(1)
+|NOT NULL
+|∅
+|Migration status
+
+|create_time
+|INTEGER
+|NOT NULL
+|∅
+|Task creation time (as UNIX timestamp)
+
+|start_time
+|INTEGER
+|NULL
+|∅
+|Migration start time (as UNIX timestamp)
+
+|end_time
+|INTEGER
+|NULL
+|∅
+|Migration end time (as UNIX timestamp)
+
+|last_processed_timestamp
+|BIGINT
+|NULL
+|∅
+|Last processed data timestamp
+
+|records_copied
+|INTEGER
+|NOT NULL
+|∅
+|Number of records copied
+
+|error_message
+|VARCHAR(255)
+|NULL
+|∅
+|Error message if migration failed
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dc_storage_class_migrations_pkey
+|UNIQUE
+|id
+
+|idx_scm_status
+|NORMAL
+|status
+
+|idx_scm_dci_id
+|NORMAL
+|dci_id
+
+|===
+

@@ -1,0 +1,60 @@
+[[t-incident-comments]]
+=== INCIDENT_COMMENTS
+
+Incident comments
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier
+
+|incident_id
+|INTEGER
+|NOT NULL
+|∅
+|Incident id from <<t-incidents>>
+
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|Comment creation time (as UNIX timestamp)
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>>
+
+|ai_generated
+|CHAR(1)
+|NOT NULL
+|∅
+|AI generated flag
+
+|comment_text
+|TEXT
+|NOT NULL
+|∅
+|Comment text
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|incident_comments_pkey
+|UNIQUE
+|id
+
+|idx_incident_comments_incident
+|NORMAL
+|incident_id
+
+|===
+

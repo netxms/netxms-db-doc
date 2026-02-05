@@ -1,0 +1,96 @@
+[[t-ai-messages]]
+=== AI_MESSAGES
+
+AI agent messages
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier
+
+|message_guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|Message GUID
+
+|message_type
+|INTEGER
+|NOT NULL
+|∅
+|Message type
+
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|Creation time (as UNIX timestamp)
+
+|expiration_time
+|INTEGER
+|NOT NULL
+|∅
+|Expiration time (as UNIX timestamp)
+
+|source_task_id
+|INTEGER
+|NULL
+|∅
+|Source task id from <<t-ai-tasks>>
+
+|source_task_type
+|VARCHAR(63)
+|NULL
+|∅
+|Source task type
+
+|related_object_id
+|INTEGER
+|NULL
+|∅
+|Related object id from <<t-object-properties>>
+
+|title
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Message title
+
+|message_text
+|TEXT
+|NOT NULL
+|∅
+|Message text
+
+|spawn_task_data
+|TEXT
+|NULL
+|∅
+|Spawn task data
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|Message status
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ai_messages_pkey
+|UNIQUE
+|id
+
+|idx_ai_messages_expiration
+|NORMAL
+|expiration_time
+
+|===
+

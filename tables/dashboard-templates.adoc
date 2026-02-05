@@ -1,0 +1,38 @@
+[[t-dashboard-templates]]
+=== DASHBOARD_TEMPLATES
+
+Dashboard templates
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier from <<t-object-properties>>
+
+|num_columns
+|INTEGER
+|NOT NULL
+|∅
+|Number of columns in dashboard
+
+|name_template
+|VARCHAR(255)
+|NULL
+|∅
+|Name template for generated dashboards
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|dashboard_templates_pkey
+|UNIQUE
+|id
+
+|===
+

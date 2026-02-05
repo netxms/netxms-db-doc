@@ -49,6 +49,12 @@ Node ICMP statistics
 |∅
 |Packet loss percentage
 
+|jitter
+|INTEGER
+|NOT NULL
+|∅
+|Jitter in milliseconds
+
 |sample_count
 |INTEGER
 |NOT NULL

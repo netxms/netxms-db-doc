@@ -1,0 +1,48 @@
+[[t-ai-message-recipients]]
+=== AI_MESSAGE_RECIPIENTS
+
+AI message recipients
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑message_id
+|INTEGER
+|NOT NULL
+|∅
+|Message id from <<t-ai-messages>>
+
+|🔑user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>>
+
+|is_initiator
+|CHAR(1)
+|NOT NULL
+|∅
+|Is initiator flag
+
+|read_time
+|INTEGER
+|NULL
+|∅
+|Read time (as UNIX timestamp)
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ai_message_recipients_pkey
+|UNIQUE
+|message_id,user_id
+
+|idx_ai_msg_recipients_user
+|NORMAL
+|user_id
+
+|===
+

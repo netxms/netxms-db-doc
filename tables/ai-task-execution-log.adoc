@@ -1,0 +1,80 @@
+[[t-ai-task-execution-log]]
+=== AI_TASK_EXECUTION_LOG
+
+AI task execution log
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑record_id
+|BIGINT
+|NOT NULL
+|∅
+|Unique record identifier
+
+|execution_timestamp
+|INTEGER
+|NOT NULL
+|∅
+|Execution timestamp (as UNIX timestamp)
+
+|task_id
+|INTEGER
+|NOT NULL
+|∅
+|Task id from <<t-ai-tasks>>
+
+|task_description
+|VARCHAR(255)
+|NULL
+|∅
+|Task description at execution time
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>>
+
+|status
+|CHAR(1)
+|NOT NULL
+|∅
+|Execution status:
+
+* C - Completed
+* F - Failed
+* S - Scheduled
+
+|iteration
+|INTEGER
+|NOT NULL
+|∅
+|Iteration number
+
+|explanation
+|TEXT
+|NULL
+|∅
+|Execution explanation
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|ai_task_execution_log_pkey
+|UNIQUE
+|record_id
+
+|idx_ai_task_exec_log_timestamp
+|NORMAL
+|execution_timestamp
+
+|idx_ai_task_exec_log_asset_id
+|NORMAL
+|task_id
+
+|===
+

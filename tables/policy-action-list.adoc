@@ -7,7 +7,13 @@ Event processing policy actions
 [cols="15,17,13,10,45a"]
 |===
 |Name|Type|State|Default|Description
-|rule_id
+|🔑record_id
+|INTEGER
+|NOT NULL
+|∅
+|Unique record identifier
+
+|🔑rule_id
 |INTEGER
 |NOT NULL
 |∅
@@ -56,6 +62,6 @@ Event processing policy actions
 |Name|Type|Fields
 |policy_action_list_pkey
 |UNIQUE
-|rule_id,action_id
+|record_id,rule_id
 
 |===

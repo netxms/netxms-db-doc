@@ -1,0 +1,110 @@
+[[t-incidents]]
+=== INCIDENTS
+
+Incidents
+
+.Columns
+[cols="19,17,13,10,41a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique identifier
+
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|Incident creation time (as UNIX timestamp)
+
+|last_change_time
+|INTEGER
+|NOT NULL
+|∅
+|Last change time (as UNIX timestamp)
+
+|state
+|INTEGER
+|NOT NULL
+|∅
+|Incident state
+
+|assigned_user_id
+|INTEGER
+|NULL
+|∅
+|Assigned user id from <<t-users>>
+
+|title
+|VARCHAR(255)
+|NOT NULL
+|∅
+|Incident title
+
+|source_alarm_id
+|INTEGER
+|NULL
+|∅
+|Source alarm id from <<t-alarms>>
+
+|source_object_id
+|INTEGER
+|NOT NULL
+|∅
+|Source object id from <<t-object-properties>>
+
+|created_by_user
+|INTEGER
+|NOT NULL
+|∅
+|User id who created the incident from <<t-users>>
+
+|resolved_by_user
+|INTEGER
+|NULL
+|∅
+|User id who resolved the incident from <<t-users>>
+
+|closed_by_user
+|INTEGER
+|NULL
+|∅
+|User id who closed the incident from <<t-users>>
+
+|resolve_time
+|INTEGER
+|NULL
+|∅
+|Incident resolve time (as UNIX timestamp)
+
+|close_time
+|INTEGER
+|NULL
+|∅
+|Incident close time (as UNIX timestamp)
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|incidents_pkey
+|UNIQUE
+|id
+
+|idx_incidents_state
+|NORMAL
+|state
+
+|idx_incidents_source_object
+|NORMAL
+|source_object_id
+
+|idx_incidents_assigned_user
+|NORMAL
+|assigned_user_id
+
+|===
+

@@ -43,6 +43,12 @@ Interface information
 |∅
 |Speed (bps)
 
+|max_speed
+|BIGINT
+|NOT NULL
+|∅
+|Maximum speed (bps)
+
 |bridge_port
 |INTEGER
 |NOT NULL
@@ -78,6 +84,12 @@ Interface information
 |NOT NULL
 |∅
 |Discovery protocol used for peer discovery
+
+|peer_last_updated
+|INTEGER
+|NOT NULL
+|∅
+|Peer information last updated time (as UNIX timestamp)
 
 |mac_addr
 |VARCHAR(16)
@@ -228,11 +240,17 @@ Interface information
 
 * 0 - UNKNOWN
 * 1 - DISABLED
-* 2 - BLOCKING 
-* 3 - LISTENING 
-* 4 - LEARNING 
-* 5 - FORWARDING 
-* 6 - BROKEN 
+* 2 - BLOCKING
+* 3 - LISTENING
+* 4 - LEARNING
+* 5 - FORWARDING
+* 6 - BROKEN
+
+|state_before_maintenance
+|VARCHAR(2000)
+|NULL
+|∅
+|Interface state before maintenance mode
 
 |if_name
 |VARCHAR(255)
