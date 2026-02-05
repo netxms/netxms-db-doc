@@ -7,13 +7,13 @@ Event processing policy actions
 [cols="15,17,13,10,45a"]
 |===
 |Name|Type|State|Default|Description
-|🔑rule_id
+|rule_id
 |INTEGER
 |NOT NULL
 |∅
 |Event processing policy rule id from <<t-event-policy>>
 
-|🔑action_id
+|action_id
 |INTEGER
 |NOT NULL
 |∅

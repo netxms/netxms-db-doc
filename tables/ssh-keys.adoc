@@ -20,13 +20,13 @@ Table stores SSH keys configuration
 |Key name
 
 |public_key
-|VARCHAR(700)
+|TEXT
 |NULL
 |∅
 |Public key
 
 |private_key
-|VARCHAR(1710)
+|TEXT
 |NULL
 |∅
 |Private key
