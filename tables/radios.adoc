@@ -1,0 +1,86 @@
+[[t-radios]]
+=== RADIOS
+
+Radio interfaces
+
+.Columns
+[cols="15,17,13,10,45a"]
+|===
+|Name|Type|State|Default|Description
+|🔑owner_id
+|INTEGER
+|NOT NULL
+|∅
+|Owner object id from <<t-object-properties>>
+
+|🔑radio_index
+|INTEGER
+|NOT NULL
+|∅
+|Radio index
+
+|if_index
+|INTEGER
+|NOT NULL
+|∅
+|Interface index
+
+|name
+|VARCHAR(63)
+|NULL
+|∅
+|Radio interface name
+
+|🔑bssid
+|CHAR(12)
+|NOT NULL
+|∅
+|Basic Service Set Identifier (MAC address)
+
+|ssid
+|VARCHAR(32)
+|NULL
+|∅
+|Service Set Identifier (network name)
+
+|frequency
+|INTEGER
+|NOT NULL
+|∅
+|Operating frequency in MHz
+
+|band
+|INTEGER
+|NOT NULL
+|∅
+|Frequency band
+
+|channel
+|INTEGER
+|NOT NULL
+|∅
+|Channel number
+
+|power_dbm
+|INTEGER
+|NOT NULL
+|∅
+|Transmit power in dBm
+
+|power_mw
+|INTEGER
+|NOT NULL
+|∅
+|Transmit power in mW
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|radios_pkey
+|UNIQUE
+|owner_id,radio_index,bssid
+
+|===
+

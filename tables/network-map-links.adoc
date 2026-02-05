@@ -25,11 +25,23 @@ Links on network maps
 |∅
 |Start element id from <<t-network-map-elements>>
 
+|interface1
+|INTEGER
+|NOT NULL
+|∅
+|Interface id on first element from <<t-interfaces>>
+
 |element2
 |INTEGER
 |NOT NULL
 |∅
 |End element id <<t-network-map-elements>>
+
+|interface2
+|INTEGER
+|NOT NULL
+|∅
+|Interface id on second element from <<t-interfaces>>
 
 |link_type
 |INTEGER

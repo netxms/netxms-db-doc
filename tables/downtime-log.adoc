@@ -1,0 +1,44 @@
+[[t-downtime-log]]
+=== DOWNTIME_LOG
+
+Downtime log
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id from <<t-object-properties>>
+
+|🔑start_time
+|INTEGER
+|NOT NULL
+|∅
+|Downtime start time (as UNIX timestamp)
+
+|end_time
+|INTEGER
+|NOT NULL
+|∅
+|Downtime end time (as UNIX timestamp)
+
+|🔑downtime_tag
+|VARCHAR(15)
+|NOT NULL
+|∅
+|Downtime tag
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|downtime_log_pkey
+|UNIQUE
+|object_id,start_time,downtime_tag
+
+|===
+

@@ -126,6 +126,12 @@ Threshold checking rules
 |∅
 |Threshold state before maintenance
 
+|is_disabled
+|CHAR(1)
+|NOT NULL
+|∅
+|Threshold is disabled flag
+
 |last_checked_value
 |VARCHAR(255)
 |NULL

@@ -14,17 +14,23 @@ List of known access points, as collected from wireless controllers.
 |∅
 |ID of the object. Reference to <<t-object-properties>>.
 
-|node_id
+|domain_id
 |INTEGER
 |NOT NULL
 |∅
-|ID of the Node object representing this access point. Reference to `id` field in <<t-nodes>>.
+|ID of the wireless domain object.
+
+|controller_id
+|INTEGER
+|NOT NULL
+|∅
+|ID of the wireless controller object from <<t-nodes>>.
 
 |mac_address
 |VARCHAR(12)
 |NULL
 |∅
-|Access point mac address
+|Access point MAC address
 
 |vendor
 |VARCHAR(64)
@@ -54,7 +60,31 @@ List of known access points, as collected from wireless controllers.
 |INTEGER
 |NOT NULL
 |∅
-|Reserved for future use
+|Access point index
+
+|grace_period_start
+|INTEGER
+|NOT NULL
+|∅
+|Grace period start time (as UNIX timestamp)
+
+|peer_node_id
+|INTEGER
+|NOT NULL
+|∅
+|Peer node id from <<t-nodes>>
+
+|peer_if_id
+|INTEGER
+|NOT NULL
+|∅
+|Peer interface id from <<t-interfaces>>
+
+|peer_proto
+|INTEGER
+|NOT NULL
+|∅
+|Discovery protocol used for peer discovery
 |===
 
 .Indexes
@@ -66,3 +96,4 @@ List of known access points, as collected from wireless controllers.
 |id
 
 |===
+

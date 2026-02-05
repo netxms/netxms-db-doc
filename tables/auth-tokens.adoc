@@ -1,0 +1,56 @@
+[[t-auth-tokens]]
+=== AUTH_TOKENS
+
+Persistent authentication tokens
+
+.Columns
+[cols="18,17,13,10,42a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique token identifier
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>>
+
+|issuing_time
+|INTEGER
+|NOT NULL
+|∅
+|Token issuing time (as UNIX timestamp)
+
+|expiration_time
+|INTEGER
+|NOT NULL
+|∅
+|Token expiration time (as UNIX timestamp)
+
+|description
+|VARCHAR(127)
+|NULL
+|∅
+|Token description
+
+|token_data
+|CHAR(64)
+|NOT NULL
+|∅
+|Token data
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|auth_tokens_pkey
+|UNIQUE
+|id
+
+|===
+

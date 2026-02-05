@@ -67,6 +67,12 @@ Event processing policy.
 |∅
 |Event generated on alarm timeout
 
+|downtime_tag
+|VARCHAR(15)
+|NULL
+|∅
+|Downtime tag for tracking object downtime
+
 |rca_script_name
 |VARCHAR(255)
 |NULL

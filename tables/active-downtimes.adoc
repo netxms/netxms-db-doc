@@ -1,0 +1,38 @@
+[[t-active-downtimes]]
+=== ACTIVE_DOWNTIMES
+
+Active downtimes
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑object_id
+|INTEGER
+|NOT NULL
+|∅
+|Object id from <<t-object-properties>>
+
+|🔑downtime_tag
+|VARCHAR(15)
+|NOT NULL
+|∅
+|Downtime tag
+
+|start_time
+|INTEGER
+|NOT NULL
+|∅
+|Downtime start time (as UNIX timestamp)
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|active_downtimes_pkey
+|UNIQUE
+|object_id,downtime_tag
+
+|===
+

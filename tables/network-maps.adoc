@@ -84,10 +84,22 @@ Network maps
 |∅
 |Default link routing:
 
-* 0 - ROUTING_DEFAULT 
-* 1 - ROUTING_DIRECT 
-* 2 - ROUTING_MANHATTAN 
-* 3 - ROUTING_BENDPOINTS 
+* 0 - ROUTING_DEFAULT
+* 1 - ROUTING_DIRECT
+* 2 - ROUTING_MANHATTAN
+* 3 - ROUTING_BENDPOINTS
+
+|link_width
+|INTEGER
+|NOT NULL
+|∅
+|Default link width
+
+|link_style
+|INTEGER
+|NOT NULL
+|∅
+|Default link style
 
 |object_display_mode
 |INTEGER
@@ -106,6 +118,24 @@ Network maps
 |NULL
 |∅
 |Network map NXSL object filter for automatic maps
+
+|link_styling_script
+|TEXT
+|NULL
+|∅
+|NXSL script for link styling
+
+|width
+|INTEGER
+|NOT NULL
+|∅
+|Map width in pixels
+
+|height
+|INTEGER
+|NOT NULL
+|∅
+|Map height in pixels
 |===
 
 .Indexes

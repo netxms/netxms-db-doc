@@ -35,7 +35,13 @@ Last collected DCI values
 |INTEGER
 |NOT NULL
 |∅
-|Timestamp of the oldest value in cash for this DCI (as UNIX timestamp)
+|Timestamp of the oldest value in cache for this DCI (as UNIX timestamp)
+
+|anomaly_detected
+|CHAR(1)
+|NOT NULL
+|∅
+|Anomaly detected flag
 |===
 
 .Indexes

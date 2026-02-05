@@ -13,17 +13,11 @@ Sensors specific information
 |∅
 |ID of the object. Reference to <<t-object-properties>>.
 
-|proxy_node
+|gateway_node
 |INTEGER
 |NOT NULL
 |∅
-|Sensor proxy node <<t-nodes>>.
-
-|mac_address
-|VARCHAR(16)
-|NULL
-|∅
-|MAC address
+|Gateway node id from <<t-nodes>>.
 
 |device_class
 |INTEGER
@@ -31,92 +25,52 @@ Sensors specific information
 |∅
 |Sensor device class:
 
-* 0 - SENSOR_CLASS_UNKNOWN 
-* 1 - SENSOR_UPS 
-* 2 - SENSOR_WATER_METER 
-* 3 - SENSOR_ELECTR_METER 
+* 0 - SENSOR_CLASS_UNKNOWN
+* 1 - SENSOR_UPS
+* 2 - SENSOR_WATER_METER
+* 3 - SENSOR_ELECTR_METER
+
+|modbus_unit_id
+|INTEGER
+|NOT NULL
+|∅
+|MODBUS unit id
+
+|capabilities
+|INTEGER
+|NOT NULL
+|∅
+|Sensor capabilities flags
+
+|mac_address
+|VARCHAR(16)
+|NULL
+|∅
+|MAC address
 
 |vendor
-|VARCHAR(128)
+|VARCHAR(127)
 |NULL
 |∅
 |Vendor
 
-|communication_protocol
-|INTEGER
-|NOT NULL
-|∅
-|Communication protocol type:
-
-* 0 - SENSOR_PROTO_UNKNOWN 
-* 1 - COMM_LORAWAN 
-* 2 - COMM_DLMS 
-
-|xml_config
-|VARCHAR(4000)
+|model
+|VARCHAR(127)
 |NULL
 |∅
-|Sensor XML configuration. Contain protocol specific configuration
-
-|xml_reg_config
-|VARCHAR(4000)
-|NULL
-|∅
-|Sensor XML configuration. Contain protocol connection information
+|Model
 
 |serial_number
-|VARCHAR(256)
+|VARCHAR(63)
 |NULL
 |∅
 |Device serial number
 
 |device_address
-|VARCHAR(256)
+|VARCHAR(127)
 |NULL
 |∅
 |Device address
-
-|meta_type
-|VARCHAR(256)
-|NULL
-|∅
-|Device meta type
-
-|description
-|VARCHAR(512)
-|NULL
-|∅
-|Device description 
-
-|last_connection_time
-|INTEGER
-|NOT NULL
-|∅
-|Last connection type (as UINIX timestamp)
-
-|frame_count
-|INTEGER
-|NOT NULL
-|∅
-|Frame count (zero when no info)
-
-|signal_strenght
-|INTEGER
-|NOT NULL
-|∅
-|Signal streight (1 when no information)
-
-|signal_noise
-|INTEGER
-|NOT NULL
-|∅
-|Signal noise (*10 from origin number)
-
-|frequency
-|INTEGER
-|NOT NULL
-|∅
-|Signal frequencty (*10 from origin number)
 |===
 
 .Indexes
@@ -128,3 +82,4 @@ Sensors specific information
 |id
 
 |===
+
