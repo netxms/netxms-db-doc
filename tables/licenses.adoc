@@ -13,6 +13,12 @@ License repository
 |∅
 |License unique identifier
 
+|guid
+|VARCHAR(36)
+|NOT NULL
+|∅
+|License GUID
+
 |content
 |VARCHAR(2000)
 |NULL

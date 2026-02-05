@@ -43,6 +43,24 @@ Table contains log for all sent notifications
 |∅
 |Message
 
+|event_code
+|INTEGER
+|NULL
+|∅
+|Event code that triggered the notification
+
+|event_id
+|BIGINT
+|NULL
+|∅
+|Event id from <<t-event-log>>
+
+|rule_id
+|VARCHAR(36)
+|NULL
+|∅
+|Rule GUID from <<t-event-policy>>
+
 |success
 |CHAR(1)
 |NULL

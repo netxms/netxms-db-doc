@@ -441,6 +441,12 @@ Nodes
 * 0x00200000 - NC_IS_NEW_POLICY_TYPES  Defines if agent is already upgraded to new policy type.
 * 0x00400000 - NC_IS_USER_AGENT_INSTALLED Defines if user agent is installed.
 
+|expected_capabilities
+|BIGINT
+|NOT NULL
+|∅
+|Expected node capabilities (same flags as capabilities)
+
 |icmp_poll_mode
 |CHAR(1)
 |NOT NULL

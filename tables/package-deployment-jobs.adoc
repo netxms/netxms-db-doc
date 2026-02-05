@@ -1,0 +1,74 @@
+[[t-package-deployment-jobs]]
+=== PACKAGE_DEPLOYMENT_JOBS
+
+Package deployment jobs
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑id
+|INTEGER
+|NOT NULL
+|∅
+|Unique job identifier
+
+|pkg_id
+|INTEGER
+|NOT NULL
+|∅
+|Package id from <<t-agent-pkg>>
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|Target node id from <<t-nodes>>
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>> who created the job
+
+|creation_time
+|INTEGER
+|NOT NULL
+|∅
+|Job creation time (as UNIX timestamp)
+
+|execution_time
+|INTEGER
+|NOT NULL
+|∅
+|Job execution time (as UNIX timestamp)
+
+|completion_time
+|INTEGER
+|NOT NULL
+|∅
+|Job completion time (as UNIX timestamp)
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|Job status
+
+|failure_reason
+|VARCHAR(255)
+|NULL
+|∅
+|Failure reason if job failed
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|package_deployment_jobs_pkey
+|UNIQUE
+|id
+
+|===
+

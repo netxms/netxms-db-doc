@@ -85,6 +85,12 @@ List of known access points, as collected from wireless controllers.
 |NOT NULL
 |∅
 |Discovery protocol used for peer discovery
+
+|down_since
+|INTEGER
+|NOT NULL
+|∅
+|Timestamp since when access point is down (as UNIX timestamp)
 |===
 
 .Indexes

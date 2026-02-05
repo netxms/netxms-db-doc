@@ -136,6 +136,12 @@ Network maps
 |NOT NULL
 |∅
 |Map height in pixels
+
+|display_priority
+|INTEGER
+|NOT NULL
+|∅
+|Map display priority
 |===
 
 .Indexes

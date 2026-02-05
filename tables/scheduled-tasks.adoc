@@ -8,7 +8,7 @@ Scheduled task information
 |===
 |Name|Type|State|Default|Description
 |🔑id
-|INTEGER
+|BIGINT
 |NOT NULL
 |∅
 |Unique identifier.

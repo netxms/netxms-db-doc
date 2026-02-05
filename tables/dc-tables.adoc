@@ -104,10 +104,16 @@ Reference to <<t-nodes>>.
 * 2 – Not Supported
 
 |system_tag
-|VARCHAR(255)
+|VARCHAR(63)
 |NULL
 |∅
-|System tag used by different system modules to save module information 
+|System tag used by different system modules to save module information
+
+|user_tag
+|VARCHAR(63)
+|NULL
+|∅
+|User-defined tag
 
 |resource_id
 |INTEGER

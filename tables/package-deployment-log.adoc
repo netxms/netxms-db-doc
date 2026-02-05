@@ -1,0 +1,118 @@
+[[t-package-deployment-log]]
+=== PACKAGE_DEPLOYMENT_LOG
+
+Package deployment log
+
+.Columns
+[cols="16,17,13,10,44a"]
+|===
+|Name|Type|State|Default|Description
+|🔑job_id
+|INTEGER
+|NOT NULL
+|∅
+|Job id from <<t-package-deployment-jobs>>
+
+|execution_time
+|INTEGER
+|NOT NULL
+|∅
+|Job execution time (as UNIX timestamp)
+
+|completion_time
+|INTEGER
+|NOT NULL
+|∅
+|Job completion time (as UNIX timestamp)
+
+|node_id
+|INTEGER
+|NOT NULL
+|∅
+|Target node id from <<t-nodes>>
+
+|user_id
+|INTEGER
+|NOT NULL
+|∅
+|User id from <<t-users>> who created the job
+
+|status
+|INTEGER
+|NOT NULL
+|∅
+|Job status
+
+|failure_reason
+|VARCHAR(255)
+|NULL
+|∅
+|Failure reason if job failed
+
+|pkg_id
+|INTEGER
+|NOT NULL
+|∅
+|Package id from <<t-agent-pkg>>
+
+|pkg_type
+|VARCHAR(15)
+|NULL
+|∅
+|Package type
+
+|pkg_name
+|VARCHAR(63)
+|NOT NULL
+|∅
+|Package name
+
+|version
+|VARCHAR(31)
+|NULL
+|∅
+|Package version
+
+|platform
+|VARCHAR(63)
+|NULL
+|∅
+|Target platform
+
+|pkg_file
+|VARCHAR(255)
+|NULL
+|∅
+|Package file name
+
+|command
+|VARCHAR(255)
+|NULL
+|∅
+|Installation command
+
+|description
+|VARCHAR(255)
+|NULL
+|∅
+|Package description
+|===
+
+.Indexes
+[cols="30,15,55a"]
+|===
+|Name|Type|Fields
+|package_deployment_log_pkey
+|UNIQUE
+|job_id
+
+|idx_pkglog_exec_time
+|NORMAL
+|execution_time
+
+|idx_pkglog_node
+|NORMAL
+|node_id
+
+|===
+
